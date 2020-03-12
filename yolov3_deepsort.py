@@ -49,7 +49,7 @@ class VideoTracker(object):
         
 
     def run(self):
-        idx_fframe = 0
+        idx_frame = 0
         while self.vdo.grab(): 
             idx_frame += 1
             if idx_frame % self.args.frame_interval:
