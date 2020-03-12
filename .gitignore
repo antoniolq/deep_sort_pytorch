@@ -10,3 +10,6 @@ build/
 *.mp4
 *.avi
 *.so
+.idea
+*iml
+__pycache__
