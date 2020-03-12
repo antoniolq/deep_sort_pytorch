@@ -63,7 +63,7 @@ class VideoTracker(object):
             bbox_xywh, cls_conf, cls_ids = self.detector(im)
             if bbox_xywh is not None:
                 # select person class
-                mask = cls_ids==0
+                mask = cls_ids==1
 
                 bbox_xywh = bbox_xywh[mask]
                 bbox_xywh[:,3:] *= 1.2 # bbox dilation just in case bbox too small
