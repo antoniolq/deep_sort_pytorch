@@ -49,7 +49,7 @@ class VideoTracker(object):
         
 
     def run(self):
-        idx_frame = 0
+        idx_fframe = 0
         while self.vdo.grab(): 
             idx_frame += 1
             if idx_frame % self.args.frame_interval:
@@ -63,7 +63,7 @@ class VideoTracker(object):
             bbox_xywh, cls_conf, cls_ids = self.detector(im)
             if bbox_xywh is not None:
                 # select person class
-                mask = cls_ids==1
+                mask = cls_ids==0
 
                 bbox_xywh = bbox_xywh[mask]
                 bbox_xywh[:,3:] *= 1.2 # bbox dilation just in case bbox too small
