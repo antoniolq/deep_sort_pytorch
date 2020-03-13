@@ -97,4 +97,10 @@ def demo():
 
 
 if __name__ == "__main__":
-    demo()
+    #demo()
+    net = Darknet()
+    print("yolov3 model structure")
+    print("----------------------------------------------")
+    for idx, net in enumerate(net.modules()):
+        print(idx, "-", net)
+    print("----------------------------------------------")
