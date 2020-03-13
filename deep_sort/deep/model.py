@@ -97,6 +97,11 @@ class Net(nn.Module):
 
 if __name__ == '__main__':
     net = Net()
+    print("reid model structure")
+    print("----------------------------------------------")
+    for idx, net in enumerate(net.modules()):
+        print(idx, "-", net)
+    print("----------------------------------------------")
     x = torch.randn(4,3,128,64)
     y = net(x)
     import ipdb; ipdb.set_trace()
