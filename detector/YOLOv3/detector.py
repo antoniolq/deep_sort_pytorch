@@ -7,12 +7,11 @@ from darknet import Darknet
 from yolo_utils import get_all_boxes, nms, post_process, xywh_to_xyxy, xyxy_to_xywh
 from nms import boxes_nms
 
-temp =1
+
 class YOLOv3(object):
     def __init__(self, cfgfile, weightfile, namesfile, score_thresh=0.7, conf_thresh=0.01, nms_thresh=0.45, is_xywh=False, use_cuda=True):
         # net definition
         self.net = Darknet(cfgfile)
-        temp = cfgfile
         self.net.load_weights(weightfile)
         print('Loading weights from %s... Done!' % (weightfile))
         self.device = "cuda" if use_cuda else "cpu"
@@ -98,10 +97,4 @@ def demo():
 
 
 if __name__ == "__main__":
-    #demo()
-    net = Darknet(temp)
-    print("yolov3 model structure")
-    print("----------------------------------------------")
-    for idx, net in enumerate(net.modules()):
-        print(idx, "-", net)
-    print("----------------------------------------------")
+    demo()
