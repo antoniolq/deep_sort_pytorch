@@ -43,18 +43,18 @@ transform_test = torchvision.transforms.Compose([
 ])
 trainloader = torch.utils.data.DataLoader(
     torchvision.datasets.ImageFolder(train_dir, transform=transform_train),
-    batch_size=32,shuffle=True
+    batch_size=64,shuffle=True
 )
 testloader = torch.utils.data.DataLoader(
     torchvision.datasets.ImageFolder(test_dir, transform=transform_test),
-    batch_size=32,shuffle=True
+    batch_size=64,shuffle=True
 )
 num_classes = len(trainloader.dataset.classes)
 
 # net definition
 start_epoch = 0
 net = Net(num_classes=num_classes)
-net=nn.DataParallel(net,device_ids=[0,1])
+net=nn.DataParallel(net,device_ids=[0,1,2])
 if args.resume:
     assert os.path.isfile("./checkpoint/ckpt.t7"), "Error: no checkpoint file found!"
     print('Loading from checkpoint/ckpt.t7')
