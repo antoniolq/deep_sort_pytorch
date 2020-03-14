@@ -70,6 +70,8 @@ class Tracker:
 
         # Update track set.
         for track_idx, detection_idx in matches:
+            print("检测框状态：\n")
+            print(detections[detection_idx])
             self.tracks[track_idx].update(
                 self.kf, detections[detection_idx])
         for track_idx in unmatched_tracks:

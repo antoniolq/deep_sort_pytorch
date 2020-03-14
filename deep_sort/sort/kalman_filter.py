@@ -104,6 +104,8 @@ class KalmanFilter(object):
             state. Unobserved velocities are initialized to 0 mean.
 
         """
+        print("mean:\n")
+        print(mean)
         std_pos = [
             self._std_weight_position * mean[3],
             self._std_weight_position * mean[3],
