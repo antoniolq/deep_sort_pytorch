@@ -24,7 +24,6 @@ args = parser.parse_args()
 device = "cuda:{}".format(args.gpu_id) if torch.cuda.is_available() and not args.no_cuda else "cpu"
 if torch.cuda.is_available() and not args.no_cuda:
     cudnn.benchmark = True
-os.environ["CUDA_VISIBLE_DEVICES"] = "1,3"
 
 # data loading
 # root = args.data_dir
@@ -55,7 +54,7 @@ num_classes = len(trainloader.dataset.classes)
 # net definition
 start_epoch = 0
 net = Net(num_classes=num_classes)
-net=nn.DataParallel(net)
+net=nn.DataParallel(net,device_ids=[0,1])
 if args.resume:
     assert os.path.isfile("./checkpoint/ckpt.t7"), "Error: no checkpoint file found!"
     print('Loading from checkpoint/ckpt.t7')
@@ -139,7 +138,7 @@ def test(epoch):
         best_acc = acc
         print("Saving parameters to checkpoint/ckpt.t7")
         checkpoint = {
-            'net_dict':net.state_dict(),
+            'net_dict':net.module.state_dict(),
             'acc':acc,
             'epoch':epoch,
         }
