@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import torch
 import torch.backends.cudnn as cudnn
 import torchvision
+import os
 
 from model import Net
 
@@ -23,6 +24,7 @@ args = parser.parse_args()
 device = "cuda:{}".format(args.gpu_id) if torch.cuda.is_available() and not args.no_cuda else "cpu"
 if torch.cuda.is_available() and not args.no_cuda:
     cudnn.benchmark = True
+os.environ["CUDA_VISIBLE_DEVICES"] = "1,3"
 
 # data loading
 # root = args.data_dir
