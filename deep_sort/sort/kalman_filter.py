@@ -128,8 +128,8 @@ class KalmanFilter(object):
             self._motion_mat, covariance, self._motion_mat.T)) + motion_cov
         print("Q:" + motion_cov)
         print("A:" + self._motion_mat)
-        print("x(k+1):"+mean)
-        print("p(k+1):"+ covariance)
+        print("x(k+1):" + mean)
+        print("p(k+1):" + covariance)
         return mean, covariance
 
     def project(self, mean, covariance):
