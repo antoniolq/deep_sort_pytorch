@@ -105,7 +105,7 @@ class KalmanFilter(object):
 
         """
         print("x(k):" , mean)
-        print("p(k):" + covariance)
+        print("p(k):" , covariance)
         std_pos = [
             self._std_weight_position * mean[3],
             self._std_weight_position * mean[3],
@@ -126,10 +126,10 @@ class KalmanFilter(object):
         mean = np.dot(self._motion_mat, mean)
         covariance = np.linalg.multi_dot((
             self._motion_mat, covariance, self._motion_mat.T)) + motion_cov
-        print("Q:" + motion_cov)
-        print("A:" + self._motion_mat)
-        print("x(k+1):" + mean)
-        print("p(k+1):" + covariance)
+        print("Q:" , motion_cov)
+        print("A:" , self._motion_mat)
+        print("x(k+1):" , mean)
+        print("p(k+1):" , covariance)
         return mean, covariance
 
     def project(self, mean, covariance):
