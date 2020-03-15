@@ -64,7 +64,6 @@ class Bottleneck(nn.Module):
             self.is_downsample = True
 
     def forward(self, x):
-        residual = x
         out = self.conv1(x)
         out = self.bn1(out)
         out = self.relu(out)
@@ -74,7 +73,7 @@ class Bottleneck(nn.Module):
         out = self.conv3(out)
         out = self.bn3(out)
         if self.is_downsample:
-            residual = self.downsample(x)
+            x = self.downsample(x)
         return F.relu(x.add(out), True)
 
 
