@@ -75,9 +75,8 @@ class Bottleneck(nn.Module):
         out = self.bn3(out)
         if self.is_downsample:
             residual = self.downsample(x)
-        out += residual
-        out = self.relu(out)
-        return out
+        return F.relu(x.add(out), True)
+
 
 def make_layers(c_in,c_out,repeat_times, is_downsample=False):
     blocks = []
