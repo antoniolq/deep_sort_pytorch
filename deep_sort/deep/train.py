@@ -120,6 +120,7 @@ def test(epoch):
         for idx, (inputs, labels) in enumerate(testloader):
             inputs, labels = inputs.to(device), labels.to(device)
             outputs = net(inputs)
+            print(labels)
             loss = criterion(outputs, labels)
 
             test_loss += loss.item()
