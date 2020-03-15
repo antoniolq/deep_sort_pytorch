@@ -51,7 +51,7 @@ testloader = torch.utils.data.DataLoader(
 )
 
 num_classes = len(trainloader.dataset.classes)
-trainloader.labels = 1+ np.random.randint(0, num_classes-1, size=len(trainloader.labels), dtype='int')
+
 print("num_classes",num_classes)
 # net definition
 start_epoch = 0
