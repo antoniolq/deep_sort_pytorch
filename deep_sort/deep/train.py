@@ -8,6 +8,7 @@ import torch
 import torch.backends.cudnn as cudnn
 import torchvision
 import os
+os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
 from model import Net
 
 parser = argparse.ArgumentParser(description="Train on market1501")
