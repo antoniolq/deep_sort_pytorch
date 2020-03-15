@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import torch
 import torch.backends.cudnn as cudnn
 import torchvision
+from torch.utils.data.sampler import SubsetRandomSampler
 import os
 #os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
 from model import Net
@@ -30,6 +31,7 @@ if torch.cuda.is_available() and not args.no_cuda:
 root = "/mnt/Disk1/qingl/data/Mars"
 train_dir = os.path.join(root,"bbox_train")
 test_dir = os.path.join(root,"bbox_test")
+
 transform_train = torchvision.transforms.Compose([
     torchvision.transforms.RandomCrop((128,64),padding=4),
     torchvision.transforms.RandomHorizontalFlip(),
@@ -41,14 +43,29 @@ transform_test = torchvision.transforms.Compose([
     torchvision.transforms.ToTensor(),
     torchvision.transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
 ])
-trainloader = torch.utils.data.DataLoader(
-    torchvision.datasets.ImageFolder(train_dir, transform=transform_train),
-    batch_size=1024,shuffle=True
-)
-testloader = torch.utils.data.DataLoader(
-    torchvision.datasets.ImageFolder(test_dir, transform=transform_test),
-    batch_size=1024,shuffle=True
-)
+#divide
+test_size = 0.3
+num_workers = 0
+train_data = torchvision.datasets.ImageFolder(train_dir, transform=transform_train)
+num_train = len(train_data)
+indices = list(range(num_train))
+np.random.shuffle(indices)
+test_split = int(np.floor((test_size) * num_train))
+test_idx, train_idx = indices[:test_split], indices[test_split:]
+print(len(test_idx), len(train_idx))
+test_sampler = SubsetRandomSampler(test_idx)
+train_sampler = SubsetRandomSampler(train_idx)
+
+trainloader = torch.utils.data.DataLoader(train_data, batch_size=1024, sampler=train_sampler, num_workers=num_workers)
+testloader = torch.utils.data.DataLoader(train_data, batch_size=1024, sampler=test_sampler, num_workers=num_workers)
+# trainloader = torch.utils.data.DataLoader(
+#     torchvision.datasets.ImageFolder(train_sampler, transform=transform_train),
+#     batch_size=1024,shuffle=True
+# )
+# testloader = torch.utils.data.DataLoader(
+#     torchvision.datasets.ImageFolder(test_sampler, transform=transform_test),
+#     batch_size=1024,shuffle=True
+# )
 
 num_classes1 = len(trainloader.dataset.classes)
 print("train num_classes",num_classes1)
