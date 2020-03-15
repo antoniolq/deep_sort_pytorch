@@ -34,8 +34,6 @@ class BasicBlock(nn.Module):
         y = self.bn2(y)
         if self.is_downsample:
             x = self.downsample(x)
-        print(y)
-        print(x)
         return F.relu(x.add(y),True)
 
 class Bottleneck(nn.Module):
@@ -76,6 +74,8 @@ class Bottleneck(nn.Module):
         out = self.bn3(out)
         if self.is_downsample:
             x = self.downsample(x)
+        print(out)
+        print(x)
         return F.relu(x.add(out), True)
 
 
