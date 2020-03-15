@@ -74,8 +74,6 @@ class Bottleneck(nn.Module):
         out = self.bn3(out)
         if self.is_downsample:
             x = self.downsample(x)
-        print(out.dim())
-        print(x.dim())
         return F.relu(x.add(out), True)
 
 
