@@ -37,7 +37,7 @@ class BasicBlock(nn.Module):
         return F.relu(x.add(y),True)
 
 class Bottleneck(nn.Module):
-    expansion = 4
+    expansion = 1
     def __init__(self, inplanes, planes, stride=1, is_downsample=False):
         super(Bottleneck, self).__init__()
         self.is_downsample = is_downsample
