@@ -203,9 +203,10 @@ def main():
     for epoch in range(start_epoch, start_epoch+40):
         train_loss, train_err = train(epoch)
         test_loss, test_err = test(epoch)
-        draw_curve(epoch, train_loss, train_err, test_loss, test_err)
-        if (epoch+1)%20==0:
-            lr_decay()
+        print("end")
+        # draw_curve(epoch, train_loss, train_err, test_loss, test_err)
+        # if (epoch+1)%20==0:
+        #     lr_decay()
 
 
 if __name__ == '__main__':
