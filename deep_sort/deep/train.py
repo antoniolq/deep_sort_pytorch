@@ -50,10 +50,11 @@ testloader = torch.utils.data.DataLoader(
     batch_size=1024,shuffle=True
 )
 
-num_classes = len(trainloader.dataset.classes)
-print("train num_classes",num_classes)
-num_classes1 = len(testloader.dataset.classes)
-print("test num_classes",num_classes1)
+num_classes1 = len(trainloader.dataset.classes)
+print("train num_classes",num_classes1)
+num_classes2 = len(testloader.dataset.classes)
+print("test num_classes",num_classes2)
+num_classes = max(num_classes1 ,num_classes2)
 # net definition
 start_epoch = 0
 net = Net(num_classes=num_classes)
@@ -89,7 +90,6 @@ def train(epoch):
         inputs,labels = inputs.to(device),labels.to(device)
         outputs = net(inputs)
         loss = criterion(outputs, labels)
-        print("labels", labels)
         # backward
         optimizer.zero_grad()
         loss.backward()
@@ -123,7 +123,6 @@ def test(epoch):
         for idx, (inputs, labels) in enumerate(testloader):
             inputs, labels = inputs.to(device), labels.to(device)
             outputs = net(inputs)
-            print("labels",labels)
             loss = criterion(outputs, labels)
 
             test_loss += loss.item()
