@@ -51,8 +51,9 @@ testloader = torch.utils.data.DataLoader(
 )
 
 num_classes = len(trainloader.dataset.classes)
-
-print("num_classes",num_classes)
+print("train num_classes",num_classes)
+num_classes1 = len(testloader.dataset.classes)
+print("test num_classes",num_classes1)
 # net definition
 start_epoch = 0
 net = Net(num_classes=num_classes)
