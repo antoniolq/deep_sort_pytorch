@@ -8,7 +8,7 @@ import torch
 import torch.backends.cudnn as cudnn
 import torchvision
 import os
-
+os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
 from model import Net
 
 parser = argparse.ArgumentParser(description="Train on market1501")
@@ -86,7 +86,7 @@ def train(epoch):
         inputs,labels = inputs.to(device),labels.to(device)
         outputs = net(inputs)
         loss = criterion(outputs, labels)
-
+        print("labels", labels)
         # backward
         optimizer.zero_grad()
         loss.backward()
@@ -120,7 +120,7 @@ def test(epoch):
         for idx, (inputs, labels) in enumerate(testloader):
             inputs, labels = inputs.to(device), labels.to(device)
             outputs = net(inputs)
-            print(labels)
+            print("labels",labels)
             loss = criterion(outputs, labels)
 
             test_loss += loss.item()
