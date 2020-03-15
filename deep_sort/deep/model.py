@@ -36,13 +36,56 @@ class BasicBlock(nn.Module):
             x = self.downsample(x)
         return F.relu(x.add(y),True)
 
+class Bottleneck(nn.Module):
+    expansion = 4
+    def __init__(self, inplanes, planes, stride=1, is_downsample=False):
+        super(Bottleneck, self).__init__()
+        self.is_downsample = is_downsample
+        if is_downsample:
+            self.conv1 = nn.Conv2d(inplanes, planes, 3, stride=2, padding=1, bias=False)
+        else:
+            self.conv1 = nn.Conv2d(inplanes, planes, 3, stride=1, padding=1, bias=False)
+        self.bn1 = nn.BatchNorm2d(planes)
+        self.conv2 = nn.Conv2d(planes, planes, stride)
+        self.bn2 = nn.BatchNorm2d(planes)
+        self.conv3 = nn.Conv2d(planes, planes * self.expansion)
+        self.bn3 = nn.BatchNorm2d(planes * self.expansion)
+        self.relu = nn.ReLU(inplace=True)
+        if is_downsample:
+            self.downsample = nn.Sequential(
+                nn.Conv2d(inplanes, planes, 1, stride=2, bias=False),
+                nn.BatchNorm2d(planes)
+            )
+        elif inplanes != planes:
+            self.downsample = nn.Sequential(
+                nn.Conv2d(inplanes, planes, 1, stride=1, bias=False),
+                nn.BatchNorm2d(planes)
+            )
+            self.is_downsample = True
+
+    def forward(self, x):
+        residual = x
+        out = self.conv1(x)
+        out = self.bn1(out)
+        out = self.relu(out)
+        out = self.conv2(out)
+        out = self.bn2(out)
+        out = self.relu(out)
+        out = self.conv3(out)
+        out = self.bn3(out)
+        if self.downsample is not None:
+            residual = self.downsample(x)
+        out += residual
+        out = self.relu(out)
+        return out
+
 def make_layers(c_in,c_out,repeat_times, is_downsample=False):
     blocks = []
     for i in range(repeat_times):
         if i ==0:
-            blocks += [BasicBlock(c_in,c_out, is_downsample=is_downsample),]
+            blocks += [Bottleneck(c_in,c_out, is_downsample=is_downsample),]
         else:
-            blocks += [BasicBlock(c_out,c_out),]
+            blocks += [Bottleneck(c_out,c_out),]
     return nn.Sequential(*blocks)
 
 class Net(nn.Module):
