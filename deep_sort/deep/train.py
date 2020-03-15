@@ -8,7 +8,7 @@ import torch
 import torch.backends.cudnn as cudnn
 import torchvision
 import os
-os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
+#os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
 from model import Net
 
 parser = argparse.ArgumentParser(description="Train on market1501")
@@ -49,7 +49,9 @@ testloader = torch.utils.data.DataLoader(
     torchvision.datasets.ImageFolder(test_dir, transform=transform_test),
     batch_size=1024,shuffle=True
 )
+
 num_classes = len(trainloader.dataset.classes)
+trainloader.labels = 1+ np.random.randint(0, num_classes-1, size=len(trainloader.labels), dtype='int')
 print("num_classes",num_classes)
 # net definition
 start_epoch = 0
