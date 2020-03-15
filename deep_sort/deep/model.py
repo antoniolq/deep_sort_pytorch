@@ -73,7 +73,7 @@ class Bottleneck(nn.Module):
         out = self.relu(out)
         out = self.conv3(out)
         out = self.bn3(out)
-        if self.downsample is not None:
+        if self.is_downsample:
             residual = self.downsample(x)
         out += residual
         out = self.relu(out)
