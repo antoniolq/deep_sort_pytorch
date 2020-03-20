@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from res2net import Res2Net
 
 class BasicBlock(nn.Module):
     def __init__(self, c_in, c_out,is_downsample=False):
@@ -97,6 +98,7 @@ class Net(nn.Module):
 
 if __name__ == '__main__':
     net = Net()
+    res2net = Res2Net()
     print("reid model structure")
     print("----------------------------------------------")
     for idx, net in enumerate(net.modules()):
