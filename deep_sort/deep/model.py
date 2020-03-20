@@ -178,7 +178,7 @@ class Net(nn.Module):
 
 if __name__ == '__main__':
     net = Net()
-    res2net = Res2Net(Bottle2neck, [3, 4, 6, 3], baseWidth = 26, scale = 4, **kwargs)
+    res2net = Res2Net(Bottle2neck, [3, 4, 6, 3], baseWidth = 26, scale = 4, num_classes = 651)
     print("reid model structure")
     print("----------------------------------------------")
     for idx, net in enumerate(net.modules()):
