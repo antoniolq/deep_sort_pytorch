@@ -197,6 +197,7 @@ class Net(nn.Module):
         print("resize:", x.shape)
         # classifier
         x = self.classifier(x)
+        print("classifier:", x.shape)
         return x
 
 
