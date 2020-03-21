@@ -185,8 +185,9 @@ class Net(nn.Module):
         x = self.layer3(x)
         print("layer3",x.shape)
         x = self.layer4(x)
+        print("layer4", x.shape)
         x = self.avgpool(x)
-        x = x.view(x.size(0), -1)
+        print("avgpool", x.shape)
         # B x 128
         if self.reid:
             x = x.div(x.norm(p=2, dim=1, keepdim=True))
