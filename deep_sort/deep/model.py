@@ -119,7 +119,7 @@ class Bottle2neck(nn.Module):
 
 
 class Net(nn.Module):
-    def __init__(self, num_classes=751, reid=False):
+    def __init__(self, num_classes=625, reid=False):
         super(Net, self).__init__()
         self.inplanes = 64
         self.baseWidth = 26
