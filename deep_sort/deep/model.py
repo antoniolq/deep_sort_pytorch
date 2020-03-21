@@ -193,6 +193,8 @@ class Net(nn.Module):
             x = x.div(x.norm(p=2, dim=1, keepdim=True))
             return x
         print("reid:", x.shape)
+        x = x.view(x.size(0), -1)
+        print("resize:", x.shape)
         # classifier
         x = self.classifier(x)
         return x
