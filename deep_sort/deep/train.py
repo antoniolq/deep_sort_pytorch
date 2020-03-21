@@ -106,6 +106,7 @@ def train(epoch):
     for idx, (inputs, labels) in enumerate(trainloader):
         # forward
         inputs, labels = inputs.to(device), labels.to(device)
+        print(inputs)
         outputs = net(inputs)
         loss = criterion(outputs, labels)
         # backward
