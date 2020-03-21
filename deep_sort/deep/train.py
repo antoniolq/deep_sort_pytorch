@@ -75,7 +75,7 @@ num_classes = max(num_classes1, num_classes2)
 # net definition
 start_epoch = 0
 net = Net(num_classes=num_classes)
-net = nn.DataParallel(net, device_ids=[0, 1, 2])
+net = nn.DataParallel(net, device_ids=[0, 1, 2, 3])
 if args.resume:
     assert os.path.isfile("./checkpoint/ckpt.t7"), "Error: no checkpoint file found!"
     print('Loading from checkpoint/ckpt.t7')
