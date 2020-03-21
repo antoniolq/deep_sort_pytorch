@@ -201,6 +201,7 @@ if __name__ == '__main__':
     net = Net()
     input = torch.rand([128,3,128,64])
     print(input.shape)
+    out = net(input)
     print("reid model structure")
 
     # print("----------------------------------------------")
