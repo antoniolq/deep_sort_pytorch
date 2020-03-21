@@ -175,15 +175,15 @@ class Net(nn.Module):
 
     def forward(self, x):
         # x = x.view(x.size(0), -1)
-        print(x.size())
+        print("input:", x.shape)
         x = self.conv(x)
-        print(x.shape)
+        print("conv1:", x.shape)
         x = self.layer1(x)
-        print(x.shape)
+        print("layer1",x.shape)
         x = self.layer2(x)
-        print(x.shape)
+        print("layer2",x.shape)
         x = self.layer3(x)
-        print(x.shape)
+        print("layer3",x.shape)
         x = self.layer4(x)
         x = self.avgpool(x)
         x = x.view(x.size(0), -1)
@@ -199,11 +199,15 @@ class Net(nn.Module):
 
 if __name__ == '__main__':
     net = Net()
+    input = torch.rand([128,3,128,64])
+    print(input.shape)
     print("reid model structure")
-    print("----------------------------------------------")
-    for idx, net in enumerate(net.modules()):
-        print(idx, "-", net)
-    print("----------------------------------------------")
+
+    # print("----------------------------------------------")
+    # for idx, net in enumerate(net.modules()):
+    #     if idx == 0:
+    #         print(idx, "-", net)
+    # print("----------------------------------------------")
     # x = torch.randn(4,3,128,64)
     # y = net(x)
     # import ipdb; ipdb.set_trace()
