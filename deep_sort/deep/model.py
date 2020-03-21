@@ -175,29 +175,29 @@ class Net(nn.Module):
 
     def forward(self, x):
         # x = x.view(x.size(0), -1)
-        print("input:", x.shape)
+        # print("input:", x.shape)
         x = self.conv(x)
-        print("conv1:", x.shape)
+        # print("conv1:", x.shape)
         x = self.layer1(x)
-        print("layer1:",x.shape)
+        # print("layer1:",x.shape)
         x = self.layer2(x)
-        print("layer2:",x.shape)
+        # print("layer2:",x.shape)
         x = self.layer3(x)
-        print("layer3:",x.shape)
+        # print("layer3:",x.shape)
         x = self.layer4(x)
-        print("layer4:", x.shape)
+        # print("layer4:", x.shape)
         x = self.avgpool(x)
-        print("avgpool:", x.shape)
+        # print("avgpool:", x.shape)
         # B x 128
         if self.reid:
             x = x.div(x.norm(p=2, dim=1, keepdim=True))
             return x
-        print("reid:", x.shape)
+        # print("reid:", x.shape)
         x = x.view(x.size(0), -1)
-        print("resize:", x.shape)
+        # print("resize:", x.shape)
         # classifier
         x = self.classifier(x)
-        print("classifier:", x.shape)
+        # print("classifier:", x.shape)
         return x
 
 
