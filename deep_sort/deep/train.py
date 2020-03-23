@@ -77,12 +77,13 @@ num_classes = max(num_classes1, num_classes2)
 start_epoch = 0
 net = Net(num_classes=num_classes)
 net = nn.DataParallel(net, device_ids=[1, 2, 3])
+device = torch.device('cuda:1')
 cudnn.benchmark = True
 args.resume = True
 if args.resume:
     assert os.path.isfile("./checkpoint/ckpt.t7"), "Error: no checkpoint file found!"
     print('Loading from checkpoint/ckpt.t7')
-    checkpoint = torch.load("./checkpoint/ckpt.t7")
+    checkpoint = torch.load("./checkpoint/ckpt.t7",map_location=device)
     # import ipdb; ipdb.set_trace()
     net_dict = checkpoint['net_dict']
     new_state_dict = OrderedDict()
