@@ -57,25 +57,14 @@ print(len(test_idx), len(train_idx))
 test_sampler = SubsetRandomSampler(test_idx)
 train_sampler = SubsetRandomSampler(train_idx)
 
-trainloader = torch.utils.data.DataLoader(train_data, batch_size=512, sampler=train_sampler, num_workers=num_workers)
-testloader = torch.utils.data.DataLoader(train_data, batch_size=512, sampler=test_sampler, num_workers=num_workers)
-# trainloader = torch.utils.data.DataLoader(
-#     torchvision.datasets.ImageFolder(train_sampler, transform=transform_train),
-#     batch_size=1024,shuffle=True
-# )
-# testloader = torch.utils.data.DataLoader(
-#     torchvision.datasets.ImageFolder(test_sampler, transform=transform_test),
-#     batch_size=1024,shuffle=True
-# )
+trainloader = torch.utils.data.DataLoader(train_data, batch_size=512, sampler=train_sampler, num_workers=num_workers,shuffle=True)
+testloader = torch.utils.data.DataLoader(train_data, batch_size=512, sampler=test_sampler, num_workers=num_workers,shuffle=True)
 
-num_classes1 = len(trainloader.dataset.classes)
-print("train num_classes", num_classes1)
-num_classes2 = len(testloader.dataset.classes)
-print("test num_classes", num_classes2)
-num_classes = max(num_classes1, num_classes2)
+print("train num_classes", len(trainloader.dataset.classes))
+print("test num_classes", len(testloader.dataset.classes))
 # net definition
 start_epoch = 0
-net = Net(num_classes=num_classes)
+net = Net(num_classes=len(trainloader.dataset.classes))
 net = nn.DataParallel(net, device_ids=[1, 2, 3])
 cudnn.benchmark = True
 args.resume = True
