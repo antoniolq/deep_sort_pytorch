@@ -76,7 +76,7 @@ num_classes = max(num_classes1, num_classes2)
 # net definition
 start_epoch = 0
 net = Net(num_classes=num_classes)
-net = nn.DataParallel(net, device_ids=[0, 1, 2, 3])
+net = nn.DataParallel(net, device_ids=[1, 2, 3])
 cudnn.benchmark = True
 args.resume = True
 if args.resume:
