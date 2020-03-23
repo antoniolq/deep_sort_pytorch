@@ -11,6 +11,7 @@ from torch.utils.data.sampler import SubsetRandomSampler
 import os
 # os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
 from model import Net
+from collections import OrderedDict
 
 parser = argparse.ArgumentParser(description="Train on market1501")
 parser.add_argument("--data-dir", default='data', type=str)
@@ -76,6 +77,7 @@ num_classes = max(num_classes1, num_classes2)
 start_epoch = 0
 net = Net(num_classes=num_classes)
 net = nn.DataParallel(net, device_ids=[0, 1, 2, 3])
+cudnn.benchmark = True
 args.resume = True
 if args.resume:
     assert os.path.isfile("./checkpoint/ckpt.t7"), "Error: no checkpoint file found!"
@@ -83,7 +85,14 @@ if args.resume:
     checkpoint = torch.load("./checkpoint/ckpt.t7")
     # import ipdb; ipdb.set_trace()
     net_dict = checkpoint['net_dict']
-    net.load_state_dict(net_dict)
+    new_state_dict = OrderedDict()
+    for k, v in net_dict.items():
+        if 'module' not in k:
+            k = 'module.' + k
+        else:
+            k = k.replace('features.module.', 'module.features.')
+        new_state_dict[k] = v
+    net.load_state_dict(new_state_dict)
     net.load_state_dict(checkpoint, False)
     best_acc = checkpoint['acc']
     start_epoch = checkpoint['epoch']
