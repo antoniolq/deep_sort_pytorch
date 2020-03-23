@@ -57,8 +57,8 @@ print(len(test_idx), len(train_idx))
 test_sampler = SubsetRandomSampler(test_idx)
 train_sampler = SubsetRandomSampler(train_idx)
 
-trainloader = torch.utils.data.DataLoader(train_data, batch_size=512, sampler=train_sampler, num_workers=num_workers,shuffle=True)
-testloader = torch.utils.data.DataLoader(train_data, batch_size=512, sampler=test_sampler, num_workers=num_workers,shuffle=True)
+trainloader = torch.utils.data.DataLoader(train_data, batch_size=512, sampler=train_sampler, num_workers=num_workers)
+testloader = torch.utils.data.DataLoader(train_data, batch_size=512, sampler=test_sampler, num_workers=num_workers)
 
 print("train num_classes", len(trainloader.dataset.classes))
 print("test num_classes", len(testloader.dataset.classes))
