@@ -65,13 +65,13 @@ print("test num_classes", len(testloader.dataset.classes))
 # net definition
 start_epoch = 0
 net = Net(num_classes=len(trainloader.dataset.classes))
-net = nn.DataParallel(net, device_ids=[1, 2, 3])
+net = nn.DataParallel(net, device_ids=[0,1, 2, 3])
 cudnn.benchmark = True
 args.resume = True
 if args.resume:
     assert os.path.isfile("./checkpoint/ckpt.t7"), "Error: no checkpoint file found!"
     print('Loading from checkpoint/ckpt.t7')
-    checkpoint = torch.load("./checkpoint/ckpt.t7", map_location=lambda storage, loc: storage.cuda(1))
+    checkpoint = torch.load("./checkpoint/ckpt.t7")
     # import ipdb; ipdb.set_trace()
     net_dict = checkpoint['net_dict']
     new_state_dict = OrderedDict()
