@@ -84,6 +84,7 @@ if args.resume:
     # import ipdb; ipdb.set_trace()
     net_dict = checkpoint['net_dict']
     net.load_state_dict(net_dict)
+    net.load_state_dict(checkpoint, False)
     best_acc = checkpoint['acc']
     start_epoch = checkpoint['epoch']
 net.to(device)
