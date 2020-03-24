@@ -46,7 +46,7 @@ transform_test = torchvision.transforms.Compose([
 ])
 # divide
 test_size = 0.3
-num_workers = 0
+num_workers = 4
 train_data = torchvision.datasets.ImageFolder(train_dir, transform=transform_train)
 num_train = len(train_data)
 indices = list(range(num_train))
@@ -57,8 +57,8 @@ print(len(test_idx), len(train_idx))
 test_sampler = SubsetRandomSampler(test_idx)
 train_sampler = SubsetRandomSampler(train_idx)
 
-trainloader = torch.utils.data.DataLoader(train_data, batch_size=512, sampler=train_sampler, num_workers=num_workers)
-testloader = torch.utils.data.DataLoader(train_data, batch_size=512, sampler=test_sampler, num_workers=num_workers)
+trainloader = torch.utils.data.DataLoader(train_data, batch_size=512, shuffle=True, sampler=train_sampler, num_workers=num_workers)
+testloader = torch.utils.data.DataLoader(train_data, batch_size=512, shuffle=True, sampler=test_sampler,  num_workers=num_workers)
 
 print("train num_classes", len(trainloader.dataset.classes))
 print("test num_classes", len(testloader.dataset.classes))
