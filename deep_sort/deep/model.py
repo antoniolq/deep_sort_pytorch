@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import math
-
+import time
 
 class BasicBlock(nn.Module):
     def __init__(self, c_in, c_out, is_downsample=False):
@@ -208,7 +208,7 @@ if __name__ == '__main__':
     print(input.shape)
     out = net(input)
     print("reid model structure")
-
+    time.sleep(1000000000)
     # print("----------------------------------------------")
     # for idx, net in enumerate(net.modules()):
     #     if idx == 0:
