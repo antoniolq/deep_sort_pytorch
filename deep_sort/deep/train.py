@@ -67,7 +67,7 @@ start_epoch = 0
 net = Net(num_classes=len(trainloader.dataset.classes))
 net = nn.DataParallel(net, device_ids=[0,1,2,3])
 cudnn.benchmark = True
-args.resume = True
+args.resume = False
 if args.resume:
     assert os.path.isfile("./checkpoint/ckpt.t7"), "Error: no checkpoint file found!"
     print('Loading from checkpoint/ckpt.t7')
