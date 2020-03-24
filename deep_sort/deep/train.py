@@ -57,15 +57,15 @@ print(len(test_idx), len(train_idx))
 test_sampler = SubsetRandomSampler(test_idx)
 train_sampler = SubsetRandomSampler(train_idx)
 
-trainloader = torch.utils.data.DataLoader(train_data, batch_size=512, sampler=train_sampler, num_workers=num_workers)
-testloader = torch.utils.data.DataLoader(train_data, batch_size=512, sampler=test_sampler, num_workers=num_workers)
+trainloader = torch.utils.data.DataLoader(train_data, batch_size=256, sampler=train_sampler, num_workers=num_workers)
+testloader = torch.utils.data.DataLoader(train_data, batch_size=256, sampler=test_sampler, num_workers=num_workers)
 
 print("train num_classes", len(trainloader.dataset.classes))
 print("test num_classes", len(testloader.dataset.classes))
 # net definition
 start_epoch = 0
 net = Net(num_classes=len(trainloader.dataset.classes))
-net = nn.DataParallel(net, device_ids=[3])
+net = nn.DataParallel(net, device_ids=[0,1,2,3])
 cudnn.benchmark = True
 args.resume = True
 if args.resume:
