@@ -19,7 +19,8 @@ if torch.cuda.is_available() and not args.no_cuda:
     cudnn.benchmark = True
 
 # data loader
-root = args.data_dir
+# root = args.data_dir
+root = "/mnt/Disk1/qingl/data/Mars"
 query_dir = os.path.join(root,"query")
 gallery_dir = os.path.join(root,"gallery")
 transform = torchvision.transforms.Compose([
