@@ -53,7 +53,7 @@ def _cosine_distance(a, b, data_is_normalized=False):
         b = np.asarray(b) / np.linalg.norm(b, axis=1, keepdims=True)
         print(a.shape)
         print(b.shape)
-    return 1. - np.dot(a, b.T)
+    return 1. - a*b
 
 
 def _nn_euclidean_distance(x, y):
