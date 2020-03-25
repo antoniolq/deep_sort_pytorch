@@ -65,7 +65,7 @@ print("test num_classes", len(testloader.dataset.classes))
 # net definition
 start_epoch = 0
 net = Net(num_classes=len(trainloader.dataset.classes))
-net = nn.DataParallel(net, device_ids=[0,1,2,3])
+net = nn.DataParallel(net, device_ids=[0,1,2])
 cudnn.benchmark = True
 args.resume = False
 if args.resume:
@@ -209,7 +209,7 @@ def lr_decay():
 
 
 def main():
-    for epoch in range(start_epoch, start_epoch + 40):
+    for epoch in range(start_epoch, start_epoch + 50):
         train_loss, train_err = train(epoch)
         test_loss, test_err = test(epoch)
         print("end")
