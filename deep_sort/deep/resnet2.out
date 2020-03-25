@@ -1,0 +1,1978 @@
+nohup: 忽略输入
+152974 356940
+train num_classes 625
+test num_classes 625
+
+Epoch : 1
+[progress:2.9%]time:17.85s Loss:6.28533 Correct:476/10240 Acc:4.648%
+[progress:5.7%]time:7.42s Loss:5.96237 Correct:1123/20480 Acc:5.483%
+[progress:8.6%]time:7.47s Loss:5.70317 Correct:1845/30720 Acc:6.006%
+[progress:11.5%]time:7.48s Loss:5.52142 Correct:2623/40960 Acc:6.404%
+[progress:14.3%]time:7.52s Loss:5.29575 Correct:3595/51200 Acc:7.021%
+[progress:17.2%]time:7.61s Loss:5.13121 Correct:4605/61440 Acc:7.495%
+[progress:20.1%]time:7.55s Loss:4.91346 Correct:5816/71680 Acc:8.114%
+[progress:22.9%]time:7.62s Loss:4.73234 Correct:7091/81920 Acc:8.656%
+[progress:25.8%]time:7.77s Loss:4.52784 Correct:8682/92160 Acc:9.421%
+[progress:28.7%]time:7.86s Loss:4.37968 Correct:10433/102400 Acc:10.188%
+[progress:31.5%]time:7.94s Loss:4.24449 Correct:12250/112640 Acc:10.875%
+[progress:34.4%]time:8.07s Loss:4.05051 Correct:14294/122880 Acc:11.632%
+[progress:37.2%]time:8.07s Loss:3.93140 Correct:16505/133120 Acc:12.399%
+[progress:40.1%]time:8.07s Loss:3.77175 Correct:18934/143360 Acc:13.207%
+[progress:43.0%]time:8.09s Loss:3.67665 Correct:21469/153600 Acc:13.977%
+[progress:45.8%]time:8.10s Loss:3.52142 Correct:24245/163840 Acc:14.798%
+[progress:48.7%]time:8.13s Loss:3.36558 Correct:27266/174080 Acc:15.663%
+[progress:51.6%]time:8.15s Loss:3.29492 Correct:30416/184320 Acc:16.502%
+[progress:54.4%]time:8.12s Loss:3.23167 Correct:33664/194560 Acc:17.303%
+[progress:57.3%]time:8.18s Loss:3.09994 Correct:37079/204800 Acc:18.105%
+[progress:60.2%]time:8.19s Loss:2.93250 Correct:40739/215040 Acc:18.945%
+[progress:63.0%]time:8.17s Loss:2.91492 Correct:44497/225280 Acc:19.752%
+[progress:65.9%]time:8.23s Loss:2.82198 Correct:48403/235520 Acc:20.552%
+[progress:68.8%]time:8.18s Loss:2.72837 Correct:52504/245760 Acc:21.364%
+[progress:71.6%]time:8.17s Loss:2.66849 Correct:56706/256000 Acc:22.151%
+[progress:74.5%]time:8.15s Loss:2.59994 Correct:60969/266240 Acc:22.900%
+[progress:77.4%]time:8.11s Loss:2.52223 Correct:65417/276480 Acc:23.661%
+[progress:80.2%]time:8.22s Loss:2.40707 Correct:70072/286720 Acc:24.439%
+[progress:83.1%]time:8.21s Loss:2.40065 Correct:74773/296960 Acc:25.179%
+[progress:86.0%]time:8.14s Loss:2.37361 Correct:79485/307200 Acc:25.874%
+[progress:88.8%]time:8.22s Loss:2.31232 Correct:84400/317440 Acc:26.588%
+[progress:91.7%]time:8.20s Loss:2.21743 Correct:89451/327680 Acc:27.298%
+[progress:94.6%]time:8.19s Loss:2.22651 Correct:94545/337920 Acc:27.979%
+[progress:97.4%]time:8.14s Loss:2.11585 Correct:99811/348160 Acc:28.668%
+Testing ...
+[progress:100.0%]time:46.24s Loss:2.36785 Correct:70778/152974 Acc:46.268%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 2
+[progress:2.9%]time:9.28s Loss:2.15641 Correct:5127/10240 Acc:50.068%
+[progress:5.7%]time:8.05s Loss:2.02840 Correct:10534/20480 Acc:51.436%
+[progress:8.6%]time:8.11s Loss:2.00558 Correct:15981/30720 Acc:52.021%
+[progress:11.5%]time:8.12s Loss:1.92076 Correct:21606/40960 Acc:52.749%
+[progress:14.3%]time:8.14s Loss:1.92004 Correct:27283/51200 Acc:53.287%
+[progress:17.2%]time:8.16s Loss:1.90032 Correct:33011/61440 Acc:53.729%
+[progress:20.1%]time:8.24s Loss:1.89004 Correct:38794/71680 Acc:54.121%
+[progress:22.9%]time:8.14s Loss:1.82206 Correct:44684/81920 Acc:54.546%
+[progress:25.8%]time:8.17s Loss:1.78824 Correct:50621/92160 Acc:54.927%
+[progress:28.7%]time:8.21s Loss:1.76318 Correct:56691/102400 Acc:55.362%
+[progress:31.5%]time:8.24s Loss:1.76169 Correct:62682/112640 Acc:55.648%
+[progress:34.4%]time:8.14s Loss:1.83090 Correct:68575/122880 Acc:55.806%
+[progress:37.2%]time:8.27s Loss:1.73452 Correct:74619/133120 Acc:56.054%
+[progress:40.1%]time:8.17s Loss:1.71194 Correct:80731/143360 Acc:56.313%
+[progress:43.0%]time:8.14s Loss:1.64471 Correct:87055/153600 Acc:56.676%
+[progress:45.8%]time:8.19s Loss:1.68840 Correct:93213/163840 Acc:56.893%
+[progress:48.7%]time:8.25s Loss:1.63447 Correct:99500/174080 Acc:57.158%
+[progress:51.6%]time:8.15s Loss:1.63089 Correct:105814/184320 Acc:57.408%
+[progress:54.4%]time:8.23s Loss:1.59381 Correct:112213/194560 Acc:57.675%
+[progress:57.3%]time:8.15s Loss:1.56338 Correct:118747/204800 Acc:57.982%
+[progress:60.2%]time:8.19s Loss:1.55585 Correct:125282/215040 Acc:58.260%
+[progress:63.0%]time:8.20s Loss:1.53299 Correct:131852/225280 Acc:58.528%
+[progress:65.9%]time:8.23s Loss:1.50081 Correct:138453/235520 Acc:58.786%
+[progress:68.8%]time:8.20s Loss:1.48051 Correct:145112/245760 Acc:59.046%
+[progress:71.6%]time:8.13s Loss:1.47683 Correct:151852/256000 Acc:59.317%
+[progress:74.5%]time:8.25s Loss:1.43385 Correct:158617/266240 Acc:59.577%
+[progress:77.4%]time:8.14s Loss:1.47150 Correct:165280/276480 Acc:59.780%
+[progress:80.2%]time:8.19s Loss:1.43945 Correct:172040/286720 Acc:60.003%
+[progress:83.1%]time:8.18s Loss:1.41646 Correct:178844/296960 Acc:60.225%
+[progress:86.0%]time:8.21s Loss:1.39290 Correct:185728/307200 Acc:60.458%
+[progress:88.8%]time:8.23s Loss:1.41118 Correct:192541/317440 Acc:60.654%
+[progress:91.7%]time:8.16s Loss:1.38456 Correct:199412/327680 Acc:60.856%
+[progress:94.6%]time:8.17s Loss:1.38984 Correct:206334/337920 Acc:61.060%
+[progress:97.4%]time:8.19s Loss:1.31460 Correct:213397/348160 Acc:61.293%
+Testing ...
+[progress:100.0%]time:45.25s Loss:1.43840 Correct:100677/152974 Acc:65.813%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 3
+[progress:2.9%]time:8.93s Loss:1.42275 Correct:6802/10240 Acc:66.426%
+[progress:5.7%]time:8.16s Loss:1.33579 Correct:13846/20480 Acc:67.607%
+[progress:8.6%]time:8.10s Loss:1.28770 Correct:20942/30720 Acc:68.171%
+[progress:11.5%]time:8.15s Loss:1.25450 Correct:28066/40960 Acc:68.521%
+[progress:14.3%]time:8.20s Loss:1.26959 Correct:35224/51200 Acc:68.797%
+[progress:17.2%]time:8.18s Loss:1.23105 Correct:42435/61440 Acc:69.067%
+[progress:20.1%]time:8.18s Loss:1.24641 Correct:49612/71680 Acc:69.213%
+[progress:22.9%]time:8.15s Loss:1.26735 Correct:56804/81920 Acc:69.341%
+[progress:25.8%]time:8.12s Loss:1.25292 Correct:64026/92160 Acc:69.473%
+[progress:28.7%]time:8.15s Loss:1.21224 Correct:71287/102400 Acc:69.616%
+[progress:31.5%]time:8.18s Loss:1.22144 Correct:78586/112640 Acc:69.767%
+[progress:34.4%]time:8.20s Loss:1.19291 Correct:85948/122880 Acc:69.945%
+[progress:37.2%]time:8.23s Loss:1.19053 Correct:93289/133120 Acc:70.079%
+[progress:40.1%]time:8.16s Loss:1.21635 Correct:100616/143360 Acc:70.184%
+[progress:43.0%]time:8.21s Loss:1.15097 Correct:108003/153600 Acc:70.314%
+[progress:45.8%]time:8.17s Loss:1.15170 Correct:115448/163840 Acc:70.464%
+[progress:48.7%]time:8.20s Loss:1.19289 Correct:122796/174080 Acc:70.540%
+[progress:51.6%]time:8.18s Loss:1.20107 Correct:130122/184320 Acc:70.596%
+[progress:54.4%]time:8.24s Loss:1.16736 Correct:137489/194560 Acc:70.667%
+[progress:57.3%]time:8.22s Loss:1.15369 Correct:144951/204800 Acc:70.777%
+[progress:60.2%]time:8.13s Loss:1.19226 Correct:152283/215040 Acc:70.816%
+[progress:63.0%]time:8.20s Loss:1.16481 Correct:159714/225280 Acc:70.896%
+[progress:65.9%]time:8.20s Loss:1.12975 Correct:167185/235520 Acc:70.985%
+[progress:68.8%]time:8.19s Loss:1.13954 Correct:174687/245760 Acc:71.080%
+[progress:71.6%]time:8.22s Loss:1.13320 Correct:182162/256000 Acc:71.157%
+[progress:74.5%]time:8.17s Loss:1.11376 Correct:189710/266240 Acc:71.255%
+[progress:77.4%]time:8.19s Loss:1.09622 Correct:197273/276480 Acc:71.352%
+[progress:80.2%]time:8.17s Loss:1.11209 Correct:204811/286720 Acc:71.432%
+[progress:83.1%]time:8.19s Loss:1.08721 Correct:212424/296960 Acc:71.533%
+[progress:86.0%]time:8.22s Loss:1.08227 Correct:220028/307200 Acc:71.624%
+[progress:88.8%]time:8.11s Loss:1.09371 Correct:227584/317440 Acc:71.694%
+[progress:91.7%]time:8.13s Loss:1.07569 Correct:235226/327680 Acc:71.785%
+[progress:94.6%]time:8.14s Loss:1.11030 Correct:242822/337920 Acc:71.858%
+[progress:97.4%]time:8.19s Loss:1.05734 Correct:250565/348160 Acc:71.968%
+Testing ...
+[progress:100.0%]time:45.35s Loss:1.50460 Correct:100234/152974 Acc:65.524%
+end
+
+Epoch : 4
+[progress:2.9%]time:8.91s Loss:1.11724 Correct:7528/10240 Acc:73.516%
+[progress:5.7%]time:8.16s Loss:1.06181 Correct:15235/20480 Acc:74.390%
+[progress:8.6%]time:8.11s Loss:0.99107 Correct:23049/30720 Acc:75.029%
+[progress:11.5%]time:8.14s Loss:1.04469 Correct:30756/40960 Acc:75.088%
+[progress:14.3%]time:8.19s Loss:1.03048 Correct:38523/51200 Acc:75.240%
+[progress:17.2%]time:8.15s Loss:1.00449 Correct:46344/61440 Acc:75.430%
+[progress:20.1%]time:8.18s Loss:1.00629 Correct:54157/71680 Acc:75.554%
+[progress:22.9%]time:8.22s Loss:1.01654 Correct:61962/81920 Acc:75.637%
+[progress:25.8%]time:8.12s Loss:0.98620 Correct:69810/92160 Acc:75.749%
+[progress:28.7%]time:8.14s Loss:0.97744 Correct:77695/102400 Acc:75.874%
+[progress:31.5%]time:8.19s Loss:0.99491 Correct:85533/112640 Acc:75.935%
+[progress:34.4%]time:8.16s Loss:0.98998 Correct:93361/122880 Acc:75.977%
+[progress:37.2%]time:8.17s Loss:1.00637 Correct:101126/133120 Acc:75.966%
+[progress:40.1%]time:8.24s Loss:1.02632 Correct:108910/143360 Acc:75.970%
+[progress:43.0%]time:8.16s Loss:0.95263 Correct:116836/153600 Acc:76.065%
+[progress:45.8%]time:8.17s Loss:0.96641 Correct:124798/163840 Acc:76.171%
+[progress:48.7%]time:8.20s Loss:0.94619 Correct:132739/174080 Acc:76.252%
+[progress:51.6%]time:8.20s Loss:0.94803 Correct:140656/184320 Acc:76.311%
+[progress:54.4%]time:8.19s Loss:0.97573 Correct:148500/194560 Acc:76.326%
+[progress:57.3%]time:8.25s Loss:0.96698 Correct:156429/204800 Acc:76.381%
+[progress:60.2%]time:8.15s Loss:0.92546 Correct:164441/215040 Acc:76.470%
+[progress:63.0%]time:8.20s Loss:0.95455 Correct:172378/225280 Acc:76.517%
+[progress:65.9%]time:8.18s Loss:0.93244 Correct:180316/235520 Acc:76.561%
+[progress:68.8%]time:8.20s Loss:0.93824 Correct:188274/245760 Acc:76.609%
+[progress:71.6%]time:8.21s Loss:0.90587 Correct:196267/256000 Acc:76.667%
+[progress:74.5%]time:8.16s Loss:0.90898 Correct:204303/266240 Acc:76.736%
+[progress:77.4%]time:8.19s Loss:0.90401 Correct:212374/276480 Acc:76.814%
+[progress:80.2%]time:8.18s Loss:0.93535 Correct:220372/286720 Acc:76.860%
+[progress:83.1%]time:8.21s Loss:0.92279 Correct:228351/296960 Acc:76.896%
+[progress:86.0%]time:8.19s Loss:0.91975 Correct:236375/307200 Acc:76.945%
+[progress:88.8%]time:8.21s Loss:0.91435 Correct:244423/317440 Acc:76.998%
+[progress:91.7%]time:8.17s Loss:0.93224 Correct:252409/327680 Acc:77.029%
+[progress:94.6%]time:8.18s Loss:0.92557 Correct:260411/337920 Acc:77.063%
+[progress:97.4%]time:8.19s Loss:0.91666 Correct:268478/348160 Acc:77.113%
+Testing ...
+[progress:100.0%]time:45.00s Loss:1.31675 Correct:108021/152974 Acc:70.614%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 5
+[progress:2.9%]time:9.04s Loss:1.00918 Correct:7758/10240 Acc:75.762%
+[progress:5.7%]time:8.10s Loss:0.92462 Correct:15767/20480 Acc:76.987%
+[progress:8.6%]time:8.18s Loss:0.88024 Correct:23924/30720 Acc:77.878%
+[progress:11.5%]time:8.22s Loss:0.89051 Correct:32011/40960 Acc:78.152%
+[progress:14.3%]time:8.12s Loss:0.87078 Correct:40195/51200 Acc:78.506%
+[progress:17.2%]time:8.12s Loss:0.87079 Correct:48357/61440 Acc:78.706%
+[progress:20.1%]time:8.14s Loss:0.88474 Correct:56491/71680 Acc:78.810%
+[progress:22.9%]time:8.19s Loss:0.89593 Correct:64604/81920 Acc:78.862%
+[progress:25.8%]time:8.20s Loss:0.89165 Correct:72717/92160 Acc:78.903%
+[progress:28.7%]time:8.24s Loss:0.84093 Correct:80904/102400 Acc:79.008%
+[progress:31.5%]time:8.20s Loss:0.84831 Correct:89098/112640 Acc:79.100%
+[progress:34.4%]time:8.13s Loss:0.86361 Correct:97312/122880 Acc:79.193%
+[progress:37.2%]time:8.20s Loss:0.86229 Correct:105517/133120 Acc:79.265%
+[progress:40.1%]time:8.20s Loss:0.89259 Correct:113588/143360 Acc:79.233%
+[progress:43.0%]time:8.24s Loss:0.85048 Correct:121770/153600 Acc:79.277%
+[progress:45.8%]time:8.18s Loss:0.87475 Correct:129921/163840 Acc:79.297%
+[progress:48.7%]time:8.20s Loss:0.83077 Correct:138202/174080 Acc:79.390%
+[progress:51.6%]time:8.15s Loss:0.81302 Correct:146481/184320 Acc:79.471%
+[progress:54.4%]time:8.19s Loss:0.84996 Correct:154693/194560 Acc:79.509%
+[progress:57.3%]time:8.19s Loss:0.87362 Correct:162823/204800 Acc:79.503%
+[progress:60.2%]time:8.23s Loss:0.85062 Correct:170987/215040 Acc:79.514%
+[progress:63.0%]time:8.15s Loss:0.84817 Correct:179197/225280 Acc:79.544%
+[progress:65.9%]time:8.24s Loss:0.82415 Correct:187474/235520 Acc:79.600%
+[progress:68.8%]time:8.14s Loss:0.79553 Correct:195790/245760 Acc:79.667%
+[progress:71.6%]time:8.20s Loss:0.81096 Correct:204068/256000 Acc:79.714%
+[progress:74.5%]time:8.16s Loss:0.80383 Correct:212378/266240 Acc:79.769%
+[progress:77.4%]time:8.23s Loss:0.83176 Correct:220629/276480 Acc:79.799%
+[progress:80.2%]time:8.17s Loss:0.82939 Correct:228894/286720 Acc:79.832%
+[progress:83.1%]time:8.19s Loss:0.84974 Correct:237086/296960 Acc:79.838%
+[progress:86.0%]time:8.20s Loss:0.79730 Correct:245428/307200 Acc:79.892%
+[progress:88.8%]time:8.19s Loss:0.81063 Correct:253722/317440 Acc:79.928%
+[progress:91.7%]time:8.19s Loss:0.82653 Correct:262008/327680 Acc:79.958%
+[progress:94.6%]time:8.19s Loss:0.80007 Correct:270343/337920 Acc:80.002%
+[progress:97.4%]time:8.18s Loss:0.76460 Correct:278749/348160 Acc:80.063%
+Testing ...
+[progress:100.0%]time:45.23s Loss:0.99677 Correct:116908/152974 Acc:76.423%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 6
+[progress:2.9%]time:9.04s Loss:0.95497 Correct:7875/10240 Acc:76.904%
+[progress:5.7%]time:8.07s Loss:0.88387 Correct:16005/20480 Acc:78.149%
+[progress:8.6%]time:8.15s Loss:0.83992 Correct:24291/30720 Acc:79.072%
+[progress:11.5%]time:8.19s Loss:0.78494 Correct:32674/40960 Acc:79.771%
+[progress:14.3%]time:8.15s Loss:0.80652 Correct:40995/51200 Acc:80.068%
+[progress:17.2%]time:8.25s Loss:0.84080 Correct:49223/61440 Acc:80.116%
+[progress:20.1%]time:8.16s Loss:0.77271 Correct:57601/71680 Acc:80.359%
+[progress:22.9%]time:8.19s Loss:0.79720 Correct:65959/81920 Acc:80.516%
+[progress:25.8%]time:8.22s Loss:0.78886 Correct:74308/92160 Acc:80.629%
+[progress:28.7%]time:8.19s Loss:0.77035 Correct:82741/102400 Acc:80.802%
+[progress:31.5%]time:8.20s Loss:0.75990 Correct:91151/112640 Acc:80.922%
+[progress:34.4%]time:8.20s Loss:0.79855 Correct:99488/122880 Acc:80.964%
+[progress:37.2%]time:8.18s Loss:0.75843 Correct:107889/133120 Acc:81.046%
+[progress:40.1%]time:8.21s Loss:0.74724 Correct:116351/143360 Acc:81.160%
+[progress:43.0%]time:8.19s Loss:0.74423 Correct:124833/153600 Acc:81.271%
+[progress:45.8%]time:8.18s Loss:0.79055 Correct:133200/163840 Acc:81.299%
+[progress:48.7%]time:8.27s Loss:0.74930 Correct:141616/174080 Acc:81.351%
+[progress:51.6%]time:8.13s Loss:0.74548 Correct:150040/184320 Acc:81.402%
+[progress:54.4%]time:8.18s Loss:0.77764 Correct:158400/194560 Acc:81.414%
+[progress:57.3%]time:8.20s Loss:0.72807 Correct:166910/204800 Acc:81.499%
+[progress:60.2%]time:8.22s Loss:0.76636 Correct:175369/215040 Acc:81.552%
+[progress:63.0%]time:8.17s Loss:0.79920 Correct:183687/225280 Acc:81.537%
+[progress:65.9%]time:8.26s Loss:0.77858 Correct:192115/235520 Acc:81.571%
+[progress:68.8%]time:8.18s Loss:0.77302 Correct:200551/245760 Acc:81.604%
+[progress:71.6%]time:8.13s Loss:0.79203 Correct:208909/256000 Acc:81.605%
+[progress:74.5%]time:8.20s Loss:0.82271 Correct:217168/266240 Acc:81.569%
+[progress:77.4%]time:8.19s Loss:0.76132 Correct:225627/276480 Acc:81.607%
+[progress:80.2%]time:8.19s Loss:0.76919 Correct:234077/286720 Acc:81.640%
+[progress:83.1%]time:8.22s Loss:0.77463 Correct:242450/296960 Acc:81.644%
+[progress:86.0%]time:8.17s Loss:0.76217 Correct:250898/307200 Acc:81.673%
+[progress:88.8%]time:8.16s Loss:0.76540 Correct:259340/317440 Acc:81.697%
+[progress:91.7%]time:8.19s Loss:0.77030 Correct:267733/327680 Acc:81.706%
+[progress:94.6%]time:8.21s Loss:0.74039 Correct:276212/337920 Acc:81.739%
+[progress:97.4%]time:8.22s Loss:0.75348 Correct:284696/348160 Acc:81.772%
+Testing ...
+[progress:100.0%]time:45.10s Loss:0.87289 Correct:121946/152974 Acc:79.717%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 7
+[progress:2.9%]time:8.97s Loss:0.85410 Correct:8201/10240 Acc:80.088%
+[progress:5.7%]time:8.17s Loss:0.82915 Correct:16452/20480 Acc:80.332%
+[progress:8.6%]time:8.17s Loss:0.76760 Correct:24878/30720 Acc:80.983%
+[progress:11.5%]time:8.22s Loss:0.75923 Correct:33331/40960 Acc:81.375%
+[progress:14.3%]time:8.17s Loss:0.72628 Correct:41856/51200 Acc:81.750%
+[progress:17.2%]time:8.18s Loss:0.71507 Correct:50400/61440 Acc:82.031%
+[progress:20.1%]time:8.18s Loss:0.75092 Correct:58837/71680 Acc:82.083%
+[progress:22.9%]time:8.12s Loss:0.73055 Correct:67323/81920 Acc:82.181%
+[progress:25.8%]time:8.19s Loss:0.73915 Correct:75825/92160 Acc:82.275%
+[progress:28.7%]time:8.20s Loss:0.72831 Correct:84322/102400 Acc:82.346%
+[progress:31.5%]time:8.14s Loss:0.72092 Correct:92861/112640 Acc:82.441%
+[progress:34.4%]time:8.23s Loss:0.72506 Correct:101377/122880 Acc:82.501%
+[progress:37.2%]time:8.17s Loss:0.70638 Correct:109911/133120 Acc:82.565%
+[progress:40.1%]time:8.17s Loss:0.71764 Correct:118494/143360 Acc:82.655%
+[progress:43.0%]time:8.21s Loss:0.71679 Correct:126997/153600 Acc:82.680%
+[progress:45.8%]time:8.17s Loss:0.74340 Correct:135477/163840 Acc:82.689%
+[progress:48.7%]time:8.19s Loss:0.70812 Correct:144009/174080 Acc:82.726%
+[progress:51.6%]time:8.24s Loss:0.71891 Correct:152559/184320 Acc:82.769%
+[progress:54.4%]time:8.16s Loss:0.71476 Correct:161163/194560 Acc:82.835%
+[progress:57.3%]time:8.23s Loss:0.72146 Correct:169683/204800 Acc:82.853%
+[progress:60.2%]time:8.14s Loss:0.73673 Correct:178189/215040 Acc:82.863%
+[progress:63.0%]time:8.20s Loss:0.72951 Correct:186662/225280 Acc:82.858%
+[progress:65.9%]time:8.20s Loss:0.70803 Correct:195212/235520 Acc:82.886%
+[progress:68.8%]time:8.24s Loss:0.71765 Correct:203748/245760 Acc:82.905%
+[progress:71.6%]time:8.20s Loss:0.72601 Correct:212267/256000 Acc:82.917%
+[progress:74.5%]time:8.14s Loss:0.71678 Correct:220780/266240 Acc:82.925%
+[progress:77.4%]time:8.19s Loss:0.71678 Correct:229313/276480 Acc:82.940%
+[progress:80.2%]time:8.19s Loss:0.68464 Correct:237939/286720 Acc:82.987%
+[progress:83.1%]time:8.23s Loss:0.70274 Correct:246492/296960 Acc:83.005%
+[progress:86.0%]time:8.17s Loss:0.72216 Correct:255029/307200 Acc:83.017%
+[progress:88.8%]time:8.17s Loss:0.71964 Correct:263622/317440 Acc:83.046%
+[progress:91.7%]time:8.21s Loss:0.71394 Correct:272158/327680 Acc:83.056%
+[progress:94.6%]time:8.19s Loss:0.73522 Correct:280685/337920 Acc:83.063%
+[progress:97.4%]time:8.17s Loss:0.72320 Correct:289186/348160 Acc:83.061%
+Testing ...
+[progress:100.0%]time:45.16s Loss:1.12818 Correct:113536/152974 Acc:74.219%
+end
+
+Epoch : 8
+[progress:2.9%]time:9.02s Loss:0.83258 Correct:8244/10240 Acc:80.508%
+[progress:5.7%]time:8.15s Loss:0.76059 Correct:16682/20480 Acc:81.455%
+[progress:8.6%]time:8.17s Loss:0.69964 Correct:25294/30720 Acc:82.337%
+[progress:11.5%]time:8.17s Loss:0.68801 Correct:33900/40960 Acc:82.764%
+[progress:14.3%]time:8.17s Loss:0.70890 Correct:42460/51200 Acc:82.930%
+[progress:17.2%]time:8.06s Loss:0.66602 Correct:51131/61440 Acc:83.221%
+[progress:20.1%]time:8.17s Loss:0.65977 Correct:59806/71680 Acc:83.435%
+[progress:22.9%]time:8.24s Loss:0.70344 Correct:68393/81920 Acc:83.488%
+[progress:25.8%]time:8.14s Loss:0.69590 Correct:77002/92160 Acc:83.553%
+[progress:28.7%]time:8.23s Loss:0.68689 Correct:85609/102400 Acc:83.603%
+[progress:31.5%]time:8.16s Loss:0.69137 Correct:94198/112640 Acc:83.627%
+[progress:34.4%]time:8.21s Loss:0.70712 Correct:102767/122880 Acc:83.632%
+[progress:37.2%]time:8.17s Loss:0.66667 Correct:111456/133120 Acc:83.726%
+[progress:40.1%]time:8.22s Loss:0.68685 Correct:120057/143360 Acc:83.745%
+[progress:43.0%]time:8.17s Loss:0.69287 Correct:128660/153600 Acc:83.763%
+[progress:45.8%]time:8.20s Loss:0.68445 Correct:137280/163840 Acc:83.789%
+[progress:48.7%]time:8.18s Loss:0.67204 Correct:145920/174080 Acc:83.824%
+[progress:51.6%]time:8.20s Loss:0.70703 Correct:154480/184320 Acc:83.811%
+[progress:54.4%]time:8.19s Loss:0.71646 Correct:163058/194560 Acc:83.809%
+[progress:57.3%]time:8.23s Loss:0.71518 Correct:171628/204800 Acc:83.803%
+[progress:60.2%]time:8.14s Loss:0.67152 Correct:180275/215040 Acc:83.833%
+[progress:63.0%]time:8.20s Loss:0.71086 Correct:188830/225280 Acc:83.820%
+[progress:65.9%]time:8.18s Loss:0.69610 Correct:197437/235520 Acc:83.830%
+[progress:68.8%]time:8.21s Loss:0.72927 Correct:205997/245760 Acc:83.820%
+[progress:71.6%]time:8.24s Loss:0.66369 Correct:214696/256000 Acc:83.866%
+[progress:74.5%]time:8.13s Loss:0.70215 Correct:223273/266240 Acc:83.862%
+[progress:77.4%]time:8.21s Loss:0.68729 Correct:231907/276480 Acc:83.878%
+[progress:80.2%]time:8.18s Loss:0.68540 Correct:240521/286720 Acc:83.887%
+[progress:83.1%]time:8.19s Loss:0.68237 Correct:249138/296960 Acc:83.896%
+[progress:86.0%]time:8.15s Loss:0.67057 Correct:257798/307200 Acc:83.919%
+[progress:88.8%]time:8.23s Loss:0.69836 Correct:266402/317440 Acc:83.922%
+[progress:91.7%]time:8.18s Loss:0.68898 Correct:275016/327680 Acc:83.928%
+[progress:94.6%]time:8.10s Loss:0.68192 Correct:283667/337920 Acc:83.945%
+[progress:97.4%]time:8.11s Loss:0.68810 Correct:292268/348160 Acc:83.946%
+Testing ...
+[progress:100.0%]time:45.22s Loss:1.62120 Correct:99977/152974 Acc:65.356%
+end
+
+Epoch : 9
+[progress:2.9%]time:8.97s Loss:0.82562 Correct:8288/10240 Acc:80.938%
+[progress:5.7%]time:8.13s Loss:0.69940 Correct:16887/20480 Acc:82.456%
+[progress:8.6%]time:8.19s Loss:0.65859 Correct:25551/30720 Acc:83.174%
+[progress:11.5%]time:8.20s Loss:0.67497 Correct:34200/40960 Acc:83.496%
+[progress:14.3%]time:8.19s Loss:0.66719 Correct:42865/51200 Acc:83.721%
+[progress:17.2%]time:8.19s Loss:0.66879 Correct:51559/61440 Acc:83.918%
+[progress:20.1%]time:8.19s Loss:0.64783 Correct:60259/71680 Acc:84.067%
+[progress:22.9%]time:8.18s Loss:0.64258 Correct:69019/81920 Acc:84.252%
+[progress:25.8%]time:8.19s Loss:0.64968 Correct:77682/92160 Acc:84.290%
+[progress:28.7%]time:8.26s Loss:0.70302 Correct:86289/102400 Acc:84.267%
+[progress:31.5%]time:8.13s Loss:0.68588 Correct:94911/112640 Acc:84.260%
+[progress:34.4%]time:8.19s Loss:0.67263 Correct:103587/122880 Acc:84.299%
+[progress:37.2%]time:8.20s Loss:0.66036 Correct:112258/133120 Acc:84.328%
+[progress:40.1%]time:8.21s Loss:0.67125 Correct:120927/143360 Acc:84.352%
+[progress:43.0%]time:8.16s Loss:0.63928 Correct:129667/153600 Acc:84.419%
+[progress:45.8%]time:8.22s Loss:0.63750 Correct:138399/163840 Acc:84.472%
+[progress:48.7%]time:8.18s Loss:0.63021 Correct:147165/174080 Acc:84.539%
+[progress:51.6%]time:8.18s Loss:0.64114 Correct:155887/184320 Acc:84.574%
+[progress:54.4%]time:8.19s Loss:0.67460 Correct:164546/194560 Acc:84.573%
+[progress:57.3%]time:8.20s Loss:0.66859 Correct:173221/204800 Acc:84.581%
+[progress:60.2%]time:8.24s Loss:0.66846 Correct:181897/215040 Acc:84.588%
+[progress:63.0%]time:8.16s Loss:0.64855 Correct:190588/225280 Acc:84.600%
+[progress:65.9%]time:8.19s Loss:0.64026 Correct:199306/235520 Acc:84.624%
+[progress:68.8%]time:8.22s Loss:0.64968 Correct:208004/245760 Acc:84.637%
+[progress:71.6%]time:8.14s Loss:0.61932 Correct:216817/256000 Acc:84.694%
+[progress:74.5%]time:8.19s Loss:0.64094 Correct:225588/266240 Acc:84.731%
+[progress:77.4%]time:8.25s Loss:0.64758 Correct:234344/276480 Acc:84.760%
+[progress:80.2%]time:8.14s Loss:0.64935 Correct:243030/286720 Acc:84.762%
+[progress:83.1%]time:8.19s Loss:0.65750 Correct:251711/296960 Acc:84.763%
+[progress:86.0%]time:8.21s Loss:0.65460 Correct:260394/307200 Acc:84.764%
+[progress:88.8%]time:8.24s Loss:0.63828 Correct:269147/317440 Acc:84.787%
+[progress:91.7%]time:8.13s Loss:0.67147 Correct:277830/327680 Acc:84.787%
+[progress:94.6%]time:8.22s Loss:0.62836 Correct:286560/337920 Acc:84.801%
+[progress:97.4%]time:8.18s Loss:0.61457 Correct:295360/348160 Acc:84.835%
+Testing ...
+[progress:100.0%]time:45.35s Loss:0.88388 Correct:120728/152974 Acc:78.921%
+end
+
+Epoch : 10
+[progress:2.9%]time:9.02s Loss:0.79003 Correct:8287/10240 Acc:80.928%
+[progress:5.7%]time:8.14s Loss:0.72876 Correct:16806/20480 Acc:82.061%
+[progress:8.6%]time:8.14s Loss:0.68024 Correct:25442/30720 Acc:82.819%
+[progress:11.5%]time:8.22s Loss:0.64417 Correct:34142/40960 Acc:83.354%
+[progress:14.3%]time:8.18s Loss:0.65968 Correct:42855/51200 Acc:83.701%
+[progress:17.2%]time:8.17s Loss:0.62260 Correct:51618/61440 Acc:84.014%
+[progress:20.1%]time:8.18s Loss:0.62490 Correct:60380/71680 Acc:84.235%
+[progress:22.9%]time:8.12s Loss:0.60786 Correct:69231/81920 Acc:84.510%
+[progress:25.8%]time:8.19s Loss:0.60995 Correct:78031/92160 Acc:84.669%
+[progress:28.7%]time:8.14s Loss:0.63139 Correct:86775/102400 Acc:84.741%
+[progress:31.5%]time:8.19s Loss:0.61118 Correct:95581/112640 Acc:84.855%
+[progress:34.4%]time:8.18s Loss:0.59377 Correct:104419/122880 Acc:84.976%
+[progress:37.2%]time:8.22s Loss:0.64610 Correct:113119/133120 Acc:84.975%
+[progress:40.1%]time:8.23s Loss:0.64022 Correct:121858/143360 Acc:85.001%
+[progress:43.0%]time:8.23s Loss:0.64406 Correct:130616/153600 Acc:85.036%
+[progress:45.8%]time:8.16s Loss:0.63254 Correct:139416/163840 Acc:85.093%
+[progress:48.7%]time:8.13s Loss:0.64443 Correct:148143/174080 Acc:85.101%
+[progress:51.6%]time:8.19s Loss:0.63213 Correct:156875/184320 Acc:85.110%
+[progress:54.4%]time:8.23s Loss:0.64427 Correct:165603/194560 Acc:85.117%
+[progress:57.3%]time:8.16s Loss:0.61779 Correct:174394/204800 Acc:85.153%
+[progress:60.2%]time:8.20s Loss:0.61662 Correct:183197/215040 Acc:85.192%
+[progress:63.0%]time:8.24s Loss:0.65400 Correct:191954/225280 Acc:85.207%
+[progress:65.9%]time:8.16s Loss:0.63714 Correct:200699/235520 Acc:85.215%
+[progress:68.8%]time:8.17s Loss:0.63319 Correct:209442/245760 Acc:85.222%
+[progress:71.6%]time:8.20s Loss:0.61781 Correct:218208/256000 Acc:85.237%
+[progress:74.5%]time:8.18s Loss:0.59298 Correct:227084/266240 Acc:85.293%
+[progress:77.4%]time:8.18s Loss:0.61814 Correct:235910/276480 Acc:85.326%
+[progress:80.2%]time:8.13s Loss:0.59288 Correct:244793/286720 Acc:85.377%
+[progress:83.1%]time:8.17s Loss:0.62750 Correct:253548/296960 Acc:85.381%
+[progress:86.0%]time:8.16s Loss:0.61823 Correct:262369/307200 Acc:85.407%
+[progress:88.8%]time:8.11s Loss:0.62789 Correct:271156/317440 Acc:85.420%
+[progress:91.7%]time:8.19s Loss:0.62013 Correct:279938/327680 Acc:85.430%
+[progress:94.6%]time:8.20s Loss:0.63922 Correct:288667/337920 Acc:85.425%
+[progress:97.4%]time:8.19s Loss:0.64314 Correct:297393/348160 Acc:85.418%
+Testing ...
+[progress:100.0%]time:45.25s Loss:0.95946 Correct:119121/152974 Acc:77.870%
+end
+
+Epoch : 11
+[progress:2.9%]time:9.03s Loss:0.75908 Correct:8449/10240 Acc:82.510%
+[progress:5.7%]time:8.09s Loss:0.69791 Correct:17071/20480 Acc:83.354%
+[progress:8.6%]time:8.16s Loss:0.62693 Correct:25874/30720 Acc:84.225%
+[progress:11.5%]time:8.23s Loss:0.64626 Correct:34589/40960 Acc:84.446%
+[progress:14.3%]time:8.18s Loss:0.64002 Correct:43337/51200 Acc:84.643%
+[progress:17.2%]time:8.17s Loss:0.61962 Correct:52121/61440 Acc:84.832%
+[progress:20.1%]time:8.18s Loss:0.60728 Correct:60956/71680 Acc:85.039%
+[progress:22.9%]time:8.16s Loss:0.58968 Correct:69775/81920 Acc:85.175%
+[progress:25.8%]time:8.14s Loss:0.59829 Correct:78626/92160 Acc:85.315%
+[progress:28.7%]time:8.11s Loss:0.61572 Correct:87433/102400 Acc:85.384%
+[progress:31.5%]time:8.20s Loss:0.58502 Correct:96305/112640 Acc:85.498%
+[progress:34.4%]time:8.22s Loss:0.59480 Correct:105120/122880 Acc:85.547%
+[progress:37.2%]time:8.17s Loss:0.58667 Correct:113961/133120 Acc:85.608%
+[progress:40.1%]time:8.24s Loss:0.61981 Correct:122751/143360 Acc:85.624%
+[progress:43.0%]time:8.20s Loss:0.62693 Correct:131530/153600 Acc:85.632%
+[progress:45.8%]time:8.19s Loss:0.60766 Correct:140354/163840 Acc:85.665%
+[progress:48.7%]time:8.13s Loss:0.59966 Correct:149164/174080 Acc:85.687%
+[progress:51.6%]time:8.18s Loss:0.62117 Correct:157978/184320 Acc:85.709%
+[progress:54.4%]time:8.21s Loss:0.63446 Correct:166705/194560 Acc:85.683%
+[progress:57.3%]time:8.25s Loss:0.63781 Correct:175495/204800 Acc:85.691%
+[progress:60.2%]time:8.13s Loss:0.62264 Correct:184286/215040 Acc:85.698%
+[progress:63.0%]time:8.25s Loss:0.62754 Correct:193002/225280 Acc:85.672%
+[progress:65.9%]time:8.19s Loss:0.61977 Correct:201773/235520 Acc:85.671%
+[progress:68.8%]time:8.14s Loss:0.61193 Correct:210591/245760 Acc:85.690%
+[progress:71.6%]time:8.18s Loss:0.61104 Correct:219422/256000 Acc:85.712%
+[progress:74.5%]time:8.20s Loss:0.60337 Correct:228281/266240 Acc:85.743%
+[progress:77.4%]time:8.20s Loss:0.58174 Correct:237179/276480 Acc:85.785%
+[progress:80.2%]time:8.22s Loss:0.60702 Correct:245993/286720 Acc:85.796%
+[progress:83.1%]time:8.18s Loss:0.60731 Correct:254815/296960 Acc:85.808%
+[progress:86.0%]time:8.18s Loss:0.60205 Correct:263634/307200 Acc:85.818%
+[progress:88.8%]time:8.16s Loss:0.59115 Correct:272472/317440 Acc:85.834%
+[progress:91.7%]time:8.19s Loss:0.59306 Correct:281317/327680 Acc:85.851%
+[progress:94.6%]time:8.18s Loss:0.61489 Correct:290155/337920 Acc:85.865%
+[progress:97.4%]time:8.18s Loss:0.59389 Correct:299035/348160 Acc:85.890%
+Testing ...
+[progress:100.0%]time:45.24s Loss:1.01265 Correct:116607/152974 Acc:76.227%
+end
+
+Epoch : 12
+[progress:2.9%]time:9.03s Loss:0.73551 Correct:8475/10240 Acc:82.764%
+[progress:5.7%]time:8.21s Loss:0.63856 Correct:17222/20480 Acc:84.092%
+[progress:8.6%]time:8.17s Loss:0.60164 Correct:26057/30720 Acc:84.821%
+[progress:11.5%]time:8.17s Loss:0.58607 Correct:34935/40960 Acc:85.291%
+[progress:14.3%]time:8.14s Loss:0.60364 Correct:43754/51200 Acc:85.457%
+[progress:17.2%]time:8.10s Loss:0.56250 Correct:52660/61440 Acc:85.710%
+[progress:20.1%]time:8.18s Loss:0.58917 Correct:61492/71680 Acc:85.787%
+[progress:22.9%]time:8.20s Loss:0.60395 Correct:70320/81920 Acc:85.840%
+[progress:25.8%]time:8.17s Loss:0.61185 Correct:79142/92160 Acc:85.875%
+[progress:28.7%]time:8.21s Loss:0.59700 Correct:88010/102400 Acc:85.947%
+[progress:31.5%]time:8.29s Loss:0.60292 Correct:96860/112640 Acc:85.991%
+[progress:34.4%]time:8.17s Loss:0.59130 Correct:105745/122880 Acc:86.056%
+[progress:37.2%]time:8.13s Loss:0.60072 Correct:114574/133120 Acc:86.068%
+[progress:40.1%]time:8.19s Loss:0.57513 Correct:123492/143360 Acc:86.141%
+[progress:43.0%]time:8.24s Loss:0.59026 Correct:132353/153600 Acc:86.167%
+[progress:45.8%]time:8.19s Loss:0.57800 Correct:141223/163840 Acc:86.196%
+[progress:48.7%]time:8.13s Loss:0.57517 Correct:150147/174080 Acc:86.252%
+[progress:51.6%]time:8.19s Loss:0.56315 Correct:159086/184320 Acc:86.310%
+[progress:54.4%]time:8.30s Loss:0.58621 Correct:167994/194560 Acc:86.346%
+[progress:57.3%]time:8.19s Loss:0.57523 Correct:176922/204800 Acc:86.388%
+[progress:60.2%]time:8.16s Loss:0.58268 Correct:185786/215040 Acc:86.396%
+[progress:63.0%]time:8.17s Loss:0.59071 Correct:194657/225280 Acc:86.407%
+[progress:65.9%]time:8.19s Loss:0.59640 Correct:203497/235520 Acc:86.403%
+[progress:68.8%]time:8.13s Loss:0.57902 Correct:212358/245760 Acc:86.409%
+[progress:71.6%]time:8.21s Loss:0.60438 Correct:221210/256000 Acc:86.410%
+[progress:74.5%]time:8.22s Loss:0.59598 Correct:230056/266240 Acc:86.409%
+[progress:77.4%]time:8.17s Loss:0.57161 Correct:238956/276480 Acc:86.428%
+[progress:80.2%]time:8.23s Loss:0.59544 Correct:247800/286720 Acc:86.426%
+[progress:83.1%]time:8.18s Loss:0.59836 Correct:256621/296960 Acc:86.416%
+[progress:86.0%]time:8.14s Loss:0.58112 Correct:265490/307200 Acc:86.423%
+[progress:88.8%]time:8.21s Loss:0.60380 Correct:274346/317440 Acc:86.425%
+[progress:91.7%]time:8.19s Loss:0.57665 Correct:283243/327680 Acc:86.439%
+[progress:94.6%]time:8.20s Loss:0.59862 Correct:292093/337920 Acc:86.439%
+[progress:97.4%]time:8.19s Loss:0.60314 Correct:300915/348160 Acc:86.430%
+Testing ...
+[progress:100.0%]time:45.18s Loss:1.24813 Correct:113060/152974 Acc:73.908%
+end
+
+Epoch : 13
+[progress:2.9%]time:9.00s Loss:0.63215 Correct:8744/10240 Acc:85.391%
+[progress:5.7%]time:8.18s Loss:0.58572 Correct:17638/20480 Acc:86.123%
+[progress:8.6%]time:8.16s Loss:0.61439 Correct:26428/30720 Acc:86.029%
+[progress:11.5%]time:8.11s Loss:0.59236 Correct:35296/40960 Acc:86.172%
+[progress:14.3%]time:8.15s Loss:0.54957 Correct:44245/51200 Acc:86.416%
+[progress:17.2%]time:8.18s Loss:0.59003 Correct:53105/61440 Acc:86.434%
+[progress:20.1%]time:8.19s Loss:0.57615 Correct:62001/71680 Acc:86.497%
+[progress:22.9%]time:8.20s Loss:0.56574 Correct:70913/81920 Acc:86.564%
+[progress:25.8%]time:8.19s Loss:0.57679 Correct:79809/92160 Acc:86.598%
+[progress:28.7%]time:8.24s Loss:0.55255 Correct:88736/102400 Acc:86.656%
+[progress:31.5%]time:8.17s Loss:0.57396 Correct:97631/112640 Acc:86.675%
+[progress:34.4%]time:8.18s Loss:0.58851 Correct:106493/122880 Acc:86.664%
+[progress:37.2%]time:8.20s Loss:0.56662 Correct:115428/133120 Acc:86.710%
+[progress:40.1%]time:8.19s Loss:0.58070 Correct:124373/143360 Acc:86.756%
+[progress:43.0%]time:8.19s Loss:0.57508 Correct:133259/153600 Acc:86.757%
+[progress:45.8%]time:8.18s Loss:0.58834 Correct:142156/163840 Acc:86.765%
+[progress:48.7%]time:8.21s Loss:0.58135 Correct:151019/174080 Acc:86.753%
+[progress:51.6%]time:8.24s Loss:0.60787 Correct:159824/184320 Acc:86.710%
+[progress:54.4%]time:8.22s Loss:0.59198 Correct:168680/194560 Acc:86.698%
+[progress:57.3%]time:8.11s Loss:0.57747 Correct:177561/204800 Acc:86.700%
+[progress:60.2%]time:8.20s Loss:0.55007 Correct:186522/215040 Acc:86.738%
+[progress:63.0%]time:8.19s Loss:0.59411 Correct:195346/225280 Acc:86.713%
+[progress:65.9%]time:8.18s Loss:0.58392 Correct:204244/235520 Acc:86.720%
+[progress:68.8%]time:8.18s Loss:0.57474 Correct:213145/245760 Acc:86.729%
+[progress:71.6%]time:8.19s Loss:0.55931 Correct:222069/256000 Acc:86.746%
+[progress:74.5%]time:8.23s Loss:0.60173 Correct:230931/266240 Acc:86.738%
+[progress:77.4%]time:8.18s Loss:0.56906 Correct:239866/276480 Acc:86.757%
+[progress:80.2%]time:8.19s Loss:0.57317 Correct:248782/286720 Acc:86.768%
+[progress:83.1%]time:8.18s Loss:0.58795 Correct:257645/296960 Acc:86.761%
+[progress:86.0%]time:8.23s Loss:0.55079 Correct:266608/307200 Acc:86.786%
+[progress:88.8%]time:8.15s Loss:0.59093 Correct:275481/317440 Acc:86.782%
+[progress:91.7%]time:8.20s Loss:0.58306 Correct:284358/327680 Acc:86.779%
+[progress:94.6%]time:8.19s Loss:0.57615 Correct:293233/337920 Acc:86.776%
+[progress:97.4%]time:8.19s Loss:0.54161 Correct:302214/348160 Acc:86.803%
+Testing ...
+[progress:100.0%]time:45.30s Loss:0.86658 Correct:123107/152974 Acc:80.476%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 14
+[progress:2.9%]time:9.02s Loss:0.62850 Correct:8789/10240 Acc:85.830%
+[progress:5.7%]time:8.19s Loss:0.63810 Correct:17537/20480 Acc:85.630%
+[progress:8.6%]time:8.17s Loss:0.57460 Correct:26434/30720 Acc:86.048%
+[progress:11.5%]time:8.18s Loss:0.56653 Correct:35343/40960 Acc:86.287%
+[progress:14.3%]time:8.16s Loss:0.57749 Correct:44242/51200 Acc:86.410%
+[progress:17.2%]time:8.17s Loss:0.57361 Correct:53169/61440 Acc:86.538%
+[progress:20.1%]time:8.08s Loss:0.58953 Correct:62013/71680 Acc:86.514%
+[progress:22.9%]time:8.20s Loss:0.56967 Correct:70949/81920 Acc:86.608%
+[progress:25.8%]time:8.22s Loss:0.56203 Correct:79886/92160 Acc:86.682%
+[progress:28.7%]time:8.16s Loss:0.56121 Correct:88803/102400 Acc:86.722%
+[progress:31.5%]time:8.21s Loss:0.57604 Correct:97710/112640 Acc:86.745%
+[progress:34.4%]time:8.17s Loss:0.57778 Correct:106588/122880 Acc:86.742%
+[progress:37.2%]time:8.20s Loss:0.56600 Correct:115558/133120 Acc:86.807%
+[progress:40.1%]time:8.20s Loss:0.56672 Correct:124495/143360 Acc:86.841%
+[progress:43.0%]time:8.19s Loss:0.58890 Correct:133375/153600 Acc:86.833%
+[progress:45.8%]time:8.23s Loss:0.54848 Correct:142349/163840 Acc:86.883%
+[progress:48.7%]time:8.16s Loss:0.55717 Correct:151329/174080 Acc:86.931%
+[progress:51.6%]time:8.20s Loss:0.55509 Correct:160328/184320 Acc:86.984%
+[progress:54.4%]time:8.18s Loss:0.56684 Correct:169258/194560 Acc:86.995%
+[progress:57.3%]time:8.18s Loss:0.56299 Correct:178176/204800 Acc:87.000%
+[progress:60.2%]time:8.18s Loss:0.55684 Correct:187132/215040 Acc:87.022%
+[progress:63.0%]time:8.21s Loss:0.56489 Correct:196051/225280 Acc:87.025%
+[progress:65.9%]time:8.19s Loss:0.60863 Correct:204879/235520 Acc:86.990%
+[progress:68.8%]time:8.19s Loss:0.57567 Correct:213802/245760 Acc:86.996%
+[progress:71.6%]time:8.21s Loss:0.55814 Correct:222727/256000 Acc:87.003%
+[progress:74.5%]time:8.18s Loss:0.54749 Correct:231687/266240 Acc:87.022%
+[progress:77.4%]time:8.19s Loss:0.57250 Correct:240649/276480 Acc:87.040%
+[progress:80.2%]time:8.16s Loss:0.54854 Correct:249618/286720 Acc:87.060%
+[progress:83.1%]time:8.18s Loss:0.56477 Correct:258573/296960 Acc:87.073%
+[progress:86.0%]time:8.19s Loss:0.59224 Correct:267477/307200 Acc:87.069%
+[progress:88.8%]time:8.18s Loss:0.56042 Correct:276402/317440 Acc:87.072%
+[progress:91.7%]time:8.12s Loss:0.57475 Correct:285342/327680 Acc:87.079%
+[progress:94.6%]time:8.17s Loss:0.56850 Correct:294270/337920 Acc:87.083%
+[progress:97.4%]time:8.20s Loss:0.54673 Correct:303230/348160 Acc:87.095%
+Testing ...
+[progress:100.0%]time:45.25s Loss:1.14556 Correct:114471/152974 Acc:74.830%
+end
+
+Epoch : 15
+[progress:2.9%]time:9.03s Loss:0.63973 Correct:8722/10240 Acc:85.176%
+[progress:5.7%]time:8.15s Loss:0.60874 Correct:17554/20480 Acc:85.713%
+[progress:8.6%]time:8.09s Loss:0.59714 Correct:26426/30720 Acc:86.022%
+[progress:11.5%]time:8.19s Loss:0.57005 Correct:35353/40960 Acc:86.311%
+[progress:14.3%]time:8.19s Loss:0.55488 Correct:44326/51200 Acc:86.574%
+[progress:17.2%]time:8.19s Loss:0.54316 Correct:53300/61440 Acc:86.751%
+[progress:20.1%]time:8.22s Loss:0.54588 Correct:62275/71680 Acc:86.879%
+[progress:22.9%]time:8.23s Loss:0.54673 Correct:71285/81920 Acc:87.018%
+[progress:25.8%]time:8.19s Loss:0.54287 Correct:80322/92160 Acc:87.155%
+[progress:28.7%]time:8.14s Loss:0.53457 Correct:89327/102400 Acc:87.233%
+[progress:31.5%]time:8.19s Loss:0.52257 Correct:98342/112640 Acc:87.306%
+[progress:34.4%]time:8.19s Loss:0.53014 Correct:107362/122880 Acc:87.371%
+[progress:37.2%]time:8.25s Loss:0.53828 Correct:116317/133120 Acc:87.378%
+[progress:40.1%]time:8.17s Loss:0.54730 Correct:125313/143360 Acc:87.411%
+[progress:43.0%]time:8.22s Loss:0.56765 Correct:134239/153600 Acc:87.395%
+[progress:45.8%]time:8.19s Loss:0.57074 Correct:143166/163840 Acc:87.382%
+[progress:48.7%]time:8.15s Loss:0.57030 Correct:152062/174080 Acc:87.352%
+[progress:51.6%]time:8.17s Loss:0.56475 Correct:160991/184320 Acc:87.343%
+[progress:54.4%]time:8.18s Loss:0.59906 Correct:169851/194560 Acc:87.300%
+[progress:57.3%]time:8.22s Loss:0.54552 Correct:178838/204800 Acc:87.323%
+[progress:60.2%]time:8.18s Loss:0.54237 Correct:187852/215040 Acc:87.357%
+[progress:63.0%]time:8.25s Loss:0.55297 Correct:196793/225280 Acc:87.355%
+[progress:65.9%]time:8.20s Loss:0.56107 Correct:205685/235520 Acc:87.332%
+[progress:68.8%]time:8.14s Loss:0.54970 Correct:214656/245760 Acc:87.344%
+[progress:71.6%]time:8.22s Loss:0.53889 Correct:223658/256000 Acc:87.366%
+[progress:74.5%]time:8.17s Loss:0.54541 Correct:232677/266240 Acc:87.394%
+[progress:77.4%]time:8.19s Loss:0.56304 Correct:241574/276480 Acc:87.375%
+[progress:80.2%]time:8.17s Loss:0.55450 Correct:250547/286720 Acc:87.384%
+[progress:83.1%]time:8.21s Loss:0.54626 Correct:259567/296960 Acc:87.408%
+[progress:86.0%]time:8.22s Loss:0.55853 Correct:268510/307200 Acc:87.406%
+[progress:88.8%]time:8.16s Loss:0.53399 Correct:277518/317440 Acc:87.424%
+[progress:91.7%]time:8.19s Loss:0.54207 Correct:286534/327680 Acc:87.443%
+[progress:94.6%]time:8.19s Loss:0.54737 Correct:295521/337920 Acc:87.453%
+[progress:97.4%]time:8.20s Loss:0.52283 Correct:304551/348160 Acc:87.474%
+Testing ...
+[progress:100.0%]time:45.47s Loss:0.77920 Correct:126598/152974 Acc:82.758%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 16
+[progress:2.9%]time:9.15s Loss:0.66984 Correct:8663/10240 Acc:84.600%
+[progress:5.7%]time:8.11s Loss:0.63420 Correct:17410/20480 Acc:85.010%
+[progress:8.6%]time:8.19s Loss:0.58325 Correct:26289/30720 Acc:85.576%
+[progress:11.5%]time:8.17s Loss:0.54046 Correct:35260/40960 Acc:86.084%
+[progress:14.3%]time:8.23s Loss:0.56860 Correct:44176/51200 Acc:86.281%
+[progress:17.2%]time:8.19s Loss:0.54067 Correct:53152/61440 Acc:86.510%
+[progress:20.1%]time:8.16s Loss:0.53544 Correct:62132/71680 Acc:86.680%
+[progress:22.9%]time:8.18s Loss:0.53139 Correct:71138/81920 Acc:86.838%
+[progress:25.8%]time:8.20s Loss:0.53959 Correct:80126/92160 Acc:86.942%
+[progress:28.7%]time:8.19s Loss:0.54471 Correct:89108/102400 Acc:87.020%
+[progress:31.5%]time:8.10s Loss:0.53497 Correct:98115/112640 Acc:87.105%
+[progress:34.4%]time:8.14s Loss:0.53669 Correct:107128/122880 Acc:87.181%
+[progress:37.2%]time:8.25s Loss:0.54149 Correct:116099/133120 Acc:87.214%
+[progress:40.1%]time:8.15s Loss:0.56248 Correct:125031/143360 Acc:87.215%
+[progress:43.0%]time:8.23s Loss:0.56391 Correct:133957/153600 Acc:87.212%
+[progress:45.8%]time:8.20s Loss:0.55565 Correct:142939/163840 Acc:87.243%
+[progress:48.7%]time:8.18s Loss:0.52449 Correct:151939/174080 Acc:87.281%
+[progress:51.6%]time:8.13s Loss:0.52446 Correct:160922/184320 Acc:87.306%
+[progress:54.4%]time:8.20s Loss:0.52218 Correct:169953/194560 Acc:87.352%
+[progress:57.3%]time:8.26s Loss:0.53672 Correct:178939/204800 Acc:87.373%
+[progress:60.2%]time:8.18s Loss:0.53846 Correct:187948/215040 Acc:87.401%
+[progress:63.0%]time:8.22s Loss:0.53709 Correct:196937/225280 Acc:87.419%
+[progress:65.9%]time:8.17s Loss:0.54021 Correct:205939/235520 Acc:87.440%
+[progress:68.8%]time:8.19s Loss:0.51980 Correct:214973/245760 Acc:87.473%
+[progress:71.6%]time:8.13s Loss:0.54384 Correct:223991/256000 Acc:87.496%
+[progress:74.5%]time:8.19s Loss:0.53380 Correct:233015/266240 Acc:87.521%
+[progress:77.4%]time:8.22s Loss:0.54082 Correct:241987/276480 Acc:87.524%
+[progress:80.2%]time:8.24s Loss:0.55455 Correct:250942/286720 Acc:87.522%
+[progress:83.1%]time:8.19s Loss:0.53073 Correct:259967/296960 Acc:87.543%
+[progress:86.0%]time:8.22s Loss:0.53741 Correct:268969/307200 Acc:87.555%
+[progress:88.8%]time:8.20s Loss:0.54765 Correct:277951/317440 Acc:87.560%
+[progress:91.7%]time:8.10s Loss:0.54239 Correct:286964/327680 Acc:87.574%
+[progress:94.6%]time:8.21s Loss:0.55984 Correct:295928/337920 Acc:87.573%
+[progress:97.4%]time:8.24s Loss:0.53113 Correct:304975/348160 Acc:87.596%
+Testing ...
+[progress:100.0%]time:45.28s Loss:0.51263 Correct:134647/152974 Acc:88.020%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 17
+[progress:2.9%]time:8.97s Loss:0.58295 Correct:8904/10240 Acc:86.953%
+[progress:5.7%]time:8.21s Loss:0.54942 Correct:17879/20480 Acc:87.300%
+[progress:8.6%]time:8.19s Loss:0.55379 Correct:26853/30720 Acc:87.412%
+[progress:11.5%]time:8.19s Loss:0.52568 Correct:35851/40960 Acc:87.527%
+[progress:14.3%]time:8.21s Loss:0.53352 Correct:44884/51200 Acc:87.664%
+[progress:17.2%]time:8.17s Loss:0.54128 Correct:53858/61440 Acc:87.660%
+[progress:20.1%]time:8.21s Loss:0.54914 Correct:62785/71680 Acc:87.591%
+[progress:22.9%]time:8.17s Loss:0.54699 Correct:71747/81920 Acc:87.582%
+[progress:25.8%]time:8.21s Loss:0.54933 Correct:80703/92160 Acc:87.568%
+[progress:28.7%]time:8.18s Loss:0.55708 Correct:89643/102400 Acc:87.542%
+[progress:31.5%]time:8.19s Loss:0.53530 Correct:98635/112640 Acc:87.567%
+[progress:34.4%]time:8.30s Loss:0.51464 Correct:107697/122880 Acc:87.644%
+[progress:37.2%]time:8.24s Loss:0.52132 Correct:116756/133120 Acc:87.707%
+[progress:40.1%]time:8.22s Loss:0.53824 Correct:125768/143360 Acc:87.729%
+[progress:43.0%]time:8.13s Loss:0.56293 Correct:134721/153600 Acc:87.709%
+[progress:45.8%]time:8.15s Loss:0.56348 Correct:143679/163840 Acc:87.695%
+[progress:48.7%]time:8.15s Loss:0.53353 Correct:152688/174080 Acc:87.711%
+[progress:51.6%]time:8.15s Loss:0.52666 Correct:161705/184320 Acc:87.731%
+[progress:54.4%]time:8.20s Loss:0.54987 Correct:170708/194560 Acc:87.741%
+[progress:57.3%]time:8.24s Loss:0.52270 Correct:179750/204800 Acc:87.769%
+[progress:60.2%]time:8.14s Loss:0.53593 Correct:188789/215040 Acc:87.793%
+[progress:63.0%]time:8.18s Loss:0.55200 Correct:197788/225280 Acc:87.797%
+[progress:65.9%]time:8.19s Loss:0.53680 Correct:206808/235520 Acc:87.809%
+[progress:68.8%]time:8.21s Loss:0.53228 Correct:215812/245760 Acc:87.814%
+[progress:71.6%]time:8.20s Loss:0.51606 Correct:224876/256000 Acc:87.842%
+[progress:74.5%]time:8.20s Loss:0.52916 Correct:233890/266240 Acc:87.849%
+[progress:77.4%]time:8.18s Loss:0.51143 Correct:242922/276480 Acc:87.862%
+[progress:80.2%]time:8.25s Loss:0.51891 Correct:251953/286720 Acc:87.874%
+[progress:83.1%]time:8.19s Loss:0.53673 Correct:260983/296960 Acc:87.885%
+[progress:86.0%]time:8.19s Loss:0.54961 Correct:269970/307200 Acc:87.881%
+[progress:88.8%]time:8.19s Loss:0.53651 Correct:278982/317440 Acc:87.885%
+[progress:91.7%]time:8.19s Loss:0.55490 Correct:287911/327680 Acc:87.863%
+[progress:94.6%]time:8.14s Loss:0.55532 Correct:296894/337920 Acc:87.859%
+[progress:97.4%]time:8.20s Loss:0.54740 Correct:305863/348160 Acc:87.851%
+Testing ...
+[progress:100.0%]time:45.23s Loss:0.83589 Correct:123991/152974 Acc:81.054%
+end
+
+Epoch : 18
+[progress:2.9%]time:9.00s Loss:0.67320 Correct:8663/10240 Acc:84.600%
+[progress:5.7%]time:8.08s Loss:0.56827 Correct:17553/20480 Acc:85.708%
+[progress:8.6%]time:8.18s Loss:0.57517 Correct:26457/30720 Acc:86.123%
+[progress:11.5%]time:8.20s Loss:0.54966 Correct:35441/40960 Acc:86.526%
+[progress:14.3%]time:8.24s Loss:0.51927 Correct:44430/51200 Acc:86.777%
+[progress:17.2%]time:8.19s Loss:0.53278 Correct:53427/61440 Acc:86.958%
+[progress:20.1%]time:8.15s Loss:0.53646 Correct:62421/71680 Acc:87.083%
+[progress:22.9%]time:8.19s Loss:0.53433 Correct:71449/81920 Acc:87.218%
+[progress:25.8%]time:8.20s Loss:0.54822 Correct:80434/92160 Acc:87.276%
+[progress:28.7%]time:8.19s Loss:0.53252 Correct:89442/102400 Acc:87.346%
+[progress:31.5%]time:8.24s Loss:0.53411 Correct:98448/112640 Acc:87.401%
+[progress:34.4%]time:8.12s Loss:0.53472 Correct:107480/122880 Acc:87.467%
+[progress:37.2%]time:8.23s Loss:0.52114 Correct:116466/133120 Acc:87.489%
+[progress:40.1%]time:8.23s Loss:0.52105 Correct:125509/143360 Acc:87.548%
+[progress:43.0%]time:8.15s Loss:0.52305 Correct:134539/153600 Acc:87.590%
+[progress:45.8%]time:8.23s Loss:0.51195 Correct:143620/163840 Acc:87.659%
+[progress:48.7%]time:8.16s Loss:0.52506 Correct:152665/174080 Acc:87.698%
+[progress:51.6%]time:8.16s Loss:0.49820 Correct:161743/184320 Acc:87.751%
+[progress:54.4%]time:8.20s Loss:0.51613 Correct:170796/194560 Acc:87.786%
+[progress:57.3%]time:8.18s Loss:0.50524 Correct:179893/204800 Acc:87.838%
+[progress:60.2%]time:8.26s Loss:0.54624 Correct:188879/215040 Acc:87.834%
+[progress:63.0%]time:8.14s Loss:0.52565 Correct:197936/225280 Acc:87.862%
+[progress:65.9%]time:8.18s Loss:0.54403 Correct:206908/235520 Acc:87.852%
+[progress:68.8%]time:8.21s Loss:0.52408 Correct:215962/245760 Acc:87.875%
+[progress:71.6%]time:8.19s Loss:0.50887 Correct:225016/256000 Acc:87.897%
+[progress:74.5%]time:8.18s Loss:0.53476 Correct:234031/266240 Acc:87.902%
+[progress:77.4%]time:8.19s Loss:0.52141 Correct:243068/276480 Acc:87.915%
+[progress:80.2%]time:8.23s Loss:0.52285 Correct:252108/286720 Acc:87.928%
+[progress:83.1%]time:8.16s Loss:0.53994 Correct:261102/296960 Acc:87.925%
+[progress:86.0%]time:8.18s Loss:0.50625 Correct:270198/307200 Acc:87.955%
+[progress:88.8%]time:8.25s Loss:0.53043 Correct:279228/317440 Acc:87.962%
+[progress:91.7%]time:8.15s Loss:0.54232 Correct:288216/327680 Acc:87.957%
+[progress:94.6%]time:8.18s Loss:0.51383 Correct:297302/337920 Acc:87.980%
+[progress:97.4%]time:8.19s Loss:0.51071 Correct:306376/348160 Acc:87.999%
+Testing ...
+[progress:100.0%]time:45.28s Loss:1.28670 Correct:111160/152974 Acc:72.666%
+end
+
+Epoch : 19
+[progress:2.9%]time:8.97s Loss:0.65854 Correct:8657/10240 Acc:84.541%
+[progress:5.7%]time:8.15s Loss:0.57939 Correct:17593/20480 Acc:85.903%
+[progress:8.6%]time:8.09s Loss:0.53704 Correct:26606/30720 Acc:86.608%
+[progress:11.5%]time:8.19s Loss:0.52682 Correct:35654/40960 Acc:87.046%
+[progress:14.3%]time:8.20s Loss:0.51958 Correct:44696/51200 Acc:87.297%
+[progress:17.2%]time:8.23s Loss:0.53436 Correct:53716/61440 Acc:87.428%
+[progress:20.1%]time:8.14s Loss:0.53993 Correct:62721/71680 Acc:87.501%
+[progress:22.9%]time:8.19s Loss:0.54640 Correct:71697/81920 Acc:87.521%
+[progress:25.8%]time:8.20s Loss:0.52592 Correct:80738/92160 Acc:87.606%
+[progress:28.7%]time:8.20s Loss:0.51278 Correct:89785/102400 Acc:87.681%
+[progress:31.5%]time:8.18s Loss:0.49906 Correct:98851/112640 Acc:87.758%
+[progress:34.4%]time:8.20s Loss:0.55058 Correct:107824/122880 Acc:87.747%
+[progress:37.2%]time:8.25s Loss:0.52604 Correct:116859/133120 Acc:87.785%
+[progress:40.1%]time:8.16s Loss:0.50035 Correct:125926/143360 Acc:87.839%
+[progress:43.0%]time:8.17s Loss:0.52482 Correct:135001/153600 Acc:87.891%
+[progress:45.8%]time:8.18s Loss:0.51880 Correct:144019/163840 Acc:87.902%
+[progress:48.7%]time:8.22s Loss:0.52495 Correct:153029/174080 Acc:87.907%
+[progress:51.6%]time:8.19s Loss:0.50096 Correct:162116/184320 Acc:87.954%
+[progress:54.4%]time:8.19s Loss:0.50772 Correct:171205/194560 Acc:87.996%
+[progress:57.3%]time:8.18s Loss:0.52988 Correct:180251/204800 Acc:88.013%
+[progress:60.2%]time:8.23s Loss:0.53336 Correct:189236/215040 Acc:88.000%
+[progress:63.0%]time:8.16s Loss:0.53054 Correct:198282/225280 Acc:88.016%
+[progress:65.9%]time:8.20s Loss:0.53072 Correct:207315/235520 Acc:88.024%
+[progress:68.8%]time:8.18s Loss:0.52849 Correct:216354/245760 Acc:88.035%
+[progress:71.6%]time:8.20s Loss:0.53828 Correct:225376/256000 Acc:88.037%
+[progress:74.5%]time:8.16s Loss:0.51792 Correct:234458/266240 Acc:88.063%
+[progress:77.4%]time:8.19s Loss:0.50372 Correct:243546/276480 Acc:88.088%
+[progress:80.2%]time:8.18s Loss:0.52289 Correct:252584/286720 Acc:88.094%
+[progress:83.1%]time:8.16s Loss:0.54052 Correct:261580/296960 Acc:88.086%
+[progress:86.0%]time:8.11s Loss:0.52463 Correct:270618/307200 Acc:88.092%
+[progress:88.8%]time:8.14s Loss:0.51090 Correct:279652/317440 Acc:88.096%
+[progress:91.7%]time:8.19s Loss:0.53869 Correct:288630/327680 Acc:88.083%
+[progress:94.6%]time:8.19s Loss:0.51162 Correct:297671/337920 Acc:88.089%
+[progress:97.4%]time:8.19s Loss:0.51937 Correct:306683/348160 Acc:88.087%
+Testing ...
+[progress:100.0%]time:45.43s Loss:1.24201 Correct:113505/152974 Acc:74.199%
+end
+
+Epoch : 20
+[progress:2.9%]time:9.01s Loss:0.63706 Correct:8746/10240 Acc:85.410%
+[progress:5.7%]time:8.10s Loss:0.58227 Correct:17644/20480 Acc:86.152%
+[progress:8.6%]time:8.15s Loss:0.55259 Correct:26617/30720 Acc:86.644%
+[progress:11.5%]time:8.19s Loss:0.54244 Correct:35564/40960 Acc:86.826%
+[progress:14.3%]time:8.19s Loss:0.52323 Correct:44579/51200 Acc:87.068%
+[progress:17.2%]time:8.24s Loss:0.51938 Correct:53621/61440 Acc:87.274%
+[progress:20.1%]time:8.18s Loss:0.51481 Correct:62664/71680 Acc:87.422%
+[progress:22.9%]time:8.16s Loss:0.53440 Correct:71698/81920 Acc:87.522%
+[progress:25.8%]time:8.21s Loss:0.51818 Correct:80753/92160 Acc:87.623%
+[progress:28.7%]time:8.19s Loss:0.51094 Correct:89823/102400 Acc:87.718%
+[progress:31.5%]time:8.20s Loss:0.51509 Correct:98901/112640 Acc:87.803%
+[progress:34.4%]time:8.18s Loss:0.48908 Correct:108011/122880 Acc:87.900%
+[progress:37.2%]time:8.19s Loss:0.50038 Correct:117112/133120 Acc:87.975%
+[progress:40.1%]time:8.25s Loss:0.51473 Correct:126161/143360 Acc:88.003%
+[progress:43.0%]time:8.14s Loss:0.52887 Correct:135201/153600 Acc:88.021%
+[progress:45.8%]time:8.25s Loss:0.50086 Correct:144291/163840 Acc:88.068%
+[progress:48.7%]time:8.19s Loss:0.50886 Correct:153358/174080 Acc:88.096%
+[progress:51.6%]time:8.14s Loss:0.53612 Correct:162368/184320 Acc:88.090%
+[progress:54.4%]time:8.18s Loss:0.51360 Correct:171456/194560 Acc:88.125%
+[progress:57.3%]time:8.20s Loss:0.49059 Correct:180534/204800 Acc:88.151%
+[progress:60.2%]time:8.28s Loss:0.48098 Correct:189666/215040 Acc:88.200%
+[progress:63.0%]time:8.13s Loss:0.50814 Correct:198728/225280 Acc:88.214%
+[progress:65.9%]time:8.22s Loss:0.51438 Correct:207786/235520 Acc:88.224%
+[progress:68.8%]time:8.14s Loss:0.49806 Correct:216847/245760 Acc:88.235%
+[progress:71.6%]time:8.18s Loss:0.51650 Correct:225888/256000 Acc:88.237%
+[progress:74.5%]time:8.20s Loss:0.48443 Correct:235025/266240 Acc:88.276%
+[progress:77.4%]time:8.19s Loss:0.52072 Correct:244059/276480 Acc:88.274%
+[progress:80.2%]time:8.20s Loss:0.51975 Correct:253125/286720 Acc:88.283%
+[progress:83.1%]time:8.19s Loss:0.52267 Correct:262116/296960 Acc:88.266%
+[progress:86.0%]time:8.24s Loss:0.51789 Correct:271165/307200 Acc:88.270%
+[progress:88.8%]time:8.15s Loss:0.52718 Correct:280205/317440 Acc:88.270%
+[progress:91.7%]time:8.20s Loss:0.52641 Correct:289227/327680 Acc:88.265%
+[progress:94.6%]time:8.18s Loss:0.51486 Correct:298255/337920 Acc:88.262%
+[progress:97.4%]time:8.20s Loss:0.52684 Correct:307298/348160 Acc:88.263%
+Testing ...
+[progress:100.0%]time:45.33s Loss:1.13868 Correct:116651/152974 Acc:76.255%
+Learning rate adjusted to 0.010000000000000002
+end
+
+Epoch : 21
+[progress:2.9%]time:9.01s Loss:0.46656 Correct:9189/10240 Acc:89.736%
+[progress:5.7%]time:8.10s Loss:0.38213 Correct:18597/20480 Acc:90.806%
+[progress:8.6%]time:8.13s Loss:0.34249 Correct:28135/30720 Acc:91.585%
+[progress:11.5%]time:8.20s Loss:0.33274 Correct:37642/40960 Acc:91.899%
+[progress:14.3%]time:8.18s Loss:0.31295 Correct:47196/51200 Acc:92.180%
+[progress:17.2%]time:8.25s Loss:0.31821 Correct:56763/61440 Acc:92.388%
+[progress:20.1%]time:8.20s Loss:0.31452 Correct:66329/71680 Acc:92.535%
+[progress:22.9%]time:8.14s Loss:0.30416 Correct:75904/81920 Acc:92.656%
+[progress:25.8%]time:8.19s Loss:0.28786 Correct:85531/92160 Acc:92.807%
+[progress:28.7%]time:8.25s Loss:0.29856 Correct:95129/102400 Acc:92.899%
+[progress:31.5%]time:8.19s Loss:0.29048 Correct:104755/112640 Acc:93.000%
+[progress:34.4%]time:8.14s Loss:0.29458 Correct:114342/122880 Acc:93.052%
+[progress:37.2%]time:8.17s Loss:0.28611 Correct:123969/133120 Acc:93.126%
+[progress:40.1%]time:8.30s Loss:0.29112 Correct:133562/143360 Acc:93.165%
+[progress:43.0%]time:8.11s Loss:0.28027 Correct:143197/153600 Acc:93.227%
+[progress:45.8%]time:8.21s Loss:0.28099 Correct:152823/163840 Acc:93.276%
+[progress:48.7%]time:8.17s Loss:0.27540 Correct:162433/174080 Acc:93.309%
+[progress:51.6%]time:8.19s Loss:0.27153 Correct:172083/184320 Acc:93.361%
+[progress:54.4%]time:8.18s Loss:0.27662 Correct:181719/194560 Acc:93.400%
+[progress:57.3%]time:8.20s Loss:0.26813 Correct:191382/204800 Acc:93.448%
+[progress:60.2%]time:8.20s Loss:0.26403 Correct:201044/215040 Acc:93.491%
+[progress:63.0%]time:8.19s Loss:0.25652 Correct:210738/225280 Acc:93.545%
+[progress:65.9%]time:8.20s Loss:0.26177 Correct:220410/235520 Acc:93.584%
+[progress:68.8%]time:8.19s Loss:0.25630 Correct:230088/245760 Acc:93.623%
+[progress:71.6%]time:8.17s Loss:0.25608 Correct:239783/256000 Acc:93.665%
+[progress:74.5%]time:8.21s Loss:0.26037 Correct:249470/266240 Acc:93.701%
+[progress:77.4%]time:8.20s Loss:0.25834 Correct:259132/276480 Acc:93.725%
+[progress:80.2%]time:8.19s Loss:0.24335 Correct:268867/286720 Acc:93.773%
+[progress:83.1%]time:8.19s Loss:0.27182 Correct:278524/296960 Acc:93.792%
+[progress:86.0%]time:8.24s Loss:0.25608 Correct:288217/307200 Acc:93.821%
+[progress:88.8%]time:8.15s Loss:0.24430 Correct:297921/317440 Acc:93.851%
+[progress:91.7%]time:8.18s Loss:0.25297 Correct:307622/327680 Acc:93.879%
+[progress:94.6%]time:8.20s Loss:0.25243 Correct:317336/337920 Acc:93.909%
+[progress:97.4%]time:8.19s Loss:0.26202 Correct:327009/348160 Acc:93.925%
+Testing ...
+[progress:100.0%]time:45.35s Loss:0.17623 Correct:147034/152974 Acc:96.117%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 22
+[progress:2.9%]time:8.98s Loss:0.23120 Correct:9755/10240 Acc:95.264%
+[progress:5.7%]time:8.18s Loss:0.25568 Correct:19431/20480 Acc:94.878%
+[progress:8.6%]time:8.19s Loss:0.23555 Correct:29169/30720 Acc:94.951%
+[progress:11.5%]time:8.18s Loss:0.24863 Correct:38878/40960 Acc:94.917%
+[progress:14.3%]time:8.20s Loss:0.23045 Correct:48627/51200 Acc:94.975%
+[progress:17.2%]time:8.21s Loss:0.24672 Correct:58343/61440 Acc:94.959%
+[progress:20.1%]time:8.18s Loss:0.24003 Correct:68064/71680 Acc:94.955%
+[progress:22.9%]time:8.18s Loss:0.25035 Correct:77773/81920 Acc:94.938%
+[progress:25.8%]time:8.15s Loss:0.24483 Correct:87502/92160 Acc:94.946%
+[progress:28.7%]time:8.12s Loss:0.24116 Correct:97199/102400 Acc:94.921%
+[progress:31.5%]time:8.19s Loss:0.22782 Correct:106944/112640 Acc:94.943%
+[progress:34.4%]time:8.16s Loss:0.23036 Correct:116693/122880 Acc:94.965%
+[progress:37.2%]time:8.16s Loss:0.24273 Correct:126427/133120 Acc:94.972%
+[progress:40.1%]time:8.26s Loss:0.21285 Correct:136206/143360 Acc:95.010%
+[progress:43.0%]time:8.20s Loss:0.23253 Correct:145979/153600 Acc:95.038%
+[progress:45.8%]time:8.13s Loss:0.22407 Correct:155737/163840 Acc:95.054%
+[progress:48.7%]time:8.18s Loss:0.22836 Correct:165492/174080 Acc:95.067%
+[progress:51.6%]time:8.20s Loss:0.23272 Correct:175242/184320 Acc:95.075%
+[progress:54.4%]time:8.23s Loss:0.21775 Correct:185021/194560 Acc:95.097%
+[progress:57.3%]time:8.17s Loss:0.23959 Correct:194751/204800 Acc:95.093%
+[progress:60.2%]time:8.18s Loss:0.23561 Correct:204518/215040 Acc:95.107%
+[progress:63.0%]time:8.26s Loss:0.22658 Correct:214269/225280 Acc:95.112%
+[progress:65.9%]time:8.18s Loss:0.22911 Correct:224006/235520 Acc:95.111%
+[progress:68.8%]time:8.24s Loss:0.25036 Correct:233703/245760 Acc:95.094%
+[progress:71.6%]time:8.16s Loss:0.21592 Correct:243487/256000 Acc:95.112%
+[progress:74.5%]time:8.17s Loss:0.22125 Correct:253262/266240 Acc:95.125%
+[progress:77.4%]time:8.15s Loss:0.21422 Correct:263067/276480 Acc:95.149%
+[progress:80.2%]time:8.20s Loss:0.23008 Correct:272840/286720 Acc:95.159%
+[progress:83.1%]time:8.24s Loss:0.22218 Correct:282619/296960 Acc:95.171%
+[progress:86.0%]time:8.19s Loss:0.21859 Correct:292404/307200 Acc:95.184%
+[progress:88.8%]time:8.20s Loss:0.21039 Correct:302195/317440 Acc:95.198%
+[progress:91.7%]time:8.26s Loss:0.22384 Correct:311962/327680 Acc:95.203%
+[progress:94.6%]time:8.25s Loss:0.22024 Correct:321740/337920 Acc:95.212%
+[progress:97.4%]time:8.17s Loss:0.23410 Correct:331484/348160 Acc:95.210%
+Testing ...
+[progress:100.0%]time:45.39s Loss:0.16411 Correct:147427/152974 Acc:96.374%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 23
+[progress:2.9%]time:8.96s Loss:0.24228 Correct:9719/10240 Acc:94.912%
+[progress:5.7%]time:8.18s Loss:0.22482 Correct:19464/20480 Acc:95.039%
+[progress:8.6%]time:8.16s Loss:0.22470 Correct:29213/30720 Acc:95.094%
+[progress:11.5%]time:8.25s Loss:0.20778 Correct:39009/40960 Acc:95.237%
+[progress:14.3%]time:8.18s Loss:0.22975 Correct:48777/51200 Acc:95.268%
+[progress:17.2%]time:8.13s Loss:0.23580 Correct:58496/61440 Acc:95.208%
+[progress:20.1%]time:8.15s Loss:0.20763 Correct:68274/71680 Acc:95.248%
+[progress:22.9%]time:8.16s Loss:0.21776 Correct:78036/81920 Acc:95.259%
+[progress:25.8%]time:8.19s Loss:0.22609 Correct:87792/92160 Acc:95.260%
+[progress:28.7%]time:8.14s Loss:0.20160 Correct:97598/102400 Acc:95.311%
+[progress:31.5%]time:8.19s Loss:0.21830 Correct:107385/112640 Acc:95.335%
+[progress:34.4%]time:8.28s Loss:0.21489 Correct:117166/122880 Acc:95.350%
+[progress:37.2%]time:8.12s Loss:0.19266 Correct:127007/133120 Acc:95.408%
+[progress:40.1%]time:8.23s Loss:0.21370 Correct:136810/143360 Acc:95.431%
+[progress:43.0%]time:8.21s Loss:0.22336 Correct:146584/153600 Acc:95.432%
+[progress:45.8%]time:8.17s Loss:0.21703 Correct:156363/163840 Acc:95.436%
+[progress:48.7%]time:8.14s Loss:0.21589 Correct:166169/174080 Acc:95.456%
+[progress:51.6%]time:8.25s Loss:0.21246 Correct:175956/184320 Acc:95.462%
+[progress:54.4%]time:8.25s Loss:0.20508 Correct:185766/194560 Acc:95.480%
+[progress:57.3%]time:8.26s Loss:0.20810 Correct:195569/204800 Acc:95.493%
+[progress:60.2%]time:8.20s Loss:0.20111 Correct:205387/215040 Acc:95.511%
+[progress:63.0%]time:8.20s Loss:0.21202 Correct:215186/225280 Acc:95.519%
+[progress:65.9%]time:8.19s Loss:0.21192 Correct:224974/235520 Acc:95.522%
+[progress:68.8%]time:8.17s Loss:0.22335 Correct:234751/245760 Acc:95.520%
+[progress:71.6%]time:8.20s Loss:0.21140 Correct:244546/256000 Acc:95.526%
+[progress:74.5%]time:8.20s Loss:0.20070 Correct:254364/266240 Acc:95.539%
+[progress:77.4%]time:8.19s Loss:0.21371 Correct:264174/276480 Acc:95.549%
+[progress:80.2%]time:8.22s Loss:0.22209 Correct:273943/286720 Acc:95.544%
+[progress:83.1%]time:8.18s Loss:0.20169 Correct:283773/296960 Acc:95.559%
+[progress:86.0%]time:8.23s Loss:0.21535 Correct:293545/307200 Acc:95.555%
+[progress:88.8%]time:8.14s Loss:0.20682 Correct:303348/317440 Acc:95.561%
+[progress:91.7%]time:8.20s Loss:0.21127 Correct:313146/327680 Acc:95.565%
+[progress:94.6%]time:8.19s Loss:0.21317 Correct:322966/337920 Acc:95.575%
+[progress:97.4%]time:8.20s Loss:0.21733 Correct:332756/348160 Acc:95.576%
+Testing ...
+[progress:100.0%]time:45.42s Loss:0.16671 Correct:147329/152974 Acc:96.310%
+end
+
+Epoch : 24
+[progress:2.9%]time:9.12s Loss:0.23098 Correct:9764/10240 Acc:95.352%
+[progress:5.7%]time:8.20s Loss:0.20694 Correct:19592/20480 Acc:95.664%
+[progress:8.6%]time:8.12s Loss:0.20964 Correct:29393/30720 Acc:95.680%
+[progress:11.5%]time:8.15s Loss:0.21597 Correct:39173/40960 Acc:95.637%
+[progress:14.3%]time:8.15s Loss:0.19156 Correct:49018/51200 Acc:95.738%
+[progress:17.2%]time:8.21s Loss:0.20684 Correct:58819/61440 Acc:95.734%
+[progress:20.1%]time:8.18s Loss:0.20402 Correct:68637/71680 Acc:95.755%
+[progress:22.9%]time:8.22s Loss:0.22422 Correct:78435/81920 Acc:95.746%
+[progress:25.8%]time:8.22s Loss:0.19717 Correct:88263/92160 Acc:95.771%
+[progress:28.7%]time:8.19s Loss:0.20094 Correct:98084/102400 Acc:95.785%
+[progress:31.5%]time:8.23s Loss:0.20336 Correct:107888/112640 Acc:95.781%
+[progress:34.4%]time:8.16s Loss:0.20964 Correct:117692/122880 Acc:95.778%
+[progress:37.2%]time:8.14s Loss:0.19469 Correct:127529/133120 Acc:95.800%
+[progress:40.1%]time:8.24s Loss:0.18792 Correct:137379/143360 Acc:95.828%
+[progress:43.0%]time:8.19s Loss:0.19562 Correct:147207/153600 Acc:95.838%
+[progress:45.8%]time:8.21s Loss:0.20431 Correct:157017/163840 Acc:95.836%
+[progress:48.7%]time:8.12s Loss:0.20725 Correct:166844/174080 Acc:95.843%
+[progress:51.6%]time:8.25s Loss:0.20425 Correct:176659/184320 Acc:95.844%
+[progress:54.4%]time:8.23s Loss:0.19790 Correct:186490/194560 Acc:95.852%
+[progress:57.3%]time:8.14s Loss:0.21284 Correct:196272/204800 Acc:95.836%
+[progress:60.2%]time:8.20s Loss:0.19744 Correct:206130/215040 Acc:95.857%
+[progress:63.0%]time:8.23s Loss:0.20273 Correct:215943/225280 Acc:95.855%
+[progress:65.9%]time:8.15s Loss:0.21865 Correct:225708/235520 Acc:95.834%
+[progress:68.8%]time:8.13s Loss:0.20295 Correct:235540/245760 Acc:95.841%
+[progress:71.6%]time:8.25s Loss:0.19032 Correct:245391/256000 Acc:95.856%
+[progress:74.5%]time:8.15s Loss:0.19874 Correct:255225/266240 Acc:95.863%
+[progress:77.4%]time:8.22s Loss:0.21005 Correct:265029/276480 Acc:95.858%
+[progress:80.2%]time:8.21s Loss:0.20837 Correct:274838/286720 Acc:95.856%
+[progress:83.1%]time:8.22s Loss:0.20857 Correct:284659/296960 Acc:95.858%
+[progress:86.0%]time:8.19s Loss:0.19552 Correct:294488/307200 Acc:95.862%
+[progress:88.8%]time:8.15s Loss:0.19876 Correct:304333/317440 Acc:95.871%
+[progress:91.7%]time:8.20s Loss:0.20216 Correct:314169/327680 Acc:95.877%
+[progress:94.6%]time:8.19s Loss:0.20362 Correct:324014/337920 Acc:95.885%
+[progress:97.4%]time:8.19s Loss:0.20118 Correct:333829/348160 Acc:95.884%
+Testing ...
+[progress:100.0%]time:45.44s Loss:0.14577 Correct:147976/152974 Acc:96.733%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 25
+[progress:2.9%]time:9.07s Loss:0.19019 Correct:9844/10240 Acc:96.133%
+[progress:5.7%]time:8.22s Loss:0.18926 Correct:19691/20480 Acc:96.147%
+[progress:8.6%]time:8.17s Loss:0.19861 Correct:29504/30720 Acc:96.042%
+[progress:11.5%]time:8.21s Loss:0.19944 Correct:39335/40960 Acc:96.033%
+[progress:14.3%]time:8.18s Loss:0.18206 Correct:49200/51200 Acc:96.094%
+[progress:17.2%]time:8.20s Loss:0.19542 Correct:59046/61440 Acc:96.104%
+[progress:20.1%]time:8.19s Loss:0.19598 Correct:68877/71680 Acc:96.090%
+[progress:22.9%]time:8.18s Loss:0.19146 Correct:78719/81920 Acc:96.093%
+[progress:25.8%]time:8.25s Loss:0.20455 Correct:88544/92160 Acc:96.076%
+[progress:28.7%]time:8.19s Loss:0.20655 Correct:98353/102400 Acc:96.048%
+[progress:31.5%]time:8.26s Loss:0.20524 Correct:108169/112640 Acc:96.031%
+[progress:34.4%]time:8.26s Loss:0.19831 Correct:117984/122880 Acc:96.016%
+[progress:37.2%]time:8.20s Loss:0.20100 Correct:127804/133120 Acc:96.007%
+[progress:40.1%]time:8.19s Loss:0.19614 Correct:137648/143360 Acc:96.016%
+[progress:43.0%]time:8.19s Loss:0.19801 Correct:147493/153600 Acc:96.024%
+[progress:45.8%]time:8.19s Loss:0.19258 Correct:157329/163840 Acc:96.026%
+[progress:48.7%]time:8.27s Loss:0.19393 Correct:167179/174080 Acc:96.036%
+[progress:51.6%]time:8.19s Loss:0.20021 Correct:177012/184320 Acc:96.035%
+[progress:54.4%]time:8.20s Loss:0.20848 Correct:186826/194560 Acc:96.025%
+[progress:57.3%]time:8.17s Loss:0.19315 Correct:196679/204800 Acc:96.035%
+[progress:60.2%]time:8.15s Loss:0.19900 Correct:206530/215040 Acc:96.043%
+[progress:63.0%]time:8.23s Loss:0.19667 Correct:216377/225280 Acc:96.048%
+[progress:65.9%]time:8.19s Loss:0.19943 Correct:226197/235520 Acc:96.042%
+[progress:68.8%]time:8.24s Loss:0.20896 Correct:236018/245760 Acc:96.036%
+[progress:71.6%]time:8.17s Loss:0.17994 Correct:245893/256000 Acc:96.052%
+[progress:74.5%]time:8.19s Loss:0.19290 Correct:255741/266240 Acc:96.057%
+[progress:77.4%]time:8.18s Loss:0.20782 Correct:265555/276480 Acc:96.049%
+[progress:80.2%]time:8.14s Loss:0.18817 Correct:275406/286720 Acc:96.054%
+[progress:83.1%]time:8.19s Loss:0.18490 Correct:285257/296960 Acc:96.059%
+[progress:86.0%]time:8.25s Loss:0.18374 Correct:295126/307200 Acc:96.070%
+[progress:88.8%]time:8.25s Loss:0.19612 Correct:304965/317440 Acc:96.070%
+[progress:91.7%]time:8.13s Loss:0.18944 Correct:314831/327680 Acc:96.079%
+[progress:94.6%]time:8.24s Loss:0.20215 Correct:324656/337920 Acc:96.075%
+[progress:97.4%]time:8.17s Loss:0.20208 Correct:334497/348160 Acc:96.076%
+Testing ...
+[progress:100.0%]time:45.61s Loss:0.14984 Correct:147874/152974 Acc:96.666%
+end
+
+Epoch : 26
+[progress:2.9%]time:8.95s Loss:0.19024 Correct:9869/10240 Acc:96.377%
+[progress:5.7%]time:8.20s Loss:0.18942 Correct:19706/20480 Acc:96.221%
+[progress:8.6%]time:8.16s Loss:0.18836 Correct:29555/30720 Acc:96.208%
+[progress:11.5%]time:8.22s Loss:0.19060 Correct:39416/40960 Acc:96.230%
+[progress:14.3%]time:8.20s Loss:0.18786 Correct:49293/51200 Acc:96.275%
+[progress:17.2%]time:8.20s Loss:0.19285 Correct:59142/61440 Acc:96.260%
+[progress:20.1%]time:8.21s Loss:0.16510 Correct:69041/71680 Acc:96.318%
+[progress:22.9%]time:8.18s Loss:0.19617 Correct:78868/81920 Acc:96.274%
+[progress:25.8%]time:8.18s Loss:0.18904 Correct:88725/92160 Acc:96.273%
+[progress:28.7%]time:8.20s Loss:0.18850 Correct:98578/102400 Acc:96.268%
+[progress:31.5%]time:8.19s Loss:0.18083 Correct:108441/112640 Acc:96.272%
+[progress:34.4%]time:8.25s Loss:0.19591 Correct:118272/122880 Acc:96.250%
+[progress:37.2%]time:8.25s Loss:0.18549 Correct:128165/133120 Acc:96.278%
+[progress:40.1%]time:8.19s Loss:0.19087 Correct:138014/143360 Acc:96.271%
+[progress:43.0%]time:8.29s Loss:0.20581 Correct:147860/153600 Acc:96.263%
+[progress:45.8%]time:8.21s Loss:0.18314 Correct:157741/163840 Acc:96.277%
+[progress:48.7%]time:8.15s Loss:0.19187 Correct:167595/174080 Acc:96.275%
+[progress:51.6%]time:8.21s Loss:0.19723 Correct:177453/184320 Acc:96.274%
+[progress:54.4%]time:8.25s Loss:0.18718 Correct:187307/194560 Acc:96.272%
+[progress:57.3%]time:8.26s Loss:0.19544 Correct:197118/204800 Acc:96.249%
+[progress:60.2%]time:8.25s Loss:0.19121 Correct:206961/215040 Acc:96.243%
+[progress:63.0%]time:8.21s Loss:0.20195 Correct:216800/225280 Acc:96.236%
+[progress:65.9%]time:8.25s Loss:0.19512 Correct:226653/235520 Acc:96.235%
+[progress:68.8%]time:8.14s Loss:0.17473 Correct:236564/245760 Acc:96.258%
+[progress:71.6%]time:8.24s Loss:0.20510 Correct:246375/256000 Acc:96.240%
+[progress:74.5%]time:8.25s Loss:0.18977 Correct:256235/266240 Acc:96.242%
+[progress:77.4%]time:8.20s Loss:0.20123 Correct:266083/276480 Acc:96.240%
+[progress:80.2%]time:8.10s Loss:0.18942 Correct:275941/286720 Acc:96.241%
+[progress:83.1%]time:8.17s Loss:0.17529 Correct:285846/296960 Acc:96.257%
+[progress:86.0%]time:8.27s Loss:0.18090 Correct:295706/307200 Acc:96.258%
+[progress:88.8%]time:8.27s Loss:0.18811 Correct:305560/317440 Acc:96.258%
+[progress:91.7%]time:8.24s Loss:0.19490 Correct:315413/327680 Acc:96.256%
+[progress:94.6%]time:8.20s Loss:0.19824 Correct:325249/337920 Acc:96.250%
+[progress:97.4%]time:8.21s Loss:0.19845 Correct:335083/348160 Acc:96.244%
+Testing ...
+[progress:100.0%]time:45.49s Loss:0.14629 Correct:148025/152974 Acc:96.765%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 27
+[progress:2.9%]time:9.01s Loss:0.19618 Correct:9868/10240 Acc:96.367%
+[progress:5.7%]time:8.18s Loss:0.19163 Correct:19730/20480 Acc:96.338%
+[progress:8.6%]time:8.20s Loss:0.19662 Correct:29579/30720 Acc:96.286%
+[progress:11.5%]time:8.23s Loss:0.17744 Correct:39474/40960 Acc:96.372%
+[progress:14.3%]time:8.18s Loss:0.17865 Correct:49372/51200 Acc:96.430%
+[progress:17.2%]time:8.19s Loss:0.17962 Correct:59245/61440 Acc:96.427%
+[progress:20.1%]time:8.19s Loss:0.18959 Correct:69100/71680 Acc:96.401%
+[progress:22.9%]time:8.19s Loss:0.17483 Correct:78990/81920 Acc:96.423%
+[progress:25.8%]time:8.20s Loss:0.17982 Correct:88865/92160 Acc:96.425%
+[progress:28.7%]time:8.22s Loss:0.20110 Correct:98695/102400 Acc:96.382%
+[progress:31.5%]time:8.16s Loss:0.18387 Correct:108570/112640 Acc:96.387%
+[progress:34.4%]time:8.24s Loss:0.19698 Correct:118413/122880 Acc:96.365%
+[progress:37.2%]time:8.21s Loss:0.17832 Correct:128297/133120 Acc:96.377%
+[progress:40.1%]time:8.19s Loss:0.18980 Correct:138146/143360 Acc:96.363%
+[progress:43.0%]time:8.20s Loss:0.19045 Correct:148016/153600 Acc:96.365%
+[progress:45.8%]time:8.25s Loss:0.19848 Correct:157855/163840 Acc:96.347%
+[progress:48.7%]time:8.27s Loss:0.18674 Correct:167716/174080 Acc:96.344%
+[progress:51.6%]time:8.17s Loss:0.17918 Correct:177602/184320 Acc:96.355%
+[progress:54.4%]time:8.21s Loss:0.18114 Correct:187478/194560 Acc:96.360%
+[progress:57.3%]time:8.24s Loss:0.18554 Correct:197341/204800 Acc:96.358%
+[progress:60.2%]time:8.16s Loss:0.19606 Correct:207199/215040 Acc:96.354%
+[progress:63.0%]time:8.19s Loss:0.18190 Correct:217093/225280 Acc:96.366%
+[progress:65.9%]time:8.24s Loss:0.18430 Correct:226968/235520 Acc:96.369%
+[progress:68.8%]time:8.19s Loss:0.17932 Correct:236848/245760 Acc:96.374%
+[progress:71.6%]time:8.13s Loss:0.18895 Correct:246709/256000 Acc:96.371%
+[progress:74.5%]time:8.19s Loss:0.18029 Correct:256586/266240 Acc:96.374%
+[progress:77.4%]time:8.25s Loss:0.17723 Correct:266478/276480 Acc:96.382%
+[progress:80.2%]time:8.20s Loss:0.18601 Correct:276353/286720 Acc:96.384%
+[progress:83.1%]time:8.19s Loss:0.18191 Correct:286227/296960 Acc:96.386%
+[progress:86.0%]time:8.21s Loss:0.18076 Correct:296118/307200 Acc:96.393%
+[progress:88.8%]time:8.17s Loss:0.18846 Correct:305978/317440 Acc:96.389%
+[progress:91.7%]time:8.18s Loss:0.17911 Correct:315869/327680 Acc:96.396%
+[progress:94.6%]time:8.20s Loss:0.18380 Correct:325761/337920 Acc:96.402%
+[progress:97.4%]time:8.19s Loss:0.17691 Correct:335642/348160 Acc:96.405%
+Testing ...
+[progress:100.0%]time:45.67s Loss:0.13275 Correct:148578/152974 Acc:97.126%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 28
+[progress:2.9%]time:8.99s Loss:0.17793 Correct:9885/10240 Acc:96.533%
+[progress:5.7%]time:8.20s Loss:0.17462 Correct:19775/20480 Acc:96.558%
+[progress:8.6%]time:8.20s Loss:0.16292 Correct:29699/30720 Acc:96.676%
+[progress:11.5%]time:8.20s Loss:0.17971 Correct:39587/40960 Acc:96.648%
+[progress:14.3%]time:8.21s Loss:0.17652 Correct:49474/51200 Acc:96.629%
+[progress:17.2%]time:8.19s Loss:0.17055 Correct:59376/61440 Acc:96.641%
+[progress:20.1%]time:8.20s Loss:0.16599 Correct:69268/71680 Acc:96.635%
+[progress:22.9%]time:8.18s Loss:0.18528 Correct:79127/81920 Acc:96.591%
+[progress:25.8%]time:8.20s Loss:0.17758 Correct:89014/92160 Acc:96.586%
+[progress:28.7%]time:8.18s Loss:0.18283 Correct:98904/102400 Acc:96.586%
+[progress:31.5%]time:8.21s Loss:0.18027 Correct:108782/112640 Acc:96.575%
+[progress:34.4%]time:8.21s Loss:0.18366 Correct:118644/122880 Acc:96.553%
+[progress:37.2%]time:8.23s Loss:0.18454 Correct:128527/133120 Acc:96.550%
+[progress:40.1%]time:8.25s Loss:0.16952 Correct:138415/143360 Acc:96.551%
+[progress:43.0%]time:8.19s Loss:0.16561 Correct:148324/153600 Acc:96.565%
+[progress:45.8%]time:8.14s Loss:0.17522 Correct:158225/163840 Acc:96.573%
+[progress:48.7%]time:8.18s Loss:0.18141 Correct:168115/174080 Acc:96.573%
+[progress:51.6%]time:8.18s Loss:0.18490 Correct:177987/184320 Acc:96.564%
+[progress:54.4%]time:8.16s Loss:0.17724 Correct:187885/194560 Acc:96.569%
+[progress:57.3%]time:8.25s Loss:0.17595 Correct:197776/204800 Acc:96.570%
+[progress:60.2%]time:8.22s Loss:0.17062 Correct:207665/215040 Acc:96.570%
+[progress:63.0%]time:8.16s Loss:0.18536 Correct:217536/225280 Acc:96.562%
+[progress:65.9%]time:8.20s Loss:0.16774 Correct:227446/235520 Acc:96.572%
+[progress:68.8%]time:8.25s Loss:0.18460 Correct:237315/245760 Acc:96.564%
+[progress:71.6%]time:8.25s Loss:0.18714 Correct:247191/256000 Acc:96.559%
+[progress:74.5%]time:8.17s Loss:0.18392 Correct:257061/266240 Acc:96.552%
+[progress:77.4%]time:8.22s Loss:0.17600 Correct:266967/276480 Acc:96.559%
+[progress:80.2%]time:8.24s Loss:0.18665 Correct:276833/286720 Acc:96.552%
+[progress:83.1%]time:8.17s Loss:0.19081 Correct:286680/296960 Acc:96.538%
+[progress:86.0%]time:8.22s Loss:0.18821 Correct:296557/307200 Acc:96.535%
+[progress:88.8%]time:8.23s Loss:0.17999 Correct:306449/317440 Acc:96.538%
+[progress:91.7%]time:8.20s Loss:0.18943 Correct:316307/327680 Acc:96.529%
+[progress:94.6%]time:8.13s Loss:0.18399 Correct:326180/337920 Acc:96.526%
+[progress:97.4%]time:8.25s Loss:0.18124 Correct:336066/348160 Acc:96.526%
+Testing ...
+[progress:100.0%]time:45.55s Loss:0.15218 Correct:147813/152974 Acc:96.626%
+end
+
+Epoch : 29
+[progress:2.9%]time:9.08s Loss:0.17655 Correct:9885/10240 Acc:96.533%
+[progress:5.7%]time:8.16s Loss:0.18578 Correct:19751/20480 Acc:96.440%
+[progress:8.6%]time:8.09s Loss:0.18638 Correct:29629/30720 Acc:96.449%
+[progress:11.5%]time:8.19s Loss:0.17977 Correct:39528/40960 Acc:96.504%
+[progress:14.3%]time:8.20s Loss:0.17970 Correct:49412/51200 Acc:96.508%
+[progress:17.2%]time:8.19s Loss:0.17687 Correct:59281/61440 Acc:96.486%
+[progress:20.1%]time:8.23s Loss:0.18876 Correct:69169/71680 Acc:96.497%
+[progress:22.9%]time:8.17s Loss:0.18979 Correct:79046/81920 Acc:96.492%
+[progress:25.8%]time:8.17s Loss:0.16831 Correct:88955/92160 Acc:96.522%
+[progress:28.7%]time:8.19s Loss:0.17927 Correct:98861/102400 Acc:96.544%
+[progress:31.5%]time:8.24s Loss:0.17202 Correct:108764/112640 Acc:96.559%
+[progress:34.4%]time:8.24s Loss:0.17238 Correct:118653/122880 Acc:96.560%
+[progress:37.2%]time:8.18s Loss:0.16951 Correct:128556/133120 Acc:96.572%
+[progress:40.1%]time:8.19s Loss:0.17171 Correct:138459/143360 Acc:96.581%
+[progress:43.0%]time:8.12s Loss:0.16958 Correct:148367/153600 Acc:96.593%
+[progress:45.8%]time:8.18s Loss:0.17517 Correct:158291/163840 Acc:96.613%
+[progress:48.7%]time:8.19s Loss:0.17988 Correct:168165/174080 Acc:96.602%
+[progress:51.6%]time:8.23s Loss:0.17412 Correct:178059/184320 Acc:96.603%
+[progress:54.4%]time:8.14s Loss:0.17295 Correct:187946/194560 Acc:96.601%
+[progress:57.3%]time:8.25s Loss:0.16137 Correct:197868/204800 Acc:96.615%
+[progress:60.2%]time:8.23s Loss:0.16992 Correct:207771/215040 Acc:96.620%
+[progress:63.0%]time:8.10s Loss:0.16562 Correct:217689/225280 Acc:96.630%
+[progress:65.9%]time:8.20s Loss:0.17022 Correct:227588/235520 Acc:96.632%
+[progress:68.8%]time:8.20s Loss:0.18432 Correct:237458/245760 Acc:96.622%
+[progress:71.6%]time:8.24s Loss:0.17755 Correct:247356/256000 Acc:96.623%
+[progress:74.5%]time:8.13s Loss:0.17780 Correct:257261/266240 Acc:96.627%
+[progress:77.4%]time:8.26s Loss:0.16850 Correct:267162/276480 Acc:96.630%
+[progress:80.2%]time:8.23s Loss:0.18577 Correct:277038/286720 Acc:96.623%
+[progress:83.1%]time:8.14s Loss:0.17237 Correct:286930/296960 Acc:96.622%
+[progress:86.0%]time:8.20s Loss:0.16876 Correct:296836/307200 Acc:96.626%
+[progress:88.8%]time:8.20s Loss:0.17802 Correct:306715/317440 Acc:96.621%
+[progress:91.7%]time:8.20s Loss:0.18233 Correct:316616/327680 Acc:96.624%
+[progress:94.6%]time:8.14s Loss:0.16415 Correct:326537/337920 Acc:96.631%
+[progress:97.4%]time:8.24s Loss:0.17494 Correct:336417/348160 Acc:96.627%
+Testing ...
+[progress:100.0%]time:45.36s Loss:0.17815 Correct:146974/152974 Acc:96.078%
+end
+
+Epoch : 30
+[progress:2.9%]time:9.02s Loss:0.18241 Correct:9884/10240 Acc:96.523%
+[progress:5.7%]time:8.20s Loss:0.17666 Correct:19774/20480 Acc:96.553%
+[progress:8.6%]time:8.19s Loss:0.17925 Correct:29649/30720 Acc:96.514%
+[progress:11.5%]time:8.19s Loss:0.18493 Correct:39547/40960 Acc:96.550%
+[progress:14.3%]time:8.20s Loss:0.18023 Correct:49427/51200 Acc:96.537%
+[progress:17.2%]time:8.21s Loss:0.18026 Correct:59297/61440 Acc:96.512%
+[progress:20.1%]time:8.19s Loss:0.17729 Correct:69191/71680 Acc:96.528%
+[progress:22.9%]time:8.16s Loss:0.15665 Correct:79126/81920 Acc:96.589%
+[progress:25.8%]time:8.20s Loss:0.18217 Correct:89015/92160 Acc:96.587%
+[progress:28.7%]time:8.20s Loss:0.17268 Correct:98916/102400 Acc:96.598%
+[progress:31.5%]time:8.20s Loss:0.16806 Correct:108857/112640 Acc:96.642%
+[progress:34.4%]time:8.15s Loss:0.17516 Correct:118764/122880 Acc:96.650%
+[progress:37.2%]time:8.25s Loss:0.17464 Correct:128690/133120 Acc:96.672%
+[progress:40.1%]time:8.19s Loss:0.17874 Correct:138591/143360 Acc:96.673%
+[progress:43.0%]time:8.15s Loss:0.17761 Correct:148471/153600 Acc:96.661%
+[progress:45.8%]time:8.22s Loss:0.17280 Correct:158379/163840 Acc:96.667%
+[progress:48.7%]time:8.21s Loss:0.16769 Correct:168267/174080 Acc:96.661%
+[progress:51.6%]time:8.19s Loss:0.17798 Correct:178166/184320 Acc:96.661%
+[progress:54.4%]time:8.20s Loss:0.17369 Correct:188042/194560 Acc:96.650%
+[progress:57.3%]time:8.20s Loss:0.18078 Correct:197932/204800 Acc:96.646%
+[progress:60.2%]time:8.25s Loss:0.18492 Correct:207809/215040 Acc:96.637%
+[progress:63.0%]time:8.19s Loss:0.16945 Correct:217721/225280 Acc:96.645%
+[progress:65.9%]time:8.20s Loss:0.17924 Correct:227613/235520 Acc:96.643%
+[progress:68.8%]time:8.21s Loss:0.17797 Correct:237504/245760 Acc:96.641%
+[progress:71.6%]time:8.23s Loss:0.17730 Correct:247370/256000 Acc:96.629%
+[progress:74.5%]time:8.13s Loss:0.18951 Correct:257232/266240 Acc:96.617%
+[progress:77.4%]time:8.20s Loss:0.17733 Correct:267117/276480 Acc:96.613%
+[progress:80.2%]time:8.36s Loss:0.17450 Correct:277008/286720 Acc:96.613%
+[progress:83.1%]time:8.17s Loss:0.17183 Correct:286924/296960 Acc:96.620%
+[progress:86.0%]time:8.20s Loss:0.17473 Correct:296810/307200 Acc:96.618%
+[progress:88.8%]time:8.24s Loss:0.16286 Correct:306718/317440 Acc:96.622%
+[progress:91.7%]time:8.20s Loss:0.17119 Correct:316622/327680 Acc:96.625%
+[progress:94.6%]time:8.15s Loss:0.17103 Correct:326540/337920 Acc:96.632%
+[progress:97.4%]time:8.23s Loss:0.18316 Correct:336422/348160 Acc:96.629%
+Testing ...
+[progress:100.0%]time:45.53s Loss:0.13965 Correct:148286/152974 Acc:96.935%
+end
+
+Epoch : 31
+[progress:2.9%]time:8.98s Loss:0.19448 Correct:9835/10240 Acc:96.045%
+[progress:5.7%]time:8.19s Loss:0.17570 Correct:19748/20480 Acc:96.426%
+[progress:8.6%]time:8.19s Loss:0.18435 Correct:29627/30720 Acc:96.442%
+[progress:11.5%]time:8.23s Loss:0.17223 Correct:39522/40960 Acc:96.489%
+[progress:14.3%]time:8.21s Loss:0.16866 Correct:49450/51200 Acc:96.582%
+[progress:17.2%]time:8.15s Loss:0.16243 Correct:59369/61440 Acc:96.629%
+[progress:20.1%]time:8.24s Loss:0.17988 Correct:69251/71680 Acc:96.611%
+[progress:22.9%]time:8.13s Loss:0.15950 Correct:79189/81920 Acc:96.666%
+[progress:25.8%]time:8.18s Loss:0.17440 Correct:89072/92160 Acc:96.649%
+[progress:28.7%]time:8.26s Loss:0.17378 Correct:98987/102400 Acc:96.667%
+[progress:31.5%]time:8.19s Loss:0.16137 Correct:108910/112640 Acc:96.689%
+[progress:34.4%]time:8.14s Loss:0.16100 Correct:118841/122880 Acc:96.713%
+[progress:37.2%]time:8.29s Loss:0.16958 Correct:128752/133120 Acc:96.719%
+[progress:40.1%]time:8.20s Loss:0.15758 Correct:138673/143360 Acc:96.731%
+[progress:43.0%]time:8.09s Loss:0.16617 Correct:148594/153600 Acc:96.741%
+[progress:45.8%]time:8.21s Loss:0.17989 Correct:158475/163840 Acc:96.725%
+[progress:48.7%]time:8.24s Loss:0.17995 Correct:168372/174080 Acc:96.721%
+[progress:51.6%]time:8.19s Loss:0.18052 Correct:178253/184320 Acc:96.708%
+[progress:54.4%]time:8.12s Loss:0.17109 Correct:188158/194560 Acc:96.709%
+[progress:57.3%]time:8.22s Loss:0.16654 Correct:198081/204800 Acc:96.719%
+[progress:60.2%]time:8.28s Loss:0.16244 Correct:207998/215040 Acc:96.725%
+[progress:63.0%]time:8.13s Loss:0.16339 Correct:217922/225280 Acc:96.734%
+[progress:65.9%]time:8.16s Loss:0.17437 Correct:227805/235520 Acc:96.724%
+[progress:68.8%]time:8.25s Loss:0.16776 Correct:237719/245760 Acc:96.728%
+[progress:71.6%]time:8.19s Loss:0.16854 Correct:247625/256000 Acc:96.729%
+[progress:74.5%]time:8.15s Loss:0.16281 Correct:257547/266240 Acc:96.735%
+[progress:77.4%]time:8.24s Loss:0.17691 Correct:267446/276480 Acc:96.732%
+[progress:80.2%]time:8.18s Loss:0.17815 Correct:277327/286720 Acc:96.724%
+[progress:83.1%]time:8.16s Loss:0.17718 Correct:287197/296960 Acc:96.712%
+[progress:86.0%]time:8.22s Loss:0.17188 Correct:297096/307200 Acc:96.711%
+[progress:88.8%]time:8.23s Loss:0.17076 Correct:306997/317440 Acc:96.710%
+[progress:91.7%]time:8.19s Loss:0.17450 Correct:316884/327680 Acc:96.705%
+[progress:94.6%]time:8.13s Loss:0.17168 Correct:326790/337920 Acc:96.706%
+[progress:97.4%]time:8.20s Loss:0.17385 Correct:336688/348160 Acc:96.705%
+Testing ...
+[progress:100.0%]time:45.46s Loss:0.15905 Correct:147598/152974 Acc:96.486%
+end
+
+Epoch : 32
+[progress:2.9%]time:9.01s Loss:0.17919 Correct:9877/10240 Acc:96.455%
+[progress:5.7%]time:8.18s Loss:0.17277 Correct:19789/20480 Acc:96.626%
+[progress:8.6%]time:8.15s Loss:0.16142 Correct:29727/30720 Acc:96.768%
+[progress:11.5%]time:8.13s Loss:0.16954 Correct:39651/40960 Acc:96.804%
+[progress:14.3%]time:8.14s Loss:0.16725 Correct:49584/51200 Acc:96.844%
+[progress:17.2%]time:8.24s Loss:0.17702 Correct:59471/61440 Acc:96.795%
+[progress:20.1%]time:8.17s Loss:0.15554 Correct:69401/71680 Acc:96.821%
+[progress:22.9%]time:8.17s Loss:0.17612 Correct:79282/81920 Acc:96.780%
+[progress:25.8%]time:8.26s Loss:0.16738 Correct:89186/92160 Acc:96.773%
+[progress:28.7%]time:8.19s Loss:0.18136 Correct:99057/102400 Acc:96.735%
+[progress:31.5%]time:8.19s Loss:0.15891 Correct:108994/112640 Acc:96.763%
+[progress:34.4%]time:8.14s Loss:0.16902 Correct:118901/122880 Acc:96.762%
+[progress:37.2%]time:8.20s Loss:0.17603 Correct:128818/133120 Acc:96.768%
+[progress:40.1%]time:8.22s Loss:0.17245 Correct:138730/143360 Acc:96.770%
+[progress:43.0%]time:8.16s Loss:0.17831 Correct:148620/153600 Acc:96.758%
+[progress:45.8%]time:8.25s Loss:0.15559 Correct:158569/163840 Acc:96.783%
+[progress:48.7%]time:8.20s Loss:0.18103 Correct:168440/174080 Acc:96.760%
+[progress:51.6%]time:8.19s Loss:0.18165 Correct:178319/184320 Acc:96.744%
+[progress:54.4%]time:8.13s Loss:0.16994 Correct:188237/194560 Acc:96.750%
+[progress:57.3%]time:8.19s Loss:0.16732 Correct:198156/204800 Acc:96.756%
+[progress:60.2%]time:8.30s Loss:0.16486 Correct:208080/215040 Acc:96.763%
+[progress:63.0%]time:8.10s Loss:0.16696 Correct:217992/225280 Acc:96.765%
+[progress:65.9%]time:8.20s Loss:0.16930 Correct:227903/235520 Acc:96.766%
+[progress:68.8%]time:8.25s Loss:0.16143 Correct:237821/245760 Acc:96.770%
+[progress:71.6%]time:8.19s Loss:0.17646 Correct:247736/256000 Acc:96.772%
+[progress:74.5%]time:8.14s Loss:0.16695 Correct:257650/266240 Acc:96.774%
+[progress:77.4%]time:8.19s Loss:0.16301 Correct:267584/276480 Acc:96.782%
+[progress:80.2%]time:8.24s Loss:0.16405 Correct:277509/286720 Acc:96.787%
+[progress:83.1%]time:8.14s Loss:0.17392 Correct:287402/296960 Acc:96.781%
+[progress:86.0%]time:8.21s Loss:0.17958 Correct:297286/307200 Acc:96.773%
+[progress:88.8%]time:8.21s Loss:0.17333 Correct:307185/317440 Acc:96.769%
+[progress:91.7%]time:8.15s Loss:0.17259 Correct:317085/327680 Acc:96.767%
+[progress:94.6%]time:8.20s Loss:0.16771 Correct:326986/337920 Acc:96.764%
+[progress:97.4%]time:8.18s Loss:0.17284 Correct:336893/348160 Acc:96.764%
+Testing ...
+[progress:100.0%]time:45.48s Loss:0.13562 Correct:148445/152974 Acc:97.039%
+end
+
+Epoch : 33
+[progress:2.9%]time:9.02s Loss:0.16275 Correct:9922/10240 Acc:96.895%
+[progress:5.7%]time:8.15s Loss:0.18772 Correct:19782/20480 Acc:96.592%
+[progress:8.6%]time:8.18s Loss:0.17296 Correct:29708/30720 Acc:96.706%
+[progress:11.5%]time:8.20s Loss:0.16858 Correct:39624/40960 Acc:96.738%
+[progress:14.3%]time:8.19s Loss:0.16356 Correct:49539/51200 Acc:96.756%
+[progress:17.2%]time:8.26s Loss:0.16428 Correct:59453/61440 Acc:96.766%
+[progress:20.1%]time:8.19s Loss:0.16735 Correct:69373/71680 Acc:96.782%
+[progress:22.9%]time:8.12s Loss:0.17307 Correct:79274/81920 Acc:96.770%
+[progress:25.8%]time:8.21s Loss:0.16705 Correct:89192/92160 Acc:96.780%
+[progress:28.7%]time:8.20s Loss:0.16860 Correct:99080/102400 Acc:96.758%
+[progress:31.5%]time:8.24s Loss:0.16493 Correct:109000/112640 Acc:96.768%
+[progress:34.4%]time:8.15s Loss:0.17218 Correct:118901/122880 Acc:96.762%
+[progress:37.2%]time:8.19s Loss:0.16125 Correct:128852/133120 Acc:96.794%
+[progress:40.1%]time:8.29s Loss:0.15893 Correct:138791/143360 Acc:96.813%
+[progress:43.0%]time:8.15s Loss:0.16708 Correct:148706/153600 Acc:96.814%
+[progress:45.8%]time:8.19s Loss:0.16520 Correct:158638/163840 Acc:96.825%
+[progress:48.7%]time:8.19s Loss:0.16934 Correct:168550/174080 Acc:96.823%
+[progress:51.6%]time:8.19s Loss:0.16808 Correct:178473/184320 Acc:96.828%
+[progress:54.4%]time:8.19s Loss:0.16404 Correct:188397/194560 Acc:96.832%
+[progress:57.3%]time:8.17s Loss:0.17362 Correct:198298/204800 Acc:96.825%
+[progress:60.2%]time:8.19s Loss:0.16288 Correct:208221/215040 Acc:96.829%
+[progress:63.0%]time:8.18s Loss:0.17420 Correct:218120/225280 Acc:96.822%
+[progress:65.9%]time:8.18s Loss:0.17001 Correct:228011/235520 Acc:96.812%
+[progress:68.8%]time:8.24s Loss:0.16997 Correct:237944/245760 Acc:96.820%
+[progress:71.6%]time:8.21s Loss:0.16547 Correct:247838/256000 Acc:96.812%
+[progress:74.5%]time:8.17s Loss:0.16316 Correct:257775/266240 Acc:96.821%
+[progress:77.4%]time:8.17s Loss:0.16865 Correct:267667/276480 Acc:96.812%
+[progress:80.2%]time:8.16s Loss:0.16817 Correct:277581/286720 Acc:96.813%
+[progress:83.1%]time:8.22s Loss:0.17783 Correct:287475/296960 Acc:96.806%
+[progress:86.0%]time:8.19s Loss:0.17122 Correct:297377/307200 Acc:96.802%
+[progress:88.8%]time:8.22s Loss:0.17165 Correct:307282/317440 Acc:96.800%
+[progress:91.7%]time:8.20s Loss:0.17932 Correct:317190/327680 Acc:96.799%
+[progress:94.6%]time:8.12s Loss:0.16057 Correct:327132/337920 Acc:96.808%
+[progress:97.4%]time:8.21s Loss:0.17462 Correct:337032/348160 Acc:96.804%
+Testing ...
+[progress:100.0%]time:45.54s Loss:0.14146 Correct:148175/152974 Acc:96.863%
+end
+
+Epoch : 34
+[progress:2.9%]time:9.02s Loss:0.17986 Correct:9880/10240 Acc:96.484%
+[progress:5.7%]time:8.18s Loss:0.18396 Correct:19742/20480 Acc:96.396%
+[progress:8.6%]time:8.17s Loss:0.17561 Correct:29643/30720 Acc:96.494%
+[progress:11.5%]time:8.19s Loss:0.16114 Correct:39582/40960 Acc:96.636%
+[progress:14.3%]time:8.08s Loss:0.17695 Correct:49476/51200 Acc:96.633%
+[progress:17.2%]time:8.14s Loss:0.17115 Correct:59392/61440 Acc:96.667%
+[progress:20.1%]time:8.29s Loss:0.19125 Correct:69253/71680 Acc:96.614%
+[progress:22.9%]time:8.14s Loss:0.17111 Correct:79159/81920 Acc:96.630%
+[progress:25.8%]time:8.16s Loss:0.17521 Correct:89059/92160 Acc:96.635%
+[progress:28.7%]time:8.22s Loss:0.16515 Correct:98982/102400 Acc:96.662%
+[progress:31.5%]time:8.14s Loss:0.18171 Correct:108878/112640 Acc:96.660%
+[progress:34.4%]time:8.19s Loss:0.16786 Correct:118798/122880 Acc:96.678%
+[progress:37.2%]time:8.19s Loss:0.16021 Correct:128712/133120 Acc:96.689%
+[progress:40.1%]time:8.30s Loss:0.17162 Correct:138605/143360 Acc:96.683%
+[progress:43.0%]time:8.24s Loss:0.16494 Correct:148531/153600 Acc:96.700%
+[progress:45.8%]time:8.21s Loss:0.17509 Correct:158424/163840 Acc:96.694%
+[progress:48.7%]time:8.20s Loss:0.17168 Correct:168329/174080 Acc:96.696%
+[progress:51.6%]time:8.20s Loss:0.16927 Correct:178243/184320 Acc:96.703%
+[progress:54.4%]time:8.15s Loss:0.16850 Correct:188162/194560 Acc:96.712%
+[progress:57.3%]time:8.21s Loss:0.17543 Correct:198065/204800 Acc:96.711%
+[progress:60.2%]time:8.19s Loss:0.16706 Correct:207962/215040 Acc:96.709%
+[progress:63.0%]time:8.21s Loss:0.16459 Correct:217887/225280 Acc:96.718%
+[progress:65.9%]time:8.20s Loss:0.15975 Correct:227808/235520 Acc:96.726%
+[progress:68.8%]time:8.19s Loss:0.17353 Correct:237723/245760 Acc:96.730%
+[progress:71.6%]time:8.20s Loss:0.16910 Correct:247632/256000 Acc:96.731%
+[progress:74.5%]time:8.14s Loss:0.17184 Correct:257530/266240 Acc:96.729%
+[progress:77.4%]time:8.21s Loss:0.17066 Correct:267431/276480 Acc:96.727%
+[progress:80.2%]time:8.22s Loss:0.16523 Correct:277365/286720 Acc:96.737%
+[progress:83.1%]time:8.21s Loss:0.17503 Correct:287272/296960 Acc:96.738%
+[progress:86.0%]time:8.22s Loss:0.18692 Correct:297150/307200 Acc:96.729%
+[progress:88.8%]time:8.19s Loss:0.17619 Correct:307025/317440 Acc:96.719%
+[progress:91.7%]time:8.19s Loss:0.15692 Correct:316975/327680 Acc:96.733%
+[progress:94.6%]time:8.18s Loss:0.16036 Correct:326897/337920 Acc:96.738%
+[progress:97.4%]time:8.20s Loss:0.15084 Correct:336863/348160 Acc:96.755%
+Testing ...
+[progress:100.0%]time:45.59s Loss:0.13205 Correct:148543/152974 Acc:97.103%
+end
+
+Epoch : 35
+[progress:2.9%]time:9.04s Loss:0.17748 Correct:9881/10240 Acc:96.494%
+[progress:5.7%]time:8.21s Loss:0.16543 Correct:19796/20480 Acc:96.660%
+[progress:8.6%]time:8.19s Loss:0.16294 Correct:29720/30720 Acc:96.745%
+[progress:11.5%]time:8.25s Loss:0.16990 Correct:39620/40960 Acc:96.729%
+[progress:14.3%]time:8.13s Loss:0.17041 Correct:49539/51200 Acc:96.756%
+[progress:17.2%]time:8.25s Loss:0.17089 Correct:59466/61440 Acc:96.787%
+[progress:20.1%]time:8.34s Loss:0.17678 Correct:69354/71680 Acc:96.755%
+[progress:22.9%]time:8.17s Loss:0.16360 Correct:79287/81920 Acc:96.786%
+[progress:25.8%]time:8.21s Loss:0.16216 Correct:89216/92160 Acc:96.806%
+[progress:28.7%]time:8.20s Loss:0.16799 Correct:99137/102400 Acc:96.813%
+[progress:31.5%]time:8.20s Loss:0.16566 Correct:109054/112640 Acc:96.816%
+[progress:34.4%]time:8.19s Loss:0.16098 Correct:118979/122880 Acc:96.825%
+[progress:37.2%]time:8.19s Loss:0.17673 Correct:128881/133120 Acc:96.816%
+[progress:40.1%]time:8.25s Loss:0.16802 Correct:138801/143360 Acc:96.820%
+[progress:43.0%]time:8.19s Loss:0.17246 Correct:148711/153600 Acc:96.817%
+[progress:45.8%]time:8.20s Loss:0.17374 Correct:158621/163840 Acc:96.815%
+[progress:48.7%]time:8.21s Loss:0.16529 Correct:168540/174080 Acc:96.818%
+[progress:51.6%]time:8.18s Loss:0.17293 Correct:178426/184320 Acc:96.802%
+[progress:54.4%]time:8.17s Loss:0.15830 Correct:188366/194560 Acc:96.816%
+[progress:57.3%]time:8.21s Loss:0.16693 Correct:198293/204800 Acc:96.823%
+[progress:60.2%]time:8.25s Loss:0.16756 Correct:208217/215040 Acc:96.827%
+[progress:63.0%]time:8.27s Loss:0.16862 Correct:218145/225280 Acc:96.833%
+[progress:65.9%]time:8.25s Loss:0.16136 Correct:228071/235520 Acc:96.837%
+[progress:68.8%]time:8.15s Loss:0.16820 Correct:237983/245760 Acc:96.836%
+[progress:71.6%]time:8.22s Loss:0.16452 Correct:247925/256000 Acc:96.846%
+[progress:74.5%]time:8.16s Loss:0.16295 Correct:257861/266240 Acc:96.853%
+[progress:77.4%]time:8.20s Loss:0.16309 Correct:267784/276480 Acc:96.855%
+[progress:80.2%]time:8.24s Loss:0.17516 Correct:277695/286720 Acc:96.852%
+[progress:83.1%]time:8.29s Loss:0.17041 Correct:287605/296960 Acc:96.850%
+[progress:86.0%]time:8.23s Loss:0.16807 Correct:297523/307200 Acc:96.850%
+[progress:88.8%]time:8.22s Loss:0.18142 Correct:307413/317440 Acc:96.841%
+[progress:91.7%]time:8.23s Loss:0.17302 Correct:317324/327680 Acc:96.840%
+[progress:94.6%]time:8.19s Loss:0.17213 Correct:327230/337920 Acc:96.837%
+[progress:97.4%]time:8.14s Loss:0.17614 Correct:337098/348160 Acc:96.823%
+Testing ...
+[progress:100.0%]time:45.43s Loss:0.12805 Correct:148705/152974 Acc:97.209%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 36
+[progress:2.9%]time:9.00s Loss:0.17559 Correct:9883/10240 Acc:96.514%
+[progress:5.7%]time:8.19s Loss:0.16714 Correct:19796/20480 Acc:96.660%
+[progress:8.6%]time:8.18s Loss:0.16920 Correct:29727/30720 Acc:96.768%
+[progress:11.5%]time:8.18s Loss:0.15912 Correct:39667/40960 Acc:96.843%
+[progress:14.3%]time:8.17s Loss:0.16724 Correct:49568/51200 Acc:96.812%
+[progress:17.2%]time:8.08s Loss:0.16445 Correct:59495/61440 Acc:96.834%
+[progress:20.1%]time:8.23s Loss:0.16325 Correct:69428/71680 Acc:96.858%
+[progress:22.9%]time:8.19s Loss:0.17921 Correct:79313/81920 Acc:96.818%
+[progress:25.8%]time:8.13s Loss:0.16807 Correct:89210/92160 Acc:96.799%
+[progress:28.7%]time:8.20s Loss:0.16988 Correct:99138/102400 Acc:96.814%
+[progress:31.5%]time:8.19s Loss:0.17262 Correct:109040/112640 Acc:96.804%
+[progress:34.4%]time:8.26s Loss:0.16652 Correct:118973/122880 Acc:96.820%
+[progress:37.2%]time:8.19s Loss:0.16257 Correct:128897/133120 Acc:96.828%
+[progress:40.1%]time:8.16s Loss:0.16998 Correct:138815/143360 Acc:96.830%
+[progress:43.0%]time:8.27s Loss:0.17566 Correct:148701/153600 Acc:96.811%
+[progress:45.8%]time:8.14s Loss:0.17496 Correct:158608/163840 Acc:96.807%
+[progress:48.7%]time:8.20s Loss:0.16842 Correct:168511/174080 Acc:96.801%
+[progress:51.6%]time:8.19s Loss:0.16083 Correct:178429/184320 Acc:96.804%
+[progress:54.4%]time:8.24s Loss:0.16943 Correct:188332/194560 Acc:96.799%
+[progress:57.3%]time:8.14s Loss:0.15706 Correct:198270/204800 Acc:96.812%
+[progress:60.2%]time:8.16s Loss:0.16816 Correct:208182/215040 Acc:96.811%
+[progress:63.0%]time:8.28s Loss:0.17391 Correct:218072/225280 Acc:96.800%
+[progress:65.9%]time:8.14s Loss:0.16701 Correct:227989/235520 Acc:96.802%
+[progress:68.8%]time:8.20s Loss:0.16722 Correct:237907/245760 Acc:96.805%
+[progress:71.6%]time:8.20s Loss:0.17857 Correct:247809/256000 Acc:96.800%
+[progress:74.5%]time:8.19s Loss:0.16029 Correct:257731/266240 Acc:96.804%
+[progress:77.4%]time:8.14s Loss:0.15989 Correct:267661/276480 Acc:96.810%
+[progress:80.2%]time:8.24s Loss:0.16755 Correct:277591/286720 Acc:96.816%
+[progress:83.1%]time:8.29s Loss:0.16421 Correct:287509/296960 Acc:96.817%
+[progress:86.0%]time:8.24s Loss:0.16211 Correct:297444/307200 Acc:96.824%
+[progress:88.8%]time:8.20s Loss:0.16623 Correct:307366/317440 Acc:96.826%
+[progress:91.7%]time:8.19s Loss:0.16970 Correct:317274/327680 Acc:96.824%
+[progress:94.6%]time:8.19s Loss:0.16467 Correct:327199/337920 Acc:96.827%
+[progress:97.4%]time:8.19s Loss:0.16614 Correct:337116/348160 Acc:96.828%
+Testing ...
+[progress:100.0%]time:45.39s Loss:0.12934 Correct:148513/152974 Acc:97.084%
+end
+
+Epoch : 37
+[progress:2.9%]time:9.07s Loss:0.17451 Correct:9879/10240 Acc:96.475%
+[progress:5.7%]time:8.17s Loss:0.18111 Correct:19761/20480 Acc:96.489%
+[progress:8.6%]time:8.20s Loss:0.17025 Correct:29645/30720 Acc:96.501%
+[progress:11.5%]time:8.19s Loss:0.15762 Correct:39585/40960 Acc:96.643%
+[progress:14.3%]time:8.20s Loss:0.16514 Correct:49530/51200 Acc:96.738%
+[progress:17.2%]time:8.19s Loss:0.17176 Correct:59418/61440 Acc:96.709%
+[progress:20.1%]time:8.20s Loss:0.16683 Correct:69327/71680 Acc:96.717%
+[progress:22.9%]time:8.21s Loss:0.17042 Correct:79229/81920 Acc:96.715%
+[progress:25.8%]time:8.17s Loss:0.17220 Correct:89147/92160 Acc:96.731%
+[progress:28.7%]time:8.22s Loss:0.16755 Correct:99056/102400 Acc:96.734%
+[progress:31.5%]time:8.19s Loss:0.15824 Correct:108982/112640 Acc:96.752%
+[progress:34.4%]time:8.25s Loss:0.16509 Correct:118920/122880 Acc:96.777%
+[progress:37.2%]time:8.14s Loss:0.16611 Correct:128846/133120 Acc:96.789%
+[progress:40.1%]time:8.29s Loss:0.16671 Correct:138764/143360 Acc:96.794%
+[progress:43.0%]time:8.21s Loss:0.17176 Correct:148675/153600 Acc:96.794%
+[progress:45.8%]time:8.19s Loss:0.16556 Correct:158593/163840 Acc:96.797%
+[progress:48.7%]time:8.25s Loss:0.15900 Correct:168519/174080 Acc:96.805%
+[progress:51.6%]time:8.22s Loss:0.17401 Correct:178405/184320 Acc:96.791%
+[progress:54.4%]time:8.21s Loss:0.16667 Correct:188324/194560 Acc:96.795%
+[progress:57.3%]time:8.18s Loss:0.18014 Correct:198205/204800 Acc:96.780%
+[progress:60.2%]time:8.20s Loss:0.17889 Correct:208098/215040 Acc:96.772%
+[progress:63.0%]time:8.22s Loss:0.16941 Correct:218008/225280 Acc:96.772%
+[progress:65.9%]time:8.16s Loss:0.16877 Correct:227925/235520 Acc:96.775%
+[progress:68.8%]time:8.25s Loss:0.16806 Correct:237851/245760 Acc:96.782%
+[progress:71.6%]time:8.21s Loss:0.17296 Correct:247745/256000 Acc:96.775%
+[progress:74.5%]time:8.25s Loss:0.17724 Correct:257636/266240 Acc:96.768%
+[progress:77.4%]time:8.20s Loss:0.16699 Correct:267524/276480 Acc:96.761%
+[progress:80.2%]time:8.22s Loss:0.16978 Correct:277428/286720 Acc:96.759%
+[progress:83.1%]time:8.24s Loss:0.17678 Correct:287329/296960 Acc:96.757%
+[progress:86.0%]time:8.14s Loss:0.16307 Correct:297277/307200 Acc:96.770%
+[progress:88.8%]time:8.20s Loss:0.16450 Correct:307210/317440 Acc:96.777%
+[progress:91.7%]time:8.20s Loss:0.17241 Correct:317109/327680 Acc:96.774%
+[progress:94.6%]time:8.20s Loss:0.16670 Correct:327058/337920 Acc:96.786%
+[progress:97.4%]time:8.17s Loss:0.16508 Correct:336990/348160 Acc:96.792%
+Testing ...
+[progress:100.0%]time:45.51s Loss:0.13318 Correct:148572/152974 Acc:97.122%
+end
+
+Epoch : 38
+[progress:2.9%]time:9.02s Loss:0.17722 Correct:9900/10240 Acc:96.680%
+[progress:5.7%]time:8.13s Loss:0.17155 Correct:19800/20480 Acc:96.680%
+[progress:8.6%]time:8.20s Loss:0.16859 Correct:29716/30720 Acc:96.732%
+[progress:11.5%]time:8.19s Loss:0.16784 Correct:39636/40960 Acc:96.768%
+[progress:14.3%]time:8.19s Loss:0.16765 Correct:49554/51200 Acc:96.785%
+[progress:17.2%]time:8.20s Loss:0.16348 Correct:59475/61440 Acc:96.802%
+[progress:20.1%]time:8.25s Loss:0.17193 Correct:69381/71680 Acc:96.793%
+[progress:22.9%]time:8.27s Loss:0.15434 Correct:79330/81920 Acc:96.838%
+[progress:25.8%]time:8.23s Loss:0.16383 Correct:89245/92160 Acc:96.837%
+[progress:28.7%]time:8.22s Loss:0.16535 Correct:99172/102400 Acc:96.848%
+[progress:31.5%]time:8.20s Loss:0.15883 Correct:109109/112640 Acc:96.865%
+[progress:34.4%]time:8.19s Loss:0.16910 Correct:119042/122880 Acc:96.877%
+[progress:37.2%]time:8.23s Loss:0.16474 Correct:128953/133120 Acc:96.870%
+[progress:40.1%]time:8.22s Loss:0.18178 Correct:138846/143360 Acc:96.851%
+[progress:43.0%]time:8.25s Loss:0.16026 Correct:148779/153600 Acc:96.861%
+[progress:45.8%]time:8.13s Loss:0.15797 Correct:158732/163840 Acc:96.882%
+[progress:48.7%]time:8.25s Loss:0.16792 Correct:168654/174080 Acc:96.883%
+[progress:51.6%]time:8.21s Loss:0.16860 Correct:178582/184320 Acc:96.887%
+[progress:54.4%]time:8.23s Loss:0.16499 Correct:188505/194560 Acc:96.888%
+[progress:57.3%]time:8.17s Loss:0.15887 Correct:198426/204800 Acc:96.888%
+[progress:60.2%]time:8.26s Loss:0.16542 Correct:208353/215040 Acc:96.890%
+[progress:63.0%]time:8.18s Loss:0.17139 Correct:218270/225280 Acc:96.888%
+[progress:65.9%]time:8.18s Loss:0.15984 Correct:228195/235520 Acc:96.890%
+[progress:68.8%]time:8.21s Loss:0.16815 Correct:238122/245760 Acc:96.892%
+[progress:71.6%]time:8.20s Loss:0.17328 Correct:248040/256000 Acc:96.891%
+[progress:74.5%]time:8.23s Loss:0.18240 Correct:257912/266240 Acc:96.872%
+[progress:77.4%]time:8.15s Loss:0.17506 Correct:267799/276480 Acc:96.860%
+[progress:80.2%]time:8.24s Loss:0.16751 Correct:277720/286720 Acc:96.861%
+[progress:83.1%]time:8.31s Loss:0.15774 Correct:287660/296960 Acc:96.868%
+[progress:86.0%]time:8.18s Loss:0.17498 Correct:297557/307200 Acc:96.861%
+[progress:88.8%]time:8.23s Loss:0.16729 Correct:307475/317440 Acc:96.861%
+[progress:91.7%]time:8.19s Loss:0.17439 Correct:317385/327680 Acc:96.858%
+[progress:94.6%]time:8.20s Loss:0.17552 Correct:327275/337920 Acc:96.850%
+[progress:97.4%]time:8.20s Loss:0.17479 Correct:337180/348160 Acc:96.846%
+Testing ...
+[progress:100.0%]time:45.50s Loss:0.13559 Correct:148392/152974 Acc:97.005%
+end
+
+Epoch : 39
+[progress:2.9%]time:9.08s Loss:0.17903 Correct:9879/10240 Acc:96.475%
+[progress:5.7%]time:8.07s Loss:0.16160 Correct:19824/20480 Acc:96.797%
+[progress:8.6%]time:8.18s Loss:0.16081 Correct:29759/30720 Acc:96.872%
+[progress:11.5%]time:8.30s Loss:0.16866 Correct:39681/40960 Acc:96.877%
+[progress:14.3%]time:8.14s Loss:0.17531 Correct:49572/51200 Acc:96.820%
+[progress:17.2%]time:8.21s Loss:0.15388 Correct:59522/61440 Acc:96.878%
+[progress:20.1%]time:8.25s Loss:0.16554 Correct:69429/71680 Acc:96.860%
+[progress:22.9%]time:8.27s Loss:0.15446 Correct:79368/81920 Acc:96.885%
+[progress:25.8%]time:8.21s Loss:0.17238 Correct:89272/92160 Acc:96.866%
+[progress:28.7%]time:8.17s Loss:0.16867 Correct:99176/102400 Acc:96.852%
+[progress:31.5%]time:8.24s Loss:0.16511 Correct:109093/112640 Acc:96.851%
+[progress:34.4%]time:8.16s Loss:0.16441 Correct:119028/122880 Acc:96.865%
+[progress:37.2%]time:8.23s Loss:0.15638 Correct:128973/133120 Acc:96.885%
+[progress:40.1%]time:8.20s Loss:0.15078 Correct:138934/143360 Acc:96.913%
+[progress:43.0%]time:8.23s Loss:0.16433 Correct:148842/153600 Acc:96.902%
+[progress:45.8%]time:8.14s Loss:0.15988 Correct:158778/163840 Acc:96.910%
+[progress:48.7%]time:8.20s Loss:0.16750 Correct:168688/174080 Acc:96.903%
+[progress:51.6%]time:8.21s Loss:0.16184 Correct:178601/184320 Acc:96.897%
+[progress:54.4%]time:8.23s Loss:0.16445 Correct:188507/194560 Acc:96.889%
+[progress:57.3%]time:8.19s Loss:0.17198 Correct:198406/204800 Acc:96.878%
+[progress:60.2%]time:8.18s Loss:0.18168 Correct:208293/215040 Acc:96.862%
+[progress:63.0%]time:8.15s Loss:0.17224 Correct:218199/225280 Acc:96.857%
+[progress:65.9%]time:8.15s Loss:0.15874 Correct:228148/235520 Acc:96.870%
+[progress:68.8%]time:8.20s Loss:0.16826 Correct:238064/245760 Acc:96.868%
+[progress:71.6%]time:8.19s Loss:0.17797 Correct:247944/256000 Acc:96.853%
+[progress:74.5%]time:8.24s Loss:0.16867 Correct:257849/266240 Acc:96.848%
+[progress:77.4%]time:8.19s Loss:0.16267 Correct:267759/276480 Acc:96.846%
+[progress:80.2%]time:8.30s Loss:0.16610 Correct:277673/286720 Acc:96.845%
+[progress:83.1%]time:8.23s Loss:0.17044 Correct:287586/296960 Acc:96.843%
+[progress:86.0%]time:8.18s Loss:0.17097 Correct:297494/307200 Acc:96.840%
+[progress:88.8%]time:8.20s Loss:0.17142 Correct:307393/317440 Acc:96.835%
+[progress:91.7%]time:8.19s Loss:0.17008 Correct:317313/327680 Acc:96.836%
+[progress:94.6%]time:8.24s Loss:0.16938 Correct:327215/337920 Acc:96.832%
+[progress:97.4%]time:8.16s Loss:0.16170 Correct:337153/348160 Acc:96.839%
+Testing ...
+[progress:100.0%]time:45.85s Loss:0.17098 Correct:147165/152974 Acc:96.203%
+end
+
+Epoch : 40
+[progress:2.9%]time:8.98s Loss:0.19143 Correct:9865/10240 Acc:96.338%
+[progress:5.7%]time:8.19s Loss:0.18003 Correct:19757/20480 Acc:96.470%
+[progress:8.6%]time:8.20s Loss:0.18306 Correct:29633/30720 Acc:96.462%
+[progress:11.5%]time:8.24s Loss:0.17287 Correct:39548/40960 Acc:96.553%
+[progress:14.3%]time:8.15s Loss:0.16744 Correct:49466/51200 Acc:96.613%
+[progress:17.2%]time:8.21s Loss:0.15985 Correct:59387/61440 Acc:96.659%
+[progress:20.1%]time:8.19s Loss:0.17119 Correct:69293/71680 Acc:96.670%
+[progress:22.9%]time:8.20s Loss:0.16326 Correct:79221/81920 Acc:96.705%
+[progress:25.8%]time:8.16s Loss:0.16440 Correct:89150/92160 Acc:96.734%
+[progress:28.7%]time:8.21s Loss:0.15705 Correct:99084/102400 Acc:96.762%
+[progress:31.5%]time:8.21s Loss:0.16962 Correct:108996/112640 Acc:96.765%
+[progress:34.4%]time:8.19s Loss:0.16061 Correct:118933/122880 Acc:96.788%
+[progress:37.2%]time:8.24s Loss:0.16021 Correct:128859/133120 Acc:96.799%
+[progress:40.1%]time:8.20s Loss:0.17224 Correct:138757/143360 Acc:96.789%
+[progress:43.0%]time:8.26s Loss:0.16900 Correct:148675/153600 Acc:96.794%
+[progress:45.8%]time:8.20s Loss:0.16275 Correct:158610/163840 Acc:96.808%
+[progress:48.7%]time:8.25s Loss:0.16412 Correct:168514/174080 Acc:96.803%
+[progress:51.6%]time:8.20s Loss:0.17363 Correct:178405/184320 Acc:96.791%
+[progress:54.4%]time:8.21s Loss:0.15495 Correct:188327/194560 Acc:96.796%
+[progress:57.3%]time:8.22s Loss:0.16321 Correct:198268/204800 Acc:96.811%
+[progress:60.2%]time:8.25s Loss:0.16913 Correct:208170/215040 Acc:96.805%
+[progress:63.0%]time:8.28s Loss:0.16903 Correct:218083/225280 Acc:96.805%
+[progress:65.9%]time:8.19s Loss:0.17083 Correct:227993/235520 Acc:96.804%
+[progress:68.8%]time:8.20s Loss:0.16819 Correct:237912/245760 Acc:96.807%
+[progress:71.6%]time:8.25s Loss:0.16696 Correct:247818/256000 Acc:96.804%
+[progress:74.5%]time:8.20s Loss:0.15997 Correct:257736/266240 Acc:96.806%
+[progress:77.4%]time:8.13s Loss:0.16528 Correct:267664/276480 Acc:96.811%
+[progress:80.2%]time:8.26s Loss:0.15990 Correct:277598/286720 Acc:96.818%
+[progress:83.1%]time:8.22s Loss:0.16240 Correct:287542/296960 Acc:96.829%
+[progress:86.0%]time:8.11s Loss:0.16482 Correct:297479/307200 Acc:96.836%
+[progress:88.8%]time:8.24s Loss:0.16675 Correct:307384/317440 Acc:96.832%
+[progress:91.7%]time:8.25s Loss:0.16351 Correct:317313/327680 Acc:96.836%
+[progress:94.6%]time:8.25s Loss:0.17373 Correct:327220/337920 Acc:96.834%
+[progress:97.4%]time:8.16s Loss:0.16360 Correct:337163/348160 Acc:96.841%
+Testing ...
+[progress:100.0%]time:45.97s Loss:0.16166 Correct:147487/152974 Acc:96.413%
+Learning rate adjusted to 0.0010000000000000002
+end
+
+Epoch : 41
+[progress:2.9%]time:9.13s Loss:0.17202 Correct:9909/10240 Acc:96.768%
+[progress:5.7%]time:8.10s Loss:0.15356 Correct:19860/20480 Acc:96.973%
+[progress:8.6%]time:8.13s Loss:0.14387 Correct:29811/30720 Acc:97.041%
+[progress:11.5%]time:8.15s Loss:0.15280 Correct:39755/40960 Acc:97.058%
+[progress:14.3%]time:8.20s Loss:0.14039 Correct:49722/51200 Acc:97.113%
+[progress:17.2%]time:8.25s Loss:0.14047 Correct:59682/61440 Acc:97.139%
+[progress:20.1%]time:8.19s Loss:0.13393 Correct:69669/71680 Acc:97.194%
+[progress:22.9%]time:8.23s Loss:0.12659 Correct:79682/81920 Acc:97.268%
+[progress:25.8%]time:8.15s Loss:0.12350 Correct:89684/92160 Acc:97.313%
+[progress:28.7%]time:8.25s Loss:0.12855 Correct:99679/102400 Acc:97.343%
+[progress:31.5%]time:8.23s Loss:0.13243 Correct:109671/112640 Acc:97.364%
+[progress:34.4%]time:8.23s Loss:0.13145 Correct:119675/122880 Acc:97.392%
+[progress:37.2%]time:8.21s Loss:0.13303 Correct:129655/133120 Acc:97.397%
+[progress:40.1%]time:8.21s Loss:0.13362 Correct:139646/143360 Acc:97.409%
+[progress:43.0%]time:8.19s Loss:0.12210 Correct:149672/153600 Acc:97.443%
+[progress:45.8%]time:8.18s Loss:0.14207 Correct:159631/163840 Acc:97.431%
+[progress:48.7%]time:8.21s Loss:0.12904 Correct:169632/174080 Acc:97.445%
+[progress:51.6%]time:8.23s Loss:0.12875 Correct:179630/184320 Acc:97.456%
+[progress:54.4%]time:8.19s Loss:0.12294 Correct:189631/194560 Acc:97.467%
+[progress:57.3%]time:8.15s Loss:0.12373 Correct:199647/204800 Acc:97.484%
+[progress:60.2%]time:8.29s Loss:0.12652 Correct:209647/215040 Acc:97.492%
+[progress:63.0%]time:8.29s Loss:0.12675 Correct:219645/225280 Acc:97.499%
+[progress:65.9%]time:8.19s Loss:0.13345 Correct:229626/235520 Acc:97.497%
+[progress:68.8%]time:8.20s Loss:0.12371 Correct:239617/245760 Acc:97.500%
+[progress:71.6%]time:8.20s Loss:0.11992 Correct:249638/256000 Acc:97.515%
+[progress:74.5%]time:8.24s Loss:0.13013 Correct:259626/266240 Acc:97.516%
+[progress:77.4%]time:8.19s Loss:0.12468 Correct:269637/276480 Acc:97.525%
+[progress:80.2%]time:8.19s Loss:0.12676 Correct:279620/286720 Acc:97.524%
+[progress:83.1%]time:8.28s Loss:0.12272 Correct:289633/296960 Acc:97.533%
+[progress:86.0%]time:8.18s Loss:0.11585 Correct:299652/307200 Acc:97.543%
+[progress:88.8%]time:8.20s Loss:0.12251 Correct:309669/317440 Acc:97.552%
+[progress:91.7%]time:8.20s Loss:0.12573 Correct:319666/327680 Acc:97.554%
+[progress:94.6%]time:8.20s Loss:0.12388 Correct:329668/337920 Acc:97.558%
+[progress:97.4%]time:8.14s Loss:0.12489 Correct:339676/348160 Acc:97.563%
+Testing ...
+[progress:100.0%]time:45.50s Loss:0.08880 Correct:150020/152974 Acc:98.069%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 42
+[progress:2.9%]time:9.05s Loss:0.13265 Correct:9975/10240 Acc:97.412%
+[progress:5.7%]time:8.21s Loss:0.11786 Correct:19996/20480 Acc:97.637%
+[progress:8.6%]time:8.21s Loss:0.10839 Correct:30036/30720 Acc:97.773%
+[progress:11.5%]time:8.18s Loss:0.12430 Correct:40028/40960 Acc:97.725%
+[progress:14.3%]time:8.18s Loss:0.11506 Correct:50056/51200 Acc:97.766%
+[progress:17.2%]time:8.20s Loss:0.12395 Correct:60059/61440 Acc:97.752%
+[progress:20.1%]time:8.20s Loss:0.12447 Correct:70069/71680 Acc:97.753%
+[progress:22.9%]time:8.19s Loss:0.12032 Correct:80082/81920 Acc:97.756%
+[progress:25.8%]time:8.22s Loss:0.11876 Correct:90105/92160 Acc:97.770%
+[progress:28.7%]time:8.17s Loss:0.11601 Correct:100121/102400 Acc:97.774%
+[progress:31.5%]time:8.28s Loss:0.11713 Correct:110134/112640 Acc:97.775%
+[progress:34.4%]time:8.22s Loss:0.11977 Correct:120143/122880 Acc:97.773%
+[progress:37.2%]time:8.19s Loss:0.11571 Correct:130174/133120 Acc:97.787%
+[progress:40.1%]time:8.16s Loss:0.11214 Correct:140208/143360 Acc:97.801%
+[progress:43.0%]time:8.17s Loss:0.12141 Correct:150237/153600 Acc:97.811%
+[progress:45.8%]time:8.19s Loss:0.10529 Correct:160274/163840 Acc:97.823%
+[progress:48.7%]time:8.14s Loss:0.12104 Correct:170283/174080 Acc:97.819%
+[progress:51.6%]time:8.24s Loss:0.12642 Correct:180291/184320 Acc:97.814%
+[progress:54.4%]time:8.21s Loss:0.11172 Correct:190311/194560 Acc:97.816%
+[progress:57.3%]time:8.17s Loss:0.10878 Correct:200359/204800 Acc:97.832%
+[progress:60.2%]time:8.22s Loss:0.11763 Correct:210371/215040 Acc:97.829%
+[progress:63.0%]time:8.24s Loss:0.12181 Correct:220386/225280 Acc:97.828%
+[progress:65.9%]time:8.26s Loss:0.10571 Correct:230433/235520 Acc:97.840%
+[progress:68.8%]time:8.18s Loss:0.11854 Correct:240437/245760 Acc:97.834%
+[progress:71.6%]time:8.20s Loss:0.11078 Correct:250486/256000 Acc:97.846%
+[progress:74.5%]time:8.17s Loss:0.10669 Correct:260532/266240 Acc:97.856%
+[progress:77.4%]time:8.18s Loss:0.11968 Correct:270547/276480 Acc:97.854%
+[progress:80.2%]time:8.20s Loss:0.12911 Correct:280522/286720 Acc:97.838%
+[progress:83.1%]time:8.20s Loss:0.11847 Correct:290517/296960 Acc:97.830%
+[progress:86.0%]time:8.20s Loss:0.12368 Correct:300517/307200 Acc:97.825%
+[progress:88.8%]time:8.14s Loss:0.11437 Correct:310542/317440 Acc:97.827%
+[progress:91.7%]time:8.17s Loss:0.11563 Correct:320560/327680 Acc:97.827%
+[progress:94.6%]time:8.19s Loss:0.11512 Correct:330588/337920 Acc:97.830%
+[progress:97.4%]time:8.17s Loss:0.12121 Correct:340605/348160 Acc:97.830%
+Testing ...
+[progress:100.0%]time:45.58s Loss:0.08516 Correct:150103/152974 Acc:98.123%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 43
+[progress:2.9%]time:9.04s Loss:0.11375 Correct:10036/10240 Acc:98.008%
+[progress:5.7%]time:8.23s Loss:0.10849 Correct:20080/20480 Acc:98.047%
+[progress:8.6%]time:8.17s Loss:0.11436 Correct:30105/30720 Acc:97.998%
+[progress:11.5%]time:8.20s Loss:0.10717 Correct:40148/40960 Acc:98.018%
+[progress:14.3%]time:8.20s Loss:0.11420 Correct:50160/51200 Acc:97.969%
+[progress:17.2%]time:8.19s Loss:0.10894 Correct:60192/61440 Acc:97.969%
+[progress:20.1%]time:8.18s Loss:0.11774 Correct:70214/71680 Acc:97.955%
+[progress:22.9%]time:8.19s Loss:0.10612 Correct:80251/81920 Acc:97.963%
+[progress:25.8%]time:8.30s Loss:0.12060 Correct:90256/92160 Acc:97.934%
+[progress:28.7%]time:8.12s Loss:0.10962 Correct:100296/102400 Acc:97.945%
+[progress:31.5%]time:8.23s Loss:0.10899 Correct:110318/112640 Acc:97.939%
+[progress:34.4%]time:8.24s Loss:0.11782 Correct:120330/122880 Acc:97.925%
+[progress:37.2%]time:8.27s Loss:0.12110 Correct:130337/133120 Acc:97.909%
+[progress:40.1%]time:8.19s Loss:0.10913 Correct:140350/143360 Acc:97.900%
+[progress:43.0%]time:8.21s Loss:0.11191 Correct:150380/153600 Acc:97.904%
+[progress:45.8%]time:8.20s Loss:0.11807 Correct:160408/163840 Acc:97.905%
+[progress:48.7%]time:8.20s Loss:0.11805 Correct:170414/174080 Acc:97.894%
+[progress:51.6%]time:8.20s Loss:0.11504 Correct:180432/184320 Acc:97.891%
+[progress:54.4%]time:8.24s Loss:0.12014 Correct:190425/194560 Acc:97.875%
+[progress:57.3%]time:8.22s Loss:0.10576 Correct:200477/204800 Acc:97.889%
+[progress:60.2%]time:8.14s Loss:0.11052 Correct:210508/215040 Acc:97.892%
+[progress:63.0%]time:8.22s Loss:0.10338 Correct:220550/225280 Acc:97.900%
+[progress:65.9%]time:8.25s Loss:0.10979 Correct:230592/235520 Acc:97.908%
+[progress:68.8%]time:8.24s Loss:0.10771 Correct:240632/245760 Acc:97.913%
+[progress:71.6%]time:8.24s Loss:0.10375 Correct:250686/256000 Acc:97.924%
+[progress:74.5%]time:8.21s Loss:0.11814 Correct:260693/266240 Acc:97.917%
+[progress:77.4%]time:8.16s Loss:0.10481 Correct:270733/276480 Acc:97.921%
+[progress:80.2%]time:8.19s Loss:0.11770 Correct:280754/286720 Acc:97.919%
+[progress:83.1%]time:8.19s Loss:0.10215 Correct:290801/296960 Acc:97.926%
+[progress:86.0%]time:8.19s Loss:0.10635 Correct:300852/307200 Acc:97.934%
+[progress:88.8%]time:8.18s Loss:0.10635 Correct:310875/317440 Acc:97.932%
+[progress:91.7%]time:8.20s Loss:0.11756 Correct:320881/327680 Acc:97.925%
+[progress:94.6%]time:8.23s Loss:0.11924 Correct:330899/337920 Acc:97.922%
+[progress:97.4%]time:8.19s Loss:0.10766 Correct:340946/348160 Acc:97.928%
+Testing ...
+[progress:100.0%]time:45.38s Loss:0.08215 Correct:150212/152974 Acc:98.194%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 44
+[progress:2.9%]time:9.06s Loss:0.12050 Correct:10011/10240 Acc:97.764%
+[progress:5.7%]time:8.17s Loss:0.11757 Correct:20037/20480 Acc:97.837%
+[progress:8.6%]time:8.18s Loss:0.11958 Correct:30039/30720 Acc:97.783%
+[progress:11.5%]time:8.13s Loss:0.10323 Correct:40075/40960 Acc:97.839%
+[progress:14.3%]time:8.11s Loss:0.10778 Correct:50104/51200 Acc:97.859%
+[progress:17.2%]time:8.22s Loss:0.11084 Correct:60120/61440 Acc:97.852%
+[progress:20.1%]time:8.15s Loss:0.10960 Correct:70163/71680 Acc:97.884%
+[progress:22.9%]time:8.18s Loss:0.10978 Correct:80190/81920 Acc:97.888%
+[progress:25.8%]time:8.30s Loss:0.10991 Correct:90211/92160 Acc:97.885%
+[progress:28.7%]time:8.27s Loss:0.11406 Correct:100241/102400 Acc:97.892%
+[progress:31.5%]time:8.19s Loss:0.11343 Correct:110247/112640 Acc:97.876%
+[progress:34.4%]time:8.21s Loss:0.10903 Correct:120268/122880 Acc:97.874%
+[progress:37.2%]time:8.20s Loss:0.10201 Correct:130312/133120 Acc:97.891%
+[progress:40.1%]time:8.20s Loss:0.11259 Correct:140334/143360 Acc:97.889%
+[progress:43.0%]time:8.16s Loss:0.11215 Correct:150360/153600 Acc:97.891%
+[progress:45.8%]time:8.20s Loss:0.10593 Correct:160402/163840 Acc:97.902%
+[progress:48.7%]time:8.26s Loss:0.10096 Correct:170442/174080 Acc:97.910%
+[progress:51.6%]time:8.15s Loss:0.10662 Correct:180485/184320 Acc:97.919%
+[progress:54.4%]time:8.18s Loss:0.10475 Correct:190521/194560 Acc:97.924%
+[progress:57.3%]time:8.25s Loss:0.12346 Correct:200516/204800 Acc:97.908%
+[progress:60.2%]time:8.20s Loss:0.12172 Correct:210507/215040 Acc:97.892%
+[progress:63.0%]time:8.19s Loss:0.10753 Correct:220557/225280 Acc:97.903%
+[progress:65.9%]time:8.19s Loss:0.10740 Correct:230585/235520 Acc:97.905%
+[progress:68.8%]time:8.15s Loss:0.10865 Correct:240616/245760 Acc:97.907%
+[progress:71.6%]time:8.24s Loss:0.11014 Correct:250644/256000 Acc:97.908%
+[progress:74.5%]time:8.19s Loss:0.10709 Correct:260682/266240 Acc:97.912%
+[progress:77.4%]time:8.24s Loss:0.11276 Correct:270695/276480 Acc:97.908%
+[progress:80.2%]time:8.26s Loss:0.10807 Correct:280723/286720 Acc:97.908%
+[progress:83.1%]time:8.17s Loss:0.10245 Correct:290786/296960 Acc:97.921%
+[progress:86.0%]time:8.21s Loss:0.11414 Correct:300801/307200 Acc:97.917%
+[progress:88.8%]time:8.22s Loss:0.10226 Correct:310854/317440 Acc:97.925%
+[progress:91.7%]time:8.20s Loss:0.11026 Correct:320886/327680 Acc:97.927%
+[progress:94.6%]time:8.24s Loss:0.10555 Correct:330929/337920 Acc:97.931%
+[progress:97.4%]time:8.16s Loss:0.10919 Correct:340970/348160 Acc:97.935%
+Testing ...
+[progress:100.0%]time:45.38s Loss:0.08199 Correct:150226/152974 Acc:98.204%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 45
+[progress:2.9%]time:8.99s Loss:0.11221 Correct:10030/10240 Acc:97.949%
+[progress:5.7%]time:8.19s Loss:0.10531 Correct:20065/20480 Acc:97.974%
+[progress:8.6%]time:8.19s Loss:0.10646 Correct:30104/30720 Acc:97.995%
+[progress:11.5%]time:8.26s Loss:0.10345 Correct:40145/40960 Acc:98.010%
+[progress:14.3%]time:8.13s Loss:0.11373 Correct:50175/51200 Acc:97.998%
+[progress:17.2%]time:8.20s Loss:0.10987 Correct:60205/61440 Acc:97.990%
+[progress:20.1%]time:8.19s Loss:0.11175 Correct:70229/71680 Acc:97.976%
+[progress:22.9%]time:8.21s Loss:0.10446 Correct:80280/81920 Acc:97.998%
+[progress:25.8%]time:8.24s Loss:0.12969 Correct:90259/92160 Acc:97.937%
+[progress:28.7%]time:8.24s Loss:0.10443 Correct:100294/102400 Acc:97.943%
+[progress:31.5%]time:8.18s Loss:0.11100 Correct:110317/112640 Acc:97.938%
+[progress:34.4%]time:8.11s Loss:0.11699 Correct:120320/122880 Acc:97.917%
+[progress:37.2%]time:8.24s Loss:0.11061 Correct:130349/133120 Acc:97.918%
+[progress:40.1%]time:8.28s Loss:0.10414 Correct:140381/143360 Acc:97.922%
+[progress:43.0%]time:8.24s Loss:0.10043 Correct:150421/153600 Acc:97.930%
+[progress:45.8%]time:8.18s Loss:0.09779 Correct:160484/163840 Acc:97.952%
+[progress:48.7%]time:8.23s Loss:0.10837 Correct:170527/174080 Acc:97.959%
+[progress:51.6%]time:8.22s Loss:0.09744 Correct:180598/184320 Acc:97.981%
+[progress:54.4%]time:8.14s Loss:0.10451 Correct:190653/194560 Acc:97.992%
+[progress:57.3%]time:8.22s Loss:0.10306 Correct:200709/204800 Acc:98.002%
+[progress:60.2%]time:8.22s Loss:0.10522 Correct:210760/215040 Acc:98.010%
+[progress:63.0%]time:8.26s Loss:0.10904 Correct:220794/225280 Acc:98.009%
+[progress:65.9%]time:8.18s Loss:0.11212 Correct:230826/235520 Acc:98.007%
+[progress:68.8%]time:8.24s Loss:0.10720 Correct:240865/245760 Acc:98.008%
+[progress:71.6%]time:8.29s Loss:0.10980 Correct:250895/256000 Acc:98.006%
+[progress:74.5%]time:8.13s Loss:0.11516 Correct:260918/266240 Acc:98.001%
+[progress:77.4%]time:8.23s Loss:0.10253 Correct:270972/276480 Acc:98.008%
+[progress:80.2%]time:8.21s Loss:0.10679 Correct:280998/286720 Acc:98.004%
+[progress:83.1%]time:8.20s Loss:0.10373 Correct:291045/296960 Acc:98.008%
+[progress:86.0%]time:8.15s Loss:0.10986 Correct:301057/307200 Acc:98.000%
+[progress:88.8%]time:8.26s Loss:0.10605 Correct:311087/317440 Acc:97.999%
+[progress:91.7%]time:8.32s Loss:0.10018 Correct:321133/327680 Acc:98.002%
+[progress:94.6%]time:8.18s Loss:0.11668 Correct:331149/337920 Acc:97.996%
+[progress:97.4%]time:8.20s Loss:0.11513 Correct:341161/348160 Acc:97.990%
+Testing ...
+[progress:100.0%]time:45.60s Loss:0.07989 Correct:150323/152974 Acc:98.267%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 46
+[progress:2.9%]time:9.06s Loss:0.10482 Correct:10057/10240 Acc:98.213%
+[progress:5.7%]time:8.08s Loss:0.10917 Correct:20086/20480 Acc:98.076%
+[progress:8.6%]time:8.12s Loss:0.11059 Correct:30118/30720 Acc:98.040%
+[progress:11.5%]time:8.20s Loss:0.11093 Correct:40149/40960 Acc:98.020%
+[progress:14.3%]time:8.20s Loss:0.09918 Correct:50211/51200 Acc:98.068%
+[progress:17.2%]time:8.21s Loss:0.09840 Correct:60266/61440 Acc:98.089%
+[progress:20.1%]time:8.21s Loss:0.10746 Correct:70312/71680 Acc:98.092%
+[progress:22.9%]time:8.17s Loss:0.10571 Correct:80361/81920 Acc:98.097%
+[progress:25.8%]time:8.19s Loss:0.11203 Correct:90378/92160 Acc:98.066%
+[progress:28.7%]time:8.17s Loss:0.10085 Correct:100418/102400 Acc:98.064%
+[progress:31.5%]time:8.21s Loss:0.10444 Correct:110461/112640 Acc:98.066%
+[progress:34.4%]time:8.21s Loss:0.11127 Correct:120490/122880 Acc:98.055%
+[progress:37.2%]time:8.24s Loss:0.09902 Correct:130565/133120 Acc:98.081%
+[progress:40.1%]time:8.15s Loss:0.09961 Correct:140615/143360 Acc:98.085%
+[progress:43.0%]time:8.25s Loss:0.10828 Correct:150648/153600 Acc:98.078%
+[progress:45.8%]time:8.25s Loss:0.11245 Correct:160676/163840 Acc:98.069%
+[progress:48.7%]time:8.19s Loss:0.09591 Correct:170741/174080 Acc:98.082%
+[progress:51.6%]time:8.22s Loss:0.10820 Correct:180782/184320 Acc:98.081%
+[progress:54.4%]time:8.22s Loss:0.10853 Correct:190824/194560 Acc:98.080%
+[progress:57.3%]time:8.22s Loss:0.11101 Correct:200863/204800 Acc:98.078%
+[progress:60.2%]time:8.16s Loss:0.10796 Correct:210905/215040 Acc:98.077%
+[progress:63.0%]time:8.25s Loss:0.10021 Correct:220959/225280 Acc:98.082%
+[progress:65.9%]time:8.21s Loss:0.10560 Correct:231014/235520 Acc:98.087%
+[progress:68.8%]time:8.17s Loss:0.10922 Correct:241057/245760 Acc:98.086%
+[progress:71.6%]time:8.19s Loss:0.10738 Correct:251103/256000 Acc:98.087%
+[progress:74.5%]time:8.22s Loss:0.08997 Correct:261177/266240 Acc:98.098%
+[progress:77.4%]time:8.19s Loss:0.09859 Correct:271233/276480 Acc:98.102%
+[progress:80.2%]time:8.18s Loss:0.09996 Correct:281292/286720 Acc:98.107%
+[progress:83.1%]time:8.25s Loss:0.10966 Correct:291314/296960 Acc:98.099%
+[progress:86.0%]time:8.25s Loss:0.10196 Correct:301358/307200 Acc:98.098%
+[progress:88.8%]time:8.25s Loss:0.09479 Correct:311418/317440 Acc:98.103%
+[progress:91.7%]time:8.23s Loss:0.10101 Correct:321462/327680 Acc:98.102%
+[progress:94.6%]time:8.19s Loss:0.10849 Correct:331500/337920 Acc:98.100%
+[progress:97.4%]time:8.21s Loss:0.10212 Correct:341550/348160 Acc:98.101%
+Testing ...
+[progress:100.0%]time:45.36s Loss:0.07713 Correct:150354/152974 Acc:98.287%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 47
+[progress:2.9%]time:9.06s Loss:0.10871 Correct:10034/10240 Acc:97.988%
+[progress:5.7%]time:8.16s Loss:0.10142 Correct:20088/20480 Acc:98.086%
+[progress:8.6%]time:8.14s Loss:0.11145 Correct:30120/30720 Acc:98.047%
+[progress:11.5%]time:8.12s Loss:0.09901 Correct:40177/40960 Acc:98.088%
+[progress:14.3%]time:8.20s Loss:0.10349 Correct:50219/51200 Acc:98.084%
+[progress:17.2%]time:8.29s Loss:0.10773 Correct:60241/61440 Acc:98.049%
+[progress:20.1%]time:8.20s Loss:0.09476 Correct:70305/71680 Acc:98.082%
+[progress:22.9%]time:8.23s Loss:0.09984 Correct:80351/81920 Acc:98.085%
+[progress:25.8%]time:8.22s Loss:0.09977 Correct:90416/92160 Acc:98.108%
+[progress:28.7%]time:8.20s Loss:0.10421 Correct:100457/102400 Acc:98.103%
+[progress:31.5%]time:8.18s Loss:0.10170 Correct:110507/112640 Acc:98.106%
+[progress:34.4%]time:8.21s Loss:0.09878 Correct:120570/122880 Acc:98.120%
+[progress:37.2%]time:8.22s Loss:0.10002 Correct:130634/133120 Acc:98.133%
+[progress:40.1%]time:8.17s Loss:0.10203 Correct:140683/143360 Acc:98.133%
+[progress:43.0%]time:8.22s Loss:0.10030 Correct:150734/153600 Acc:98.134%
+[progress:45.8%]time:8.22s Loss:0.10183 Correct:160778/163840 Acc:98.131%
+[progress:48.7%]time:8.25s Loss:0.09828 Correct:170826/174080 Acc:98.131%
+[progress:51.6%]time:8.16s Loss:0.10434 Correct:180874/184320 Acc:98.130%
+[progress:54.4%]time:8.14s Loss:0.09459 Correct:190940/194560 Acc:98.139%
+[progress:57.3%]time:8.21s Loss:0.10523 Correct:200977/204800 Acc:98.133%
+[progress:60.2%]time:8.19s Loss:0.10761 Correct:211011/215040 Acc:98.126%
+[progress:63.0%]time:8.20s Loss:0.11100 Correct:221030/225280 Acc:98.113%
+[progress:65.9%]time:8.24s Loss:0.09889 Correct:231092/235520 Acc:98.120%
+[progress:68.8%]time:8.26s Loss:0.10102 Correct:241158/245760 Acc:98.127%
+[progress:71.6%]time:8.19s Loss:0.10672 Correct:251208/256000 Acc:98.128%
+[progress:74.5%]time:8.21s Loss:0.09425 Correct:261274/266240 Acc:98.135%
+[progress:77.4%]time:8.20s Loss:0.10325 Correct:271318/276480 Acc:98.133%
+[progress:80.2%]time:8.20s Loss:0.10211 Correct:281365/286720 Acc:98.132%
+[progress:83.1%]time:8.24s Loss:0.10218 Correct:291403/296960 Acc:98.129%
+[progress:86.0%]time:8.32s Loss:0.10284 Correct:301455/307200 Acc:98.130%
+[progress:88.8%]time:8.21s Loss:0.10640 Correct:311499/317440 Acc:98.128%
+[progress:91.7%]time:8.20s Loss:0.10302 Correct:321557/327680 Acc:98.131%
+[progress:94.6%]time:8.20s Loss:0.11200 Correct:331584/337920 Acc:98.125%
+[progress:97.4%]time:8.25s Loss:0.09009 Correct:341660/348160 Acc:98.133%
+Testing ...
+[progress:100.0%]time:45.43s Loss:0.07769 Correct:150346/152974 Acc:98.282%
+end
+
+Epoch : 48
+[progress:2.9%]time:9.07s Loss:0.09464 Correct:10066/10240 Acc:98.301%
+[progress:5.7%]time:8.16s Loss:0.10561 Correct:20114/20480 Acc:98.213%
+[progress:8.6%]time:8.19s Loss:0.09934 Correct:30175/30720 Acc:98.226%
+[progress:11.5%]time:8.14s Loss:0.10331 Correct:40208/40960 Acc:98.164%
+[progress:14.3%]time:8.26s Loss:0.09906 Correct:50277/51200 Acc:98.197%
+[progress:17.2%]time:8.21s Loss:0.10479 Correct:60319/61440 Acc:98.175%
+[progress:20.1%]time:8.16s Loss:0.09284 Correct:70378/71680 Acc:98.184%
+[progress:22.9%]time:8.21s Loss:0.09647 Correct:80452/81920 Acc:98.208%
+[progress:25.8%]time:8.21s Loss:0.10406 Correct:90490/92160 Acc:98.188%
+[progress:28.7%]time:8.21s Loss:0.10243 Correct:100544/102400 Acc:98.188%
+[progress:31.5%]time:8.19s Loss:0.10287 Correct:110585/112640 Acc:98.176%
+[progress:34.4%]time:8.18s Loss:0.10002 Correct:120631/122880 Acc:98.170%
+[progress:37.2%]time:8.26s Loss:0.09396 Correct:130706/133120 Acc:98.187%
+[progress:40.1%]time:8.17s Loss:0.10968 Correct:140755/143360 Acc:98.183%
+[progress:43.0%]time:8.24s Loss:0.10751 Correct:150803/153600 Acc:98.179%
+[progress:45.8%]time:8.24s Loss:0.10027 Correct:160858/163840 Acc:98.180%
+[progress:48.7%]time:8.27s Loss:0.10095 Correct:170907/174080 Acc:98.177%
+[progress:51.6%]time:8.20s Loss:0.08642 Correct:180995/184320 Acc:98.196%
+[progress:54.4%]time:8.18s Loss:0.09657 Correct:191065/194560 Acc:98.204%
+[progress:57.3%]time:8.28s Loss:0.09414 Correct:201142/204800 Acc:98.214%
+[progress:60.2%]time:8.12s Loss:0.09383 Correct:211215/215040 Acc:98.221%
+[progress:63.0%]time:8.20s Loss:0.09919 Correct:221284/225280 Acc:98.226%
+[progress:65.9%]time:8.24s Loss:0.10279 Correct:231338/235520 Acc:98.224%
+[progress:68.8%]time:8.26s Loss:0.10556 Correct:241387/245760 Acc:98.221%
+[progress:71.6%]time:8.20s Loss:0.10939 Correct:251432/256000 Acc:98.216%
+[progress:74.5%]time:8.21s Loss:0.10221 Correct:261487/266240 Acc:98.215%
+[progress:77.4%]time:8.23s Loss:0.09425 Correct:271545/276480 Acc:98.215%
+[progress:80.2%]time:8.20s Loss:0.10119 Correct:281590/286720 Acc:98.211%
+[progress:83.1%]time:8.24s Loss:0.10261 Correct:291642/296960 Acc:98.209%
+[progress:86.0%]time:8.20s Loss:0.10469 Correct:301682/307200 Acc:98.204%
+[progress:88.8%]time:8.20s Loss:0.10370 Correct:311730/317440 Acc:98.201%
+[progress:91.7%]time:8.14s Loss:0.10009 Correct:321792/327680 Acc:98.203%
+[progress:94.6%]time:8.24s Loss:0.10320 Correct:331839/337920 Acc:98.200%
+[progress:97.4%]time:8.25s Loss:0.10274 Correct:341881/348160 Acc:98.197%
+Testing ...
+[progress:100.0%]time:45.41s Loss:0.07664 Correct:150435/152974 Acc:98.340%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 49
+[progress:2.9%]time:9.03s Loss:0.10240 Correct:10054/10240 Acc:98.184%
+[progress:5.7%]time:8.20s Loss:0.10242 Correct:20103/20480 Acc:98.159%
+[progress:8.6%]time:8.19s Loss:0.09962 Correct:30149/30720 Acc:98.141%
+[progress:11.5%]time:8.19s Loss:0.10132 Correct:40193/40960 Acc:98.127%
+[progress:14.3%]time:8.20s Loss:0.10661 Correct:50241/51200 Acc:98.127%
+[progress:17.2%]time:8.20s Loss:0.10615 Correct:60273/61440 Acc:98.101%
+[progress:20.1%]time:8.21s Loss:0.09258 Correct:70354/71680 Acc:98.150%
+[progress:22.9%]time:8.16s Loss:0.08986 Correct:80435/81920 Acc:98.187%
+[progress:25.8%]time:8.21s Loss:0.10142 Correct:90498/92160 Acc:98.197%
+[progress:28.7%]time:8.18s Loss:0.09382 Correct:100571/102400 Acc:98.214%
+[progress:31.5%]time:8.21s Loss:0.10601 Correct:110603/112640 Acc:98.192%
+[progress:34.4%]time:8.16s Loss:0.10882 Correct:120654/122880 Acc:98.188%
+[progress:37.2%]time:8.24s Loss:0.09936 Correct:130700/133120 Acc:98.182%
+[progress:40.1%]time:8.20s Loss:0.10816 Correct:140718/143360 Acc:98.157%
+[progress:43.0%]time:8.19s Loss:0.09953 Correct:150769/153600 Acc:98.157%
+[progress:45.8%]time:8.21s Loss:0.10305 Correct:160812/163840 Acc:98.152%
+[progress:48.7%]time:8.20s Loss:0.09782 Correct:170871/174080 Acc:98.157%
+[progress:51.6%]time:8.23s Loss:0.09378 Correct:180933/184320 Acc:98.162%
+[progress:54.4%]time:8.16s Loss:0.11028 Correct:190981/194560 Acc:98.160%
+[progress:57.3%]time:8.27s Loss:0.10240 Correct:201038/204800 Acc:98.163%
+[progress:60.2%]time:8.26s Loss:0.09818 Correct:211097/215040 Acc:98.166%
+[progress:63.0%]time:8.17s Loss:0.09501 Correct:221159/225280 Acc:98.171%
+[progress:65.9%]time:8.21s Loss:0.10353 Correct:231212/235520 Acc:98.171%
+[progress:68.8%]time:8.20s Loss:0.09274 Correct:241278/245760 Acc:98.176%
+[progress:71.6%]time:8.19s Loss:0.10141 Correct:251332/256000 Acc:98.177%
+[progress:74.5%]time:8.20s Loss:0.10528 Correct:261366/266240 Acc:98.169%
+[progress:77.4%]time:8.19s Loss:0.09896 Correct:271426/276480 Acc:98.172%
+[progress:80.2%]time:8.25s Loss:0.10809 Correct:281463/286720 Acc:98.167%
+[progress:83.1%]time:8.16s Loss:0.10102 Correct:291523/296960 Acc:98.169%
+[progress:86.0%]time:8.17s Loss:0.09600 Correct:301589/307200 Acc:98.174%
+[progress:88.8%]time:8.25s Loss:0.09870 Correct:311652/317440 Acc:98.177%
+[progress:91.7%]time:8.25s Loss:0.10748 Correct:321698/327680 Acc:98.174%
+[progress:94.6%]time:8.21s Loss:0.10518 Correct:331741/337920 Acc:98.171%
+[progress:97.4%]time:8.25s Loss:0.09544 Correct:341814/348160 Acc:98.177%
+Testing ...
+[progress:100.0%]time:45.45s Loss:0.07482 Correct:150432/152974 Acc:98.338%
+end
+
+Epoch : 50
+[progress:2.9%]time:9.13s Loss:0.10054 Correct:10059/10240 Acc:98.232%
+[progress:5.7%]time:8.19s Loss:0.09710 Correct:20119/20480 Acc:98.237%
+[progress:8.6%]time:8.19s Loss:0.10185 Correct:30185/30720 Acc:98.258%
+[progress:11.5%]time:8.19s Loss:0.10739 Correct:40219/40960 Acc:98.191%
+[progress:14.3%]time:8.11s Loss:0.09297 Correct:50299/51200 Acc:98.240%
+[progress:17.2%]time:8.20s Loss:0.09817 Correct:60351/61440 Acc:98.228%
+[progress:20.1%]time:8.21s Loss:0.10234 Correct:70396/71680 Acc:98.209%
+[progress:22.9%]time:8.18s Loss:0.10119 Correct:80430/81920 Acc:98.181%
+[progress:25.8%]time:8.21s Loss:0.09640 Correct:90496/92160 Acc:98.194%
+[progress:28.7%]time:8.18s Loss:0.10940 Correct:100524/102400 Acc:98.168%
+[progress:31.5%]time:8.21s Loss:0.09683 Correct:110595/112640 Acc:98.184%
+[progress:34.4%]time:8.16s Loss:0.10691 Correct:120633/122880 Acc:98.171%
+[progress:37.2%]time:8.24s Loss:0.10073 Correct:130692/133120 Acc:98.176%
+[progress:40.1%]time:8.26s Loss:0.09872 Correct:140754/143360 Acc:98.182%
+[progress:43.0%]time:8.19s Loss:0.09219 Correct:150821/153600 Acc:98.191%
+[progress:45.8%]time:8.22s Loss:0.09405 Correct:160882/163840 Acc:98.195%
+[progress:48.7%]time:8.21s Loss:0.09861 Correct:170949/174080 Acc:98.201%
+[progress:51.6%]time:8.17s Loss:0.09343 Correct:181022/184320 Acc:98.211%
+[progress:54.4%]time:8.20s Loss:0.10573 Correct:191065/194560 Acc:98.204%
+[progress:57.3%]time:8.20s Loss:0.10261 Correct:201120/204800 Acc:98.203%
+[progress:60.2%]time:8.29s Loss:0.10259 Correct:211176/215040 Acc:98.203%
+[progress:63.0%]time:8.20s Loss:0.09769 Correct:221244/225280 Acc:98.208%
+[progress:65.9%]time:8.24s Loss:0.09899 Correct:231298/235520 Acc:98.207%
+[progress:68.8%]time:8.22s Loss:0.10748 Correct:241330/245760 Acc:98.197%
+[progress:71.6%]time:8.19s Loss:0.10153 Correct:251385/256000 Acc:98.197%
+[progress:74.5%]time:8.15s Loss:0.09140 Correct:261450/266240 Acc:98.201%
+[progress:77.4%]time:8.20s Loss:0.10018 Correct:271509/276480 Acc:98.202%
+[progress:80.2%]time:8.24s Loss:0.09188 Correct:281590/286720 Acc:98.211%
+[progress:83.1%]time:8.15s Loss:0.09595 Correct:291662/296960 Acc:98.216%
+[progress:86.0%]time:8.20s Loss:0.09741 Correct:301734/307200 Acc:98.221%
+[progress:88.8%]time:8.20s Loss:0.09361 Correct:311806/317440 Acc:98.225%
+[progress:91.7%]time:8.20s Loss:0.10484 Correct:321842/327680 Acc:98.218%
+[progress:94.6%]time:8.17s Loss:0.09844 Correct:331909/337920 Acc:98.221%
+[progress:97.4%]time:8.19s Loss:0.09510 Correct:341971/348160 Acc:98.222%
+Testing ...
+[progress:100.0%]time:45.07s Loss:0.07399 Correct:150449/152974 Acc:98.349%
+Saving parameters to checkpoint/ckpt.t7
+end

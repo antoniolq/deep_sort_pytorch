@@ -1,0 +1,66 @@
+nohup: 忽略输入
+152974 356940
+train num_classes 625
+test num_classes 625
+
+Epoch : 1
+[progress:2.9%]time:18.67s Loss:6.30115 Correct:450/10240 Acc:4.395%
+[progress:5.7%]time:7.49s Loss:5.91526 Correct:1138/20480 Acc:5.557%
+[progress:8.6%]time:7.50s Loss:5.74045 Correct:1837/30720 Acc:5.980%
+[progress:11.5%]time:7.54s Loss:5.50226 Correct:2705/40960 Acc:6.604%
+[progress:14.3%]time:7.56s Loss:5.27534 Correct:3630/51200 Acc:7.090%
+[progress:17.2%]time:7.62s Loss:5.05917 Correct:4804/61440 Acc:7.819%
+[progress:20.1%]time:7.63s Loss:4.81574 Correct:6116/71680 Acc:8.532%
+[progress:22.9%]time:7.64s Loss:4.62398 Correct:7684/81920 Acc:9.380%
+[progress:25.8%]time:7.73s Loss:4.42288 Correct:9376/92160 Acc:10.174%
+[progress:28.7%]time:7.86s Loss:4.24534 Correct:11251/102400 Acc:10.987%
+[progress:31.5%]time:7.91s Loss:4.04675 Correct:13384/112640 Acc:11.882%
+[progress:34.4%]time:8.07s Loss:3.90256 Correct:15637/122880 Acc:12.725%
+[progress:37.2%]time:8.07s Loss:3.78528 Correct:18084/133120 Acc:13.585%
+[progress:40.1%]time:8.04s Loss:3.62333 Correct:20804/143360 Acc:14.512%
+[progress:43.0%]time:8.17s Loss:3.45816 Correct:23738/153600 Acc:15.454%
+[progress:45.8%]time:8.15s Loss:3.36082 Correct:26798/163840 Acc:16.356%
+[progress:48.7%]time:8.12s Loss:3.22134 Correct:30065/174080 Acc:17.271%
+[progress:51.6%]time:8.15s Loss:3.14821 Correct:33385/184320 Acc:18.113%
+[progress:54.4%]time:8.18s Loss:3.00397 Correct:36996/194560 Acc:19.015%
+[progress:57.3%]time:8.19s Loss:2.91126 Correct:40748/204800 Acc:19.896%
+[progress:60.2%]time:8.20s Loss:2.81947 Correct:44627/215040 Acc:20.753%
+[progress:63.0%]time:8.19s Loss:2.76377 Correct:48623/225280 Acc:21.583%
+[progress:65.9%]time:8.22s Loss:2.70095 Correct:52761/235520 Acc:22.402%
+[progress:68.8%]time:8.18s Loss:2.56878 Correct:57114/245760 Acc:23.240%
+[progress:71.6%]time:8.20s Loss:2.57642 Correct:61420/256000 Acc:23.992%
+[progress:74.5%]time:8.18s Loss:2.46297 Correct:65947/266240 Acc:24.770%
+[progress:77.4%]time:8.25s Loss:2.43360 Correct:70543/276480 Acc:25.515%
+[progress:80.2%]time:8.19s Loss:2.37377 Correct:75312/286720 Acc:26.267%
+[progress:83.1%]time:8.23s Loss:2.29240 Correct:80204/296960 Acc:27.008%
+[progress:86.0%]time:8.19s Loss:2.29340 Correct:85086/307200 Acc:27.697%
+[progress:88.8%]time:8.19s Loss:2.24096 Correct:90072/317440 Acc:28.374%
+[progress:91.7%]time:8.22s Loss:2.22712 Correct:95085/327680 Acc:29.018%
+[progress:94.6%]time:8.25s Loss:2.10312 Correct:100368/337920 Acc:29.702%
+[progress:97.4%]time:8.22s Loss:2.08309 Correct:105710/348160 Acc:30.362%
+Testing ...
+[progress:100.0%]time:45.50s Loss:3.78346 Correct:45508/152974 Acc:29.749%
+Saving parameters to checkpoint/ckpt.t7
+end
+
+Epoch : 2
+[progress:2.9%]time:9.47s Loss:2.20627 Correct:5051/10240 Acc:49.326%
+[progress:5.7%]time:8.22s Loss:2.05921 Correct:10405/20480 Acc:50.806%
+[progress:8.6%]time:8.20s Loss:2.01194 Correct:15821/30720 Acc:51.501%
+[progress:11.5%]time:8.21s Loss:1.96015 Correct:21407/40960 Acc:52.263%
+[progress:14.3%]time:8.24s Loss:1.92208 Correct:27128/51200 Acc:52.984%
+[progress:17.2%]time:8.28s Loss:1.90386 Correct:32877/61440 Acc:53.511%
+[progress:20.1%]time:8.21s Loss:1.90833 Correct:38618/71680 Acc:53.876%
+[progress:22.9%]time:8.23s Loss:1.81852 Correct:44533/81920 Acc:54.362%
+[progress:25.8%]time:8.26s Loss:1.80398 Correct:50470/92160 Acc:54.763%
+[progress:28.7%]time:8.28s Loss:1.78501 Correct:56392/102400 Acc:55.070%
+[progress:31.5%]time:8.25s Loss:1.75374 Correct:62454/112640 Acc:55.446%
+[progress:34.4%]time:8.20s Loss:1.77357 Correct:68501/122880 Acc:55.746%
+[progress:37.2%]time:8.34s Loss:1.72150 Correct:74543/133120 Acc:55.997%
+[progress:40.1%]time:8.22s Loss:1.69984 Correct:80673/143360 Acc:56.273%
+[progress:43.0%]time:8.23s Loss:1.64862 Correct:86932/153600 Acc:56.596%
+[progress:45.8%]time:8.29s Loss:1.67371 Correct:93156/163840 Acc:56.858%
+[progress:48.7%]time:8.25s Loss:1.62710 Correct:99497/174080 Acc:57.156%
+[progress:51.6%]time:8.28s Loss:1.56085 Correct:105987/184320 Acc:57.502%
+[progress:54.4%]time:8.29s Loss:1.59204 Correct:112383/194560 Acc:57.763%
+[progress:57.3%]time:8.25s Loss:1.52019 Correct:118892/204800 Acc:58.053%

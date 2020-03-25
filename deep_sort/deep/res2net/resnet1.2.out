@@ -1,0 +1,41 @@
+nohup: 忽略输入
+152974 356940
+train num_classes 625
+test num_classes 625
+
+Epoch : 1
+Traceback (most recent call last):
+  File "train.py", line 222, in <module>
+    main()
+  File "train.py", line 213, in main
+    train_loss, train_err = train(epoch)
+  File "train.py", line 109, in train
+    outputs = net(inputs)
+  File "/home/qingl/.local/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/qingl/.local/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 152, in forward
+    outputs = self.parallel_apply(replicas, inputs, kwargs)
+  File "/home/qingl/.local/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 162, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/home/qingl/.local/lib/python3.7/site-packages/torch/nn/parallel/parallel_apply.py", line 85, in parallel_apply
+    output.reraise()
+  File "/home/qingl/.local/lib/python3.7/site-packages/torch/_utils.py", line 369, in reraise
+    raise self.exc_type(msg)
+RuntimeError: Caught RuntimeError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/home/qingl/.local/lib/python3.7/site-packages/torch/nn/parallel/parallel_apply.py", line 60, in _worker
+    output = module(*input, **kwargs)
+  File "/home/qingl/.local/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/qingl/antonio/deep_sort_pytorch/deep_sort/deep/model.py", line 183, in forward
+    x = self.layer2(x)
+  File "/home/qingl/.local/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/qingl/.local/lib/python3.7/site-packages/torch/nn/modules/container.py", line 92, in forward
+    input = module(input)
+  File "/home/qingl/.local/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/qingl/antonio/deep_sort_pytorch/deep_sort/deep/model.py", line 103, in forward
+    out = torch.cat((out, sp), 1)
+RuntimeError: CUDA out of memory. Tried to allocate 40.00 MiB (GPU 0; 10.76 GiB total capacity; 9.81 GiB already allocated; 10.62 MiB free; 15.57 MiB cached)
+
