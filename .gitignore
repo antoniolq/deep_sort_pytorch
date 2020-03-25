@@ -13,4 +13,4 @@ build/
 .idea
 *iml
 __pycache__
-*mkv
+*.mkv
