@@ -15,7 +15,6 @@ class VideoTracker(object):
     def __init__(self, cfg, args):
         self.cfg = cfg
         self.args = args
-        self.result = []
         use_cuda = args.use_cuda and torch.cuda.is_available()
         if not use_cuda:
             raise UserWarning("Running in cpu mode!")
@@ -71,12 +70,14 @@ class VideoTracker(object):
                 cls_conf = cls_conf[mask]
 
                 # do tracking
-                results = self.deepsort.update(bbox_xywh, cls_conf, im)
+                outputs = self.deepsort.update(bbox_xywh, cls_conf, im)
+                np.save("out.np",outputs)
+                exit(1)
                 # draw boxes for visualization
-                f = open("/home/qingl/antonio/mot16/test.txt", 'a')
-                for row in results:
-                    print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (idx_frame,
-                        row[0], row[1], row[2], row[3], row[4]), file=f)
+                # f = open("/home/qingl/antonio/mot16/test.txt", 'a')
+                # for row in results:
+                #     print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (idx_frame,
+                #         row[0], row[1], row[2], row[3], row[4]), file=f)
 
             end = time.time()
             print("time: {:.03f}s, fps: {:.03f}".format(end-start, 1/(end-start)))
