@@ -15,6 +15,7 @@ class VideoTracker(object):
     def __init__(self, cfg, args):
         self.cfg = cfg
         self.args = args
+        self.result = []
         use_cuda = args.use_cuda and torch.cuda.is_available()
         if not use_cuda:
             raise UserWarning("Running in cpu mode!")
@@ -70,26 +71,26 @@ class VideoTracker(object):
                 cls_conf = cls_conf[mask]
 
                 # do tracking
-                outputs = self.deepsort.update(bbox_xywh, cls_conf, im)
-                print("saving ")
-                np.save("outputs.npy",outputs)
-                print("saved")
-                sys.exit()
+                outputs, results = self.deepsort.update(bbox_xywh, cls_conf, im)
                 # draw boxes for visualization
                 if len(outputs) > 0:
                     bbox_xyxy = outputs[:,:4]
                     identities = outputs[:,-1]
                     ori_im = draw_boxes(ori_im, bbox_xyxy, identities)
+                f = open("/home/qingl/antonio/mot/test.txt", 'w')
+                for row in results:
+                    print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (
+                        row[0], row[1], row[2], row[3], row[4], row[5]), file=f)
 
             end = time.time()
             print("time: {:.03f}s, fps: {:.03f}".format(end-start, 1/(end-start)))
 
-            if self.args.display:
-                cv2.imshow("test", ori_im)
-                cv2.waitKey(1)
+            # if self.args.display:
+            #     cv2.imshow("test", ori_im)
+            #     cv2.waitKey(1)
 
-            if self.args.save_path:
-                self.writer.write(ori_im)
+            # if self.args.save_path:
+            #     self.writer.write(ori_im)
             
 
 def parse_args():
