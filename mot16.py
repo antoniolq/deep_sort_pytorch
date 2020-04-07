@@ -73,7 +73,7 @@ class VideoTracker(object):
                 # do tracking
                 results = self.deepsort.update(bbox_xywh, cls_conf, im)
                 # draw boxes for visualization
-                f = open("/home/qingl/antonio/mot/test.txt", 'w')
+                f = open("/home/qingl/antonio/mot16/test.txt", 'w')
                 for row in results:
                     print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (
                         row[0], row[1], row[2], row[3], row[4], row[5]), file=f)
