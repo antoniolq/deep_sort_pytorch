@@ -72,7 +72,6 @@ class VideoTracker(object):
                 # do tracking
                 outputs = self.deepsort.update(bbox_xywh, cls_conf, im)
                 np.save("out.np",outputs)
-                exit(1)
                 # draw boxes for visualization
                 # f = open("/home/qingl/antonio/mot16/test.txt", 'a')
                 # for row in results:
