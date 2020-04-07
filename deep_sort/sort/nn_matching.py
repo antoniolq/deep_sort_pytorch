@@ -53,8 +53,8 @@ def _cosine_distance(a, b, data_is_normalized=False):
         b = np.asarray(b) / np.linalg.norm(b, axis=1, keepdims=True)
         a = np.reshape(a, (-1, 1024))
         b = np.reshape(b, (-1, 1024))
-        print(a.shape)
-        print(b.shape)
+        # print(a.shape)
+        # print(b.shape)
     return 1. - np.dot(a, b.T)
 
 

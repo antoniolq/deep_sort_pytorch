@@ -58,9 +58,9 @@ class YOLOv3(object):
         bbox = bbox * torch.FloatTensor([[width, height, width, height]])
         cls_conf = boxes[:,5]
         cls_ids = boxes[:,6].long()
-        print("bbox:",bbox)
-        print("cls_conf:", cls_conf)
-        print("cls_ids:", cls_ids)
+        # print("bbox:",bbox)
+        # print("cls_conf:", cls_conf)
+        # print("cls_ids:", cls_ids)
         return bbox.numpy(), cls_conf.numpy(), cls_ids.numpy()
 
     def load_class_names(self,namesfile):
