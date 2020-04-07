@@ -54,7 +54,7 @@ class imageTracker(object):
 
                 # do tracking
                 results = self.deepsort.update(bbox_xywh, cls_conf, im)
-                f = open("/home/qingl/antonio/mot16/baseline/MOT16-02.txt", 'a')
+                f = open("/home/qingl/antonio/mot16/advanced/MOT16-02.txt", 'a')
                 for row in results:
                     print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (idx_frame,
                         row[0], row[1], row[2], row[3], row[4]), file=f)
