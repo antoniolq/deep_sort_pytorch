@@ -71,12 +71,10 @@ class VideoTracker(object):
 
                 # do tracking
                 outputs = self.deepsort.update(bbox_xywh, cls_conf, im)
-                np.save("out.np",outputs)
-                # draw boxes for visualization
-                # f = open("/home/qingl/antonio/mot16/test.txt", 'a')
-                # for row in results:
-                #     print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (idx_frame,
-                #         row[0], row[1], row[2], row[3], row[4]), file=f)
+                f = open("/home/qingl/antonio/mot16/test.txt", 'a')
+                for row in outputs:
+                    print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (idx_frame,
+                        row[0], row[1], row[2], row[3], row[4]), file=f)
 
             end = time.time()
             print("time: {:.03f}s, fps: {:.03f}".format(end-start, 1/(end-start)))
