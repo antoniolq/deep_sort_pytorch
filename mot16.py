@@ -9,7 +9,7 @@ from detector import build_detector
 from deep_sort import build_tracker
 from utils.draw import draw_boxes
 from utils.parser import get_config
-
+from skimage import io
 
 class imageTracker(object):
     def __init__(self, cfg, args):
@@ -24,16 +24,25 @@ class imageTracker(object):
         self.deepsort = build_tracker(cfg, use_cuda=use_cuda)
         self.class_names = self.detector.class_names
 
+
+    def __enter__(self):
+        return self
+
+
+    def __exit__(self, exc_type, exc_value, exc_traceback):
+        if exc_type:
+            print(exc_type, exc_value, exc_traceback)
+
+
     def run(self):
         images = os.listdir(self.dir)
         idx_frame = 0
-        while idx_frame >= len(images):
-            idx_frame += 1
+        sample = list(images)
+        while idx_frame <= len(sample):
+            tmp = self.dir + images[0]
+            img = io.imread(tmp)
             start = time.time()
-            _, ori_im = images[idx_frame]
-            im = cv2.cvtColor(ori_im, cv2.COLOR_BGR2RGB)
-
-            # do detection
+            im = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
             bbox_xywh, cls_conf, cls_ids = self.detector(im)
             if bbox_xywh is not None:
                 # select person class
@@ -43,12 +52,13 @@ class imageTracker(object):
                 bbox_xywh[:,3:] *= 1.2 # bbox dilation just in case bbox too small
                 cls_conf = cls_conf[mask]
 
+                # do tracking
                 outputs = self.deepsort.update(bbox_xywh, cls_conf, im)
                 f = open("/home/qingl/antonio/mot16/test.txt", 'a')
                 for row in outputs:
                     print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (idx_frame,
                         row[0], row[1], row[2], row[3], row[4]), file=f)
-
+            idx_frame += 1
             end = time.time()
             print("time: {:.03f}s, fps: {:.03f}".format(end-start, 1/(end-start)))
 
@@ -57,7 +67,6 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config_detection", type=str, default="./configs/yolov3.yaml")
     parser.add_argument("--config_deepsort", type=str, default="./configs/deep_sort.yaml")
-    parser.add_argument("--frame_interval", type=int, default=1)
     parser.add_argument("--cpu", dest="use_cuda", action="store_false", default=True)
     return parser.parse_args()
 
