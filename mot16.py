@@ -19,7 +19,7 @@ class imageTracker(object):
         if not use_cuda:
             raise UserWarning("Running in cpu mode!")
 
-        self.dir = "/mnt/Disk1/qingl/data/MOT16/train/img/"
+        self.dir = "/mnt/Disk1/qingl/data/MOT16/train/MOT16-02/img1/"
         self.detector = build_detector(cfg, use_cuda=use_cuda)
         self.deepsort = build_tracker(cfg, use_cuda=use_cuda)
         self.class_names = self.detector.class_names
@@ -38,7 +38,7 @@ class imageTracker(object):
         images = os.listdir(self.dir)
         idx_frame = 0
         sample = list(images)
-        while idx_frame <= len(sample):
+        while idx_frame < len(sample):
             tmp = self.dir + images[idx_frame]
             img = io.imread(tmp)
             start = time.time()
@@ -54,10 +54,11 @@ class imageTracker(object):
 
                 # do tracking
                 results = self.deepsort.update(bbox_xywh, cls_conf, im)
-                f = open("/home/qingl/antonio/mot16/img1.txt", 'a')
+                f = open("/home/qingl/antonio/mot16/baseline/MOT16-02.txt", 'a')
                 for row in results:
                     print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (idx_frame,
                         row[0], row[1], row[2], row[3], row[4]), file=f)
+            print(images[idx_frame],"finished")
             idx_frame += 1
             end = time.time()
             print("time: {:.03f}s, fps: {:.03f}".format(end-start, 1/(end-start)))
