@@ -19,7 +19,7 @@ class imageTracker(object):
         if not use_cuda:
             raise UserWarning("Running in cpu mode!")
 
-        self.dir = "/mnt/Disk1/qingl/data/MOT16/train/MOT16-04/img1/"
+        self.dir = "/mnt/Disk1/qingl/data/MOT16/train/MOT16-05/img1/"
         self.detector = build_detector(cfg, use_cuda=use_cuda)
         self.deepsort = build_tracker(cfg, use_cuda=use_cuda)
         self.class_names = self.detector.class_names
@@ -54,7 +54,7 @@ class imageTracker(object):
 
                 # do tracking
                 results = self.deepsort.update(bbox_xywh, cls_conf, im)
-                f = open("/home/qingl/antonio/mot16/baseline/MOT16-04.txt", 'a')
+                f = open("/home/qingl/antonio/mot16/baseline/MOT16-05.txt", 'a')
                 for row in results:
                     print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (idx_frame,
                         row[0], row[1], row[2], row[3], row[4]), file=f)
