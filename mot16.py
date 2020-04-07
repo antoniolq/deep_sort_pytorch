@@ -75,8 +75,8 @@ class VideoTracker(object):
                 # draw boxes for visualization
                 f = open("/home/qingl/antonio/mot16/test.txt", 'w')
                 for row in results:
-                    print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (
-                        row[0], row[1], row[2], row[3], row[4], row[5]), file=f)
+                    print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (idx_frame,
+                        row[0], row[1], row[2], row[3], row[4]), file=f)
 
             end = time.time()
             print("time: {:.03f}s, fps: {:.03f}".format(end-start, 1/(end-start)))
