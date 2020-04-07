@@ -71,12 +71,8 @@ class VideoTracker(object):
                 cls_conf = cls_conf[mask]
 
                 # do tracking
-                outputs, results = self.deepsort.update(bbox_xywh, cls_conf, im)
+                results = self.deepsort.update(bbox_xywh, cls_conf, im)
                 # draw boxes for visualization
-                if len(outputs) > 0:
-                    bbox_xyxy = outputs[:,:4]
-                    identities = outputs[:,-1]
-                    ori_im = draw_boxes(ori_im, bbox_xyxy, identities)
                 f = open("/home/qingl/antonio/mot/test.txt", 'w')
                 for row in results:
                     print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (
