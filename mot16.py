@@ -11,6 +11,9 @@ from utils.draw import draw_boxes
 from utils.parser import get_config
 from skimage import io
 
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "2,3"
+
 class imageTracker(object):
     def __init__(self, cfg, args, name):
         self.cfg = cfg
