@@ -39,7 +39,6 @@ class imageTracker(object):
         idx_frame = 0
         sample = list(images)
         imgs = sorted(sample)
-        np.save("imgs",imgs)
         while idx_frame < len(imgs):
             tmp = self.dir + images[idx_frame]
             img = io.imread(tmp)
@@ -60,7 +59,7 @@ class imageTracker(object):
                 for row in results:
                     print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (idx_frame,
                         row[0], row[1], row[2], row[3], row[4]), file=f)
-            print(images[idx_frame],"finished")
+            print(tmp,"finished")
             idx_frame += 1
             end = time.time()
             print("time: {:.03f}s, fps: {:.03f}".format(end-start, 1/(end-start)))
