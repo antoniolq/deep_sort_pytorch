@@ -46,7 +46,6 @@ class imageTracker(object):
         print(imgs[0])
         while idx_frame < len(imgs):
             tmp = self.indir + imgs[idx_frame]
-            print(idx_frame,imgs[idx_frame])
             img = io.imread(tmp)
             start = time.time()
             im = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -65,7 +64,7 @@ class imageTracker(object):
                 for row in results:
                     print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (idx_frame,
                         row[0], row[1], row[2], row[3], row[4]), file=f)
-            print(tmp,"finished")
+            print(imgs[idx_frame],"finished")
             idx_frame += 1
             end = time.time()
             print("time: {:.03f}s, fps: {:.03f}".format(end-start, 1/(end-start)))
@@ -85,6 +84,12 @@ if __name__=="__main__":
     cfg = get_config()
     cfg.merge_from_file(args.config_detection)
     cfg.merge_from_file(args.config_deepsort)
-
-    with imageTracker(cfg, args, args.name) as img_trk:
-        img_trk.run()
+    list = ["MOT16-02","MOT16-04","MOT16-05","MOT16-09","MOT16-10","MOT16-11","MOT16-13"]
+    id = 0
+    while(id < len(list)):
+        print(list[id], ".txt started------------")
+        with imageTracker(cfg, args, list[id]) as img_trk:
+            img_trk.run()
+        print(list[id], ".txt finished-----------")
+        id += 1
+    print("all finished")
