@@ -39,6 +39,7 @@ class imageTracker(object):
         idx_frame = 0
         sample = list(images)
         imgs = sorted(sample)
+        print(imgs[0])
         while idx_frame < len(imgs):
             tmp = self.dir + images[idx_frame]
             print(idx_frame,images[idx_frame])
