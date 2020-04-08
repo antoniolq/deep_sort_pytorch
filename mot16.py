@@ -41,6 +41,7 @@ class imageTracker(object):
         imgs = sorted(sample)
         while idx_frame < len(imgs):
             tmp = self.dir + images[idx_frame]
+            print(idx_frame,images[idx_frame])
             img = io.imread(tmp)
             start = time.time()
             im = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
