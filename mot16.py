@@ -39,6 +39,7 @@ class imageTracker(object):
         idx_frame = 0
         sample = list(images)
         imgs = sorted(sample)
+        np.save("imgs",imgs)
         while idx_frame < len(imgs):
             tmp = self.dir + images[idx_frame]
             img = io.imread(tmp)
