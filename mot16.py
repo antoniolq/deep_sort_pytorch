@@ -12,14 +12,18 @@ from utils.parser import get_config
 from skimage import io
 
 class imageTracker(object):
-    def __init__(self, cfg, args):
+    def __init__(self, cfg, args, name):
         self.cfg = cfg
         self.args = args
+        self.name = name
         use_cuda = args.use_cuda and torch.cuda.is_available()
         if not use_cuda:
             raise UserWarning("Running in cpu mode!")
 
-        self.dir = "/mnt/Disk1/qingl/data/MOT16/train/MOT16-05/img1/"
+        self.indir = "/mnt/Disk1/qingl/data/MOT16/train/"+ self.name +"/img1/"
+        self.outdir = dir = "/home/qingl/antonio/mot16/baseline/"+ self.name +".txt"
+        f = open(self.outdir, 'w')
+        f.truncate()
         self.detector = build_detector(cfg, use_cuda=use_cuda)
         self.deepsort = build_tracker(cfg, use_cuda=use_cuda)
         self.class_names = self.detector.class_names
@@ -35,13 +39,13 @@ class imageTracker(object):
 
 
     def run(self):
-        images = os.listdir(self.dir)
+        images = os.listdir(self.indir)
         idx_frame = 0
         sample = list(images)
         imgs = sorted(sample)
         print(imgs[0])
         while idx_frame < len(imgs):
-            tmp = self.dir + imgs[idx_frame]
+            tmp = self.indir + imgs[idx_frame]
             print(idx_frame,imgs[idx_frame])
             img = io.imread(tmp)
             start = time.time()
@@ -57,7 +61,7 @@ class imageTracker(object):
 
                 # do tracking
                 results = self.deepsort.update(bbox_xywh, cls_conf, im)
-                f = open("/home/qingl/antonio/mot16/baseline/MOT16-05.txt", 'a')
+                f = open(self.outdir, 'a')
                 for row in results:
                     print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (idx_frame,
                         row[0], row[1], row[2], row[3], row[4]), file=f)
@@ -72,6 +76,7 @@ def parse_args():
     parser.add_argument("--config_detection", type=str, default="./configs/yolov3.yaml")
     parser.add_argument("--config_deepsort", type=str, default="./configs/deep_sort.yaml")
     parser.add_argument("--cpu", dest="use_cuda", action="store_false", default=True)
+    parser.add_argument("--name", type=str, default="MOT16-02")
     return parser.parse_args()
 
 
@@ -81,5 +86,5 @@ if __name__=="__main__":
     cfg.merge_from_file(args.config_detection)
     cfg.merge_from_file(args.config_deepsort)
 
-    with imageTracker(cfg, args) as img_trk:
+    with imageTracker(cfg, args, args.name) as img_trk:
         img_trk.run()
