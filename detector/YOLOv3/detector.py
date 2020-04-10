@@ -41,7 +41,7 @@ class YOLOv3(object):
             img = img.to(self.device)
             out_boxes = self.net(img)
             boxes = get_all_boxes(out_boxes, self.conf_thresh, self.num_classes, use_cuda=self.use_cuda) #batch size is 1
-            # boxes = nms(boxes, self.nms_thresh)
+            boxes = nms(boxes, self.nms_thresh)
 
             boxes = post_process(boxes, self.net.num_classes, self.conf_thresh, self.nms_thresh)[0].cpu()
             boxes = boxes[boxes[:,-2]>self.score_thresh, :] # bbox xmin ymin xmax ymax
