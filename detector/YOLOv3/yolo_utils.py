@@ -142,6 +142,7 @@ def nms(boxes, nms_thresh):
                     #print(box_i, box_j, bbox_iou(box_i, box_j, x1y1x2y2=False))
                     weight = np.exp(-(iou * iou) / 0.5)
                     box_j[4] = weight * box_j[4]
+    print("soft nms")
     return out_boxes
 
 def convert2cpu(gpu_matrix):
