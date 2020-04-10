@@ -120,7 +120,7 @@ def xyxy_to_xywh(boxes_xyxy):
     
     return boxes_xywh
 
-
+#soft nms implemention
 def nms(boxes, nms_thresh):
     if len(boxes) == 0:
         return boxes
@@ -137,9 +137,11 @@ def nms(boxes, nms_thresh):
             out_boxes.append(box_i)
             for j in range(i+1, len(boxes)):
                 box_j = boxes[sortIds[j]]
-                if bbox_iou(box_i, box_j, x1y1x2y2=False) > nms_thresh:
+                iou = bbox_iou(box_i, box_j, x1y1x2y2=False)
+                if iou > nms_thresh:
                     #print(box_i, box_j, bbox_iou(box_i, box_j, x1y1x2y2=False))
-                    box_j[4] = 0
+                    weight = np.exp(-(iou * iou) / 0.5)
+                    box_j[4] = weight * box_j[4]
     return out_boxes
 
 def convert2cpu(gpu_matrix):
