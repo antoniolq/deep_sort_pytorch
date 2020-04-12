@@ -99,7 +99,7 @@ def post_process(boxes, num_classes, conf_thresh=0.01, nms_thresh=0.45, obj_thre
 
     results_boxes.append(processed_boxes)
 
-    return results_boxes
+    return torch.Tensor(results_boxes)
 
 def xywh_to_xyxy(boxes_xywh):
     boxes_xyxy = boxes_xywh.copy()
