@@ -99,5 +99,5 @@ def python_nms(boxes, scores, nms_thresh):
                 scores[j] = np.exp(-(ovr * ovr) / 0.5) * scores[j]
     keep = np.where(scores > nms_thresh)[0]
     keep = torch.from_numpy(keep).to(origin_device)
-    print("yes")
+    # print("yes")
     return keep
