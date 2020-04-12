@@ -89,7 +89,7 @@ def post_process(boxes, num_classes, conf_thresh=0.01, nms_thresh=0.45, obj_thre
             # np.save("test/masked_boxes",masked_boxes.cpu().numpy())
             # keep = boxes_nms(masked_boxes[:,:4], masked_boxes[:,5], nms_thresh)
             # np.save("test/keep", keep.cpu().numpy())
-            nmsed_boxes = torch.tensor(nms(masked_boxes, nms_thresh))
+            nmsed_boxes = torch.from_numpy(nms(masked_boxes, nms_thresh))
             # nmsed_boxes = masked_boxes[keep, :]
             # np.save("test/nmsed_boxes", nmsed_boxes.cpu().numpy())
             processed_boxes.append(nmsed_boxes)
