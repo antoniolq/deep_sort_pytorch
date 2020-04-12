@@ -103,7 +103,7 @@ def python_nms(boxes, scores, nms_thresh):
             dious = ovr - inter_diag / outer_diag
             if dious >= nms_thresh:
                 suppressed[j] = np.exp(-(ovr * ovr) / 0.5) * suppressed[j]
-    keep = np.where(suppressed >= nms_thresh)[0]
+    keep = np.where(suppressed < nms_thresh)[0]
     keep = torch.from_numpy(keep).to(origin_device)
     # print("yes")
     return keep
