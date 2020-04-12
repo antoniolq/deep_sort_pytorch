@@ -149,7 +149,7 @@ def nms(boxes, nms_thresh):
                     box_j[4] = weight * box_j[4]
     print("soft nms" )
     for i in range(len(out_boxes)):
-        print(out_boxes[i])
+        print(out_boxes[i].item())
     print(out_boxes)
     return out_boxes
 
