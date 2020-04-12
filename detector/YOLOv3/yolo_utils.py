@@ -147,7 +147,7 @@ def nms(boxes, nms_thresh):
                     weight = np.exp(-(iou * iou) / 0.5)
                     box_j[4] = weight * box_j[4]
     print("soft nms" )
-    return out_boxes
+    return out_boxes[:25]
 
 def convert2cpu(gpu_matrix):
     return torch.FloatTensor(gpu_matrix.size()).copy_(gpu_matrix)
