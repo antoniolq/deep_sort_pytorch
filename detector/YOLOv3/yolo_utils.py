@@ -75,7 +75,7 @@ def multi_bbox_ious(boxes1, boxes2, x1y1x2y2=True):
     uarea = area1 + area2 - carea
     return carea/uarea
 
-from nms import boxes_nms
+# from nms import boxes_nms
 def post_process(boxes, num_classes, conf_thresh=0.01, nms_thresh=0.45, obj_thresh=0.3):
     batch_size = boxes.size(0)
     np.save("test/boxes", boxes.cpu().numpy())
@@ -86,13 +86,13 @@ def post_process(boxes, num_classes, conf_thresh=0.01, nms_thresh=0.45, obj_thre
         for cls_id in range(num_classes):
             mask = (boxes[batch_id, :, -1] == cls_id) * (boxes[batch_id, :, 4] > obj_thresh)
             masked_boxes = boxes[batch_id, mask]
-            np.save("test/masked_boxes",masked_boxes.cpu().numpy())
-            keep = boxes_nms(masked_boxes[:,:4], masked_boxes[:,5], nms_thresh)
-            np.save("test/keep", keep.cpu().numpy())
-            nmsed_boxes = masked_boxes[keep, :]
-            np.save("test/nmsed_boxes", nmsed_boxes.cpu().numpy())
+            # np.save("test/masked_boxes",masked_boxes.cpu().numpy())
+            nmsed_boxes = nms(boxes, nms_thresh)
+            # np.save("test/keep", keep.cpu().numpy())
+            # nmsed_boxes = masked_boxes[keep, :]
+            # np.save("test/nmsed_boxes", nmsed_boxes.cpu().numpy())
             processed_boxes.append(nmsed_boxes)
-            exit(1)
+            # exit(1)
         processed_boxes = torch.cat(processed_boxes, dim=0)
     
     results_boxes.append(processed_boxes)
@@ -143,7 +143,7 @@ def nms(boxes, nms_thresh):
                     #print(box_i, box_j, bbox_iou(box_i, box_j, x1y1x2y2=False))
                     weight = np.exp(-(iou * iou) / 0.5)
                     box_j[4] = weight * box_j[4]
-    print("soft nms" )
+    print("soft nms")
     return out_boxes
 
 def convert2cpu(gpu_matrix):
