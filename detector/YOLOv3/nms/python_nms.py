@@ -69,11 +69,8 @@ def python_nms(boxes, scores, nms_thresh):
     areas = (x2 - x1) * (y2 - y1)
     order = np.argsort(scores)[::-1]
     num_detections = boxes.shape[0]
-    suppressed = np.zeros((num_detections,), dtype=np.float)
     for _i in range(num_detections):
         i = order[_i]
-        if suppressed[i]:
-            continue
         ix1 = x1[i]
         iy1 = y1[i]
         ix2 = x2[i]
@@ -82,9 +79,6 @@ def python_nms(boxes, scores, nms_thresh):
 
         for _j in range(_i + 1, num_detections):
             j = order[_j]
-            if suppressed[j]:
-                continue
-
             xx1 = max(ix1, x1[j])
             yy1 = max(iy1, y1[j])
             xx2 = min(ix2, x2[j])
@@ -102,9 +96,8 @@ def python_nms(boxes, scores, nms_thresh):
             ovr = inter / (iarea + areas[j] - inter)
             dious = ovr - inter_diag / outer_diag
             if dious >= nms_thresh:
-                suppressed[j] = np.exp(-(ovr * ovr) / 0.5) * suppressed[j]
-    np.save("test/suppressed",suppressed)
-    keep = np.where(suppressed < nms_thresh)[0]
+                scores[j] = np.exp(-(ovr * ovr) / 0.5) * scores[j]
+    keep = np.where(scores > nms_thresh)[0]
     keep = torch.from_numpy(keep).to(origin_device)
     # print("yes")
     return keep
