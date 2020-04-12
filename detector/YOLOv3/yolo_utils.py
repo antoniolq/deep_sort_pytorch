@@ -91,15 +91,15 @@ def post_process(boxes, num_classes, conf_thresh=0.01, nms_thresh=0.45, obj_thre
 
             # keep = boxes_nms(masked_boxes[:, :4], masked_boxes[:, 5], nms_thresh)
             keep = nms(masked_boxes, nms_thresh)
-            print(keep)
-            nmsed_boxes = masked_boxes[keep, :]
+            print(torch.Tensor(keep))
+            nmsed_boxes = masked_boxes[torch.Tensor(keep), :]
 
             processed_boxes.append(nmsed_boxes)
         processed_boxes = torch.cat(processed_boxes, dim=0)
 
     results_boxes.append(processed_boxes)
 
-    return torch.Tensor(results_boxes)
+    return results_boxes
 
 def xywh_to_xyxy(boxes_xywh):
     boxes_xyxy = boxes_xywh.copy()
