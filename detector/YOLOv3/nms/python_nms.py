@@ -53,7 +53,7 @@ def python_nms(boxes, scores, nms_thresh):
             inter = w * h
             ovr = inter / (iarea + areas[j] - inter)
             if ovr >= nms_thresh:
-                suppressed[j] = True
+                suppressed[j] = np.exp(-(ovr * ovr) / 0.5) * suppressed[j]
     keep = np.nonzero(suppressed == 0)[0]
     keep = torch.from_numpy(keep).to(origin_device)
     print("yes")
