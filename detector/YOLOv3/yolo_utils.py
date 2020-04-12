@@ -137,7 +137,7 @@ def nms(boxes, nms_thresh):
     out_boxes = []
     for i in range(len(boxes)):
         box_i = boxes[sortIds[i]]
-        if box_i[4] > 0:
+        if box_i[5] > 0:
             out_boxes.append(sortIds[i].item())
             for j in range(i+1, len(boxes)):
                 box_j = boxes[sortIds[j]]
