@@ -150,8 +150,7 @@ def nms(boxes, nms_thresh):
     print("soft nms" )
     for i in range(len(out_boxes)):
         print(out_boxes[i].item())
-    print(out_boxes)
-    return out_boxes
+    return out_boxes[0]
 
 def convert2cpu(gpu_matrix):
     return torch.FloatTensor(gpu_matrix.size()).copy_(gpu_matrix)
