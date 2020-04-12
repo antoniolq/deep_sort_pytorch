@@ -87,12 +87,13 @@ def post_process(boxes, num_classes, conf_thresh=0.01, nms_thresh=0.45, obj_thre
             mask = (boxes[batch_id, :, -1] == cls_id) * (boxes[batch_id, :, 4] > obj_thresh)
             masked_boxes = boxes[batch_id, mask]
             # np.save("test/masked_boxes",masked_boxes.cpu().numpy())
-            nmsed_boxes = nms(boxes, nms_thresh)
+            # keep = boxes_nms(masked_boxes[:,:4], masked_boxes[:,5], nms_thresh)
             # np.save("test/keep", keep.cpu().numpy())
+            nmsed_boxes = nms(masked_boxes, nms_thresh)
             # nmsed_boxes = masked_boxes[keep, :]
             # np.save("test/nmsed_boxes", nmsed_boxes.cpu().numpy())
             processed_boxes.append(nmsed_boxes)
-            # exit(1)
+            exit(1)
         processed_boxes = torch.cat(processed_boxes, dim=0)
     
     results_boxes.append(processed_boxes)
@@ -128,7 +129,7 @@ def nms(boxes, nms_thresh):
 
     det_confs = torch.zeros(len(boxes))
     for i in range(len(boxes)):
-        det_confs[i] = boxes[i][4]                
+        det_confs[i] = boxes[i][5]
 
     _,sortIds = torch.sort(det_confs, descending=True)
     out_boxes = []
@@ -143,7 +144,7 @@ def nms(boxes, nms_thresh):
                     #print(box_i, box_j, bbox_iou(box_i, box_j, x1y1x2y2=False))
                     weight = np.exp(-(iou * iou) / 0.5)
                     box_j[4] = weight * box_j[4]
-    print("soft nms")
+    print("soft nms" )
     return out_boxes
 
 def convert2cpu(gpu_matrix):
