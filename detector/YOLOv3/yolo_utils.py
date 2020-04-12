@@ -135,9 +135,9 @@ def nms(boxes, nms_thresh):
     _,sortIds = torch.sort(det_confs, descending=True)
     out_boxes = []
     for i in range(len(boxes)):
-        box_i = boxes[sortIds[i].item()]
+        box_i = boxes[sortIds[i]]
         if box_i[4] > 0:
-            out_boxes.append(sortIds[i])
+            out_boxes.append(sortIds[i].item())
             for j in range(i+1, len(boxes)):
                 box_j = boxes[sortIds[j]]
                 iou = bbox_iou(boxes[sortIds[i]], box_j, x1y1x2y2=False)
@@ -146,9 +146,7 @@ def nms(boxes, nms_thresh):
                     weight = np.exp(-(iou * iou) / 0.5)
                     box_j[4] = weight * box_j[4]
     print("soft nms" )
-    for i in range(len(out_boxes)):
-        print(out_boxes[i].item())
-    return out_boxes[0].item()
+    return out_boxes
 
 def convert2cpu(gpu_matrix):
     return torch.FloatTensor(gpu_matrix.size()).copy_(gpu_matrix)
