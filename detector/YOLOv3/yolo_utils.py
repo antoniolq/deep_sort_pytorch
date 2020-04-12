@@ -89,10 +89,10 @@ def post_process(boxes, num_classes, conf_thresh=0.01, nms_thresh=0.45, obj_thre
             # np.save("test/masked_boxes",masked_boxes.cpu().numpy())
             # keep = boxes_nms(masked_boxes[:,:4], masked_boxes[:,5], nms_thresh)
             # np.save("test/keep", keep.cpu().numpy())
-            masked_boxes = masked_boxes.cpu()
-            nmsed_boxes = nms(masked_boxes, nms_thresh)
-            np.save("test/nmsed_boxes2", np.array(nmsed_boxes))
-            # nmsed_boxes = masked_boxes[keep, :]
+            # masked_boxes = masked_boxes.cpu()
+            keep = nms(masked_boxes, nms_thresh)
+            # np.save("test/nmsed_boxes2", np.array(nmsed_boxes))
+            nmsed_boxes = masked_boxes[keep, :]
             # np.save("test/nmsed_boxes", nmsed_boxes.cpu().numpy())
             processed_boxes.append(nmsed_boxes)
             # exit(1)
@@ -138,10 +138,10 @@ def nms(boxes, nms_thresh):
     for i in range(len(boxes)):
         box_i = boxes[sortIds[i]]
         if box_i[4] > 0:
-            out_boxes.append(box_i)
+            out_boxes.append(sortIds[i])
             for j in range(i+1, len(boxes)):
                 box_j = boxes[sortIds[j]]
-                iou = bbox_iou(box_i, box_j, x1y1x2y2=False)
+                iou = bbox_iou(boxes[sortIds[i]], box_j, x1y1x2y2=False)
                 if iou > nms_thresh:
                     #print(box_i, box_j, bbox_iou(box_i, box_j, x1y1x2y2=False))
                     weight = np.exp(-(iou * iou) / 0.5)
