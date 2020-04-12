@@ -1,6 +1,8 @@
 # Folders
 __pycache__/
 build/
+mot16/
+test/
 *.egg-info
 
 
@@ -16,3 +18,4 @@ __pycache__
 *.mkv
 *.npy
 *.out
+*.txt
