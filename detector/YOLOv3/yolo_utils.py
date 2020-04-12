@@ -91,7 +91,7 @@ def post_process(boxes, num_classes, conf_thresh=0.01, nms_thresh=0.45, obj_thre
             # np.save("test/keep", keep.cpu().numpy())
             # masked_boxes = masked_boxes.cpu()
             keep = nms(masked_boxes, nms_thresh)
-            print(keep.type())
+            # print(keep.type())
             # np.save("test/nmsed_boxes2", np.array(nmsed_boxes))
             nmsed_boxes = masked_boxes[keep, :]
             # np.save("test/nmsed_boxes", nmsed_boxes.cpu().numpy())
@@ -148,6 +148,8 @@ def nms(boxes, nms_thresh):
                     weight = np.exp(-(iou * iou) / 0.5)
                     box_j[4] = weight * box_j[4]
     print("soft nms" )
+    for i in range(len(out_boxes)):
+        print(out_boxes[i])
     print(out_boxes)
     return out_boxes
 
