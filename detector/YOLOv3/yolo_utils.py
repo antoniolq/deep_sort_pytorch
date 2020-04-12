@@ -86,11 +86,11 @@ def post_process(boxes, num_classes, conf_thresh=0.01, nms_thresh=0.45, obj_thre
         for cls_id in range(num_classes):
             mask = (boxes[batch_id, :, -1] == cls_id) * (boxes[batch_id, :, 4] > obj_thresh)
             masked_boxes = boxes[batch_id, mask]
-            np.save("test/masked_boxes",masked_boxes)
+            np.save("test/masked_boxes",masked_boxes.cpu().numpy())
             keep = boxes_nms(masked_boxes[:,:4], masked_boxes[:,5], nms_thresh)
-            np.save("test/keep", keep)
+            np.save("test/keep", keep.cpu().numpy())
             nmsed_boxes = masked_boxes[keep, :]
-            np.save("test/nmsed_boxes", nmsed_boxes)
+            np.save("test/nmsed_boxes", nmsed_boxes.cpu().numpy())
             processed_boxes.append(nmsed_boxes)
             exit(1)
         processed_boxes = torch.cat(processed_boxes, dim=0)
