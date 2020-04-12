@@ -93,7 +93,7 @@ def post_process(boxes, num_classes, conf_thresh=0.01, nms_thresh=0.45, obj_thre
             keep = nms(masked_boxes, nms_thresh)
             # print(keep.type())
             # np.save("test/nmsed_boxes2", np.array(nmsed_boxes))
-            nmsed_boxes = masked_boxes[keep, :]
+            nmsed_boxes = masked_boxes[12, :]
             # np.save("test/nmsed_boxes", nmsed_boxes.cpu().numpy())
             processed_boxes.append(nmsed_boxes)
             # exit(1)
