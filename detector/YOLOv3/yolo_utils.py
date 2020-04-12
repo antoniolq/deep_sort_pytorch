@@ -145,7 +145,7 @@ def nms(boxes, nms_thresh):
                 if iou > nms_thresh:
                     #print(box_i, box_j, bbox_iou(box_i, box_j, x1y1x2y2=False))
                     weight = np.exp(-(iou * iou) / 0.5)
-                    box_j[4] = weight * box_j[4]
+                    box_j[5] = weight * box_j[5]
     print("soft nms" )
     return out_boxes[:25]
 
