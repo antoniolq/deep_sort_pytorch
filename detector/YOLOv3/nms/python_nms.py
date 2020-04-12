@@ -56,4 +56,5 @@ def python_nms(boxes, scores, nms_thresh):
                 suppressed[j] = True
     keep = np.nonzero(suppressed == 0)[0]
     keep = torch.from_numpy(keep).to(origin_device)
+    print("yes")
     return keep

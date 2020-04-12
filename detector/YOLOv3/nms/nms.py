@@ -1,11 +1,12 @@
 import warnings
 import torchvision
+from .python_nms import python_nms
 
 try:
     import torch
     import torch_extension
 
-    _nms = torch_extension.nms
+    _nms = python_nms
 except ImportError:
     if torchvision.__version__ >= '0.3.0':
         _nms = torchvision.ops.nms
