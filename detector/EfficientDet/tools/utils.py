@@ -31,6 +31,7 @@ def invert_affine(metas: Union[float, list, tuple], preds):
 
 def aspectaware_resize_padding(image, width, height, interpolation=None, means=None):
     old_h, old_w, c = image.shape
+    print(old_h, old_w, c)
     if old_w > old_h:
         new_w = width
         new_h = int(width / old_w * old_h)
@@ -68,6 +69,7 @@ def preprocess(ori_img, max_size=512, mean=(0.406, 0.456, 0.485), std=(0.225, 0.
     normalized_imgs = [(img / 255 - mean) / std for img in ori_imgs]
     imgs_meta = [aspectaware_resize_padding(img[..., ::-1], max_size, max_size,
                                             means=None) for img in normalized_imgs]
+    print(imgs_meta)
     framed_imgs = [img_meta[0] for img_meta in imgs_meta]
     framed_metas = [img_meta[1:] for img_meta in imgs_meta]
 
