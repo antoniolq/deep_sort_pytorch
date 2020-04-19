@@ -63,6 +63,7 @@ def aspectaware_resize_padding(image, width, height, interpolation=None, means=N
 
 
 def preprocess(*image_path, max_size=512, mean=(0.406, 0.456, 0.485), std=(0.225, 0.224, 0.229)):
+    print(image_path[0])
     ori_imgs = cv2.imread(image_path[0])
     print(image_path)
     print(ori_imgs)
