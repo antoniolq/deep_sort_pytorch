@@ -77,7 +77,7 @@ with torch.no_grad():
                       threshold, iou_threshold)
 
 
-def display(preds, imgs, imshow=True, imwrite=False):
+def display(preds, imgs, imshow=True, imwrite=True):
     for i in range(len(imgs)):
         if len(preds[i]['rois']) == 0:
             continue
@@ -97,7 +97,7 @@ def display(preds, imgs, imshow=True, imwrite=False):
             cv2.waitKey(0)
 
         if imwrite:
-            cv2.imwrite(f'test/img_inferred_d{compound_coef}_this_repo_{i}.jpg', imgs[i])
+            cv2.imwrite(f'imgs/result.jpg', imgs[i])
 
 
 out = invert_affine(framed_metas, out)
