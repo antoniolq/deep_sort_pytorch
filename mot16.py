@@ -52,10 +52,6 @@ class imageTracker(object):
             start = time.time()
             im = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
             bbox_xywh, cls_conf, cls_ids = self.detector(im)
-            np.save("bbox_xywh", bbox_xywh)
-            np.save("cls_conf", cls_conf)
-            np.save("cls_ids", cls_ids)
-            exit(1)
             if bbox_xywh is not None:
                 # select person class
                 mask = cls_ids==0
