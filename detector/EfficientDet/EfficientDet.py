@@ -59,7 +59,7 @@ class EfficientDet(object):
 
         model = EfficientDetBackbone(compound_coef=self.compound_coef, num_classes=len(self.obj_list),
                                      ratios=self.anchor_ratios, scales=self.anchor_scales)
-        model.load_state_dict(torch.load(f'weights/efficientdet-d{self.compound_coef}.pth'))
+        model.load_state_dict(torch.load(f'detector/EfficientDet/weights/efficientdet-d{self.compound_coef}.pth'))
         model.requires_grad_(False)
         model.eval()
 
