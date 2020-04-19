@@ -78,6 +78,7 @@ class EfficientDet(object):
                               self.threshold, self.iou_threshold)
         out = invert_affine(framed_metas, out)
         np.save("effout", out)
+        print("saved--------------")
         exit(1)
         self.display(out, ori_imgs, imshow=False, imwrite=True)
 
