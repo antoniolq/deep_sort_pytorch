@@ -44,8 +44,6 @@ class EfficientDet(object):
         # tf bilinear interpolation is different from any other's, just make do
 
     def __call__(self):
-        print("callll")
-        print(self.img_path)
         input_sizes = [512, 640, 768, 896, 1024, 1280, 1280, 1536]
         input_size = input_sizes[self.compound_coef] if self.force_input_size is None else self.force_input_size
         ori_imgs, framed_imgs, framed_metas = preprocess(self.img_path, max_size=input_size)
@@ -79,6 +77,8 @@ class EfficientDet(object):
                               regressBoxes, clipBoxes,
                               self.threshold, self.iou_threshold)
         out = invert_affine(framed_metas, out)
+        np.save("effout", out)
+        exit(1)
         self.display(out, ori_imgs, imshow=False, imwrite=True)
 
         print('running speed test...')
