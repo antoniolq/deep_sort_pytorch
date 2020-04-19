@@ -15,7 +15,7 @@ import numpy as np
 from efficientdet.utils import BBoxTransform, ClipBoxes
 from utils.utils import preprocess, invert_affine, postprocess
 
-compound_coef = 0
+compound_coef = 7
 force_input_size = None  # set None to use default size
 img_path = 'imgs/000128.jpg'
 
