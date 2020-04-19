@@ -15,7 +15,7 @@ class EfficientDet(object):
         # net definition
         self.compound_coef = 7
         self.force_input_size = None  # set None to use default size
-        self.img_path = 'imgs/000128.jpg'
+        self.img_path = '"/home/qingl/antonio/deep_sort_pytorch/detector/EfficientDet/imgs/000128.jpg"'
 
         # replace this part with your project's anchor config
         self.anchor_ratios = [(1.0, 1.0), (1.4, 0.7), (0.7, 1.4)]
