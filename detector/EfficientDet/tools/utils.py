@@ -62,8 +62,8 @@ def aspectaware_resize_padding(image, width, height, interpolation=None, means=N
     return canvas, new_w, new_h, old_w, old_h, padding_w, padding_h,
 
 
-def preprocess(*image_path, max_size=512, mean=(0.406, 0.456, 0.485), std=(0.225, 0.224, 0.229)):
-    ori_imgs = [cv2.imread(img_path) for img_path in image_path]
+def preprocess(ori_img, max_size=512, mean=(0.406, 0.456, 0.485), std=(0.225, 0.224, 0.229)):
+    ori_imgs = ori_img
     # cv2.imshow(ori_imgs)
     normalized_imgs = [(img / 255 - mean) / std for img in ori_imgs]
     imgs_meta = [aspectaware_resize_padding(img[..., ::-1], max_size, max_size,
@@ -205,17 +205,3 @@ def init_weights(model):
 
             if module.bias is not None:
                 module.bias.data.zero_()
-
-
-def xyxy_to_xywh(boxes_xyxy):
-    if isinstance(boxes_xyxy, torch.Tensor):
-        boxes_xywh = boxes_xyxy.clone()
-    elif isinstance(boxes_xyxy, np.ndarray):
-        boxes_xywh = boxes_xyxy.copy()
-
-    boxes_xywh[:, 0] = (boxes_xyxy[:, 0] + boxes_xyxy[:, 2]) / 2.
-    boxes_xywh[:, 1] = (boxes_xyxy[:, 1] + boxes_xyxy[:, 3]) / 2.
-    boxes_xywh[:, 2] = boxes_xyxy[:, 2] - boxes_xyxy[:, 0]
-    boxes_xywh[:, 3] = boxes_xyxy[:, 3] - boxes_xyxy[:, 1]
-
-    return boxes_xywh

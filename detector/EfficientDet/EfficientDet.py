@@ -43,10 +43,11 @@ class EfficientDet(object):
 
         # tf bilinear interpolation is different from any other's, just make do
 
-    def __call__(self):
+    def __call__(self, ori_imgs):
+        assert isinstance(ori_imgs, np.ndarray), "input must be a numpy array!"
         input_sizes = [512, 640, 768, 896, 1024, 1280, 1280, 1536]
         input_size = input_sizes[self.compound_coef] if self.force_input_size is None else self.force_input_size
-        ori_imgs, framed_imgs, framed_metas = preprocess(self.img_path, max_size=input_size)
+        ori_imgs, framed_imgs, framed_metas = preprocess(ori_imgs, max_size=input_size)
 
         if self.use_cuda:
             x = torch.stack([torch.from_numpy(fi).cuda() for fi in framed_imgs], 0)
@@ -77,39 +78,5 @@ class EfficientDet(object):
                               regressBoxes, clipBoxes,
                               self.threshold, self.iou_threshold)
         out = invert_affine(framed_metas, out)
-        np.save("effout", out)
-        print("saved--------------")
-        exit(1)
-        self.display(out, ori_imgs, imshow=False, imwrite=True)
+        return out[0]['rois'], out[0]['scores'], out[0]['class_ids']
 
-        print('running speed test...')
-        with torch.no_grad():
-            print('test1: model inferring and postprocessing')
-            print('inferring image for 10 times...')
-            t1 = time.time()
-            for _ in range(10):
-                _, regression, classification, anchors = model(x)
-
-                out = postprocess(x,
-                                  anchors, regression, classification,
-                                  regressBoxes, clipBoxes,
-                                  self.threshold, self.iou_threshold)
-                out = invert_affine(framed_metas, out)
-
-            t2 = time.time()
-            tact_time = (t2 - t1) / 10
-            print(f'{tact_time} seconds, {1 / tact_time} FPS, @batch_size 1')
-
-    def display(self, preds, imgs, imshow=True, imwrite=True):
-        for i in range(len(imgs)):
-            if len(preds[i]['rois']) == 0:
-                continue
-
-            for j in range(len(preds[i]['rois'])):
-                (x1, y1, x2, y2) = preds[i]['rois'][j].astype(np.int)
-                obj = self.obj_list[preds[i]['class_ids'][j]]
-                score = float(preds[i]['scores'][j])
-
-                cv2.putText(imgs[i], '{}, {:.3f}'.format(obj, score),
-                            (x1, y1 + 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
-                            (255, 255, 0), 1)
