@@ -8,7 +8,7 @@ import time
 import torch
 from torch.backends import cudnn
 
-from detector.EfficientDet.backbone import EfficientDetBackbone
+from backbone import EfficientDetBackbone
 import cv2
 import numpy as np
 
