@@ -26,7 +26,6 @@ class VideoTracker(object):
         self.vdo = cv2.VideoCapture()
         self.detector = build_detector_advanced()
         self.deepsort = build_tracker(cfg, use_cuda=use_cuda)
-        self.class_names = self.detector.class_names
 
     def __enter__(self):
         assert os.path.isfile(self.args.VIDEO_PATH), "Error: path error"
