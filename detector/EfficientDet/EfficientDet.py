@@ -44,7 +44,7 @@ class EfficientDet(object):
         # tf bilinear interpolation is different from any other's, just make do
         self.input_sizes = [512, 640, 768, 896, 1024, 1280, 1280, 1536]
 
-    def __call__(self, ori_img):
+    def __call__(self):
         print("callll")
         input_size = self.input_sizes[self.compound_coef] if self.force_input_size is None else self.force_input_size
         ori_imgs, framed_imgs, framed_metas = preprocess(self.img_path, max_size=input_size)
