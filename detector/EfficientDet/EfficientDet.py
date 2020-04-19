@@ -47,7 +47,7 @@ class EfficientDet(object):
 
     def __call__(self):
         print("callll")
-
+        print(self.img_path)
         ori_imgs, framed_imgs, framed_metas = preprocess(self.img_path, max_size=self.input_size)
 
         if self.use_cuda:
