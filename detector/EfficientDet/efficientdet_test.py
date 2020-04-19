@@ -12,8 +12,8 @@ from backbone import EfficientDetBackbone
 import cv2
 import numpy as np
 
-from detector.EfficientDet.efficientdet.utils import BBoxTransform, ClipBoxes
-from detector.EfficientDet.utils.utils import preprocess, invert_affine, postprocess
+from efficientdet.utils import BBoxTransform, ClipBoxes
+from utils.utils import preprocess, invert_affine, postprocess
 
 compound_coef = 0
 force_input_size = None  # set None to use default size

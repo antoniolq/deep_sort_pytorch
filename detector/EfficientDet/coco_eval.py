@@ -16,13 +16,13 @@ import os
 import argparse
 import torch
 import yaml
-from detector.EfficientDet.tqdm import tqdm
-from detector.EfficientDet.pycocotools.coco import COCO
-from detector.EfficientDet.pycocotools.cocoeval import COCOeval
+from tqdm import tqdm
+from pycocotools.coco import COCO
+from pycocotools.cocoeval import COCOeval
 
-from detector.EfficientDet.backbone import EfficientDetBackbone
-from detector.EfficientDet.efficientdet.utils import BBoxTransform, ClipBoxes
-from detector.EfficientDet.utils.utils import preprocess, invert_affine, postprocess
+from backbone import EfficientDetBackbone
+from efficientdet.utils import BBoxTransform, ClipBoxes
+from utils.utils import preprocess, invert_affine, postprocess
 
 ap = argparse.ArgumentParser()
 ap.add_argument('-p', '--project', type=str, default='coco', help='project file that contains parameters')

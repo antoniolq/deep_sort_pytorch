@@ -12,15 +12,15 @@ import yaml
 from torch import nn
 from torch.utils.data import DataLoader
 from torchvision import transforms
-from detector.EfficientDet.efficientdet.dataset import CocoDataset, Resizer, Normalizer, Augmenter, collater
-from detector.EfficientDet.backbone import EfficientDetBackbone
+from efficientdet.dataset import CocoDataset, Resizer, Normalizer, Augmenter, collater
+from backbone import EfficientDetBackbone
 from tensorboardX import SummaryWriter
 import numpy as np
-from detector.EfficientDet.tqdm.autonotebook import tqdm
+from tqdm.autonotebook import tqdm
 
-from detector.EfficientDet.efficientdet.loss import FocalLoss
-from detector.EfficientDet.utils.sync_batchnorm import patch_replication_callback
-from detector.EfficientDet.utils.utils import replace_w_sync_bn, CustomDataParallel, get_last_weights, init_weights
+from efficientdet.loss import FocalLoss
+from utils.sync_batchnorm import patch_replication_callback
+from utils.utils import replace_w_sync_bn, CustomDataParallel, get_last_weights, init_weights
 
 
 class Params:
