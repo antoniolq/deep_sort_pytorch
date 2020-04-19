@@ -26,8 +26,8 @@ class EfficientDet(object):
 
         self.use_cuda = True
         self.use_float16 = False
-        self.cudnn.fastest = True
-        self.cudnn.benchmark = True
+        cudnn.fastest = True
+        cudnn.benchmark = True
         self.obj_list = ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat',
                     'traffic light',
                     'fire hydrant', '', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep',
