@@ -8,7 +8,7 @@ import cv2
 import numpy as np
 
 from efficientdet.utils import BBoxTransform, ClipBoxes
-from tools.utils import preprocess, invert_affine, postprocess, xyxy_to_xywh
+from tools.utils import preprocess, invert_affine, postprocess
 
 class EfficientDet(object):
     def __init__(self):
