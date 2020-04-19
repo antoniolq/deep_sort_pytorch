@@ -11,7 +11,7 @@ from efficientdet.utils import BBoxTransform, ClipBoxes
 from tools.utils import preprocess, invert_affine, postprocess
 
 class EfficientDet(object):
-    def __init__(self, cfgfile, weightfile, namesfile, score_thresh=0.7, conf_thresh=0.01, nms_thresh=0.45, is_xywh=False, use_cuda=True):
+    def __init__(self):
         # net definition
         self.compound_coef = 7
         self.force_input_size = None  # set None to use default size
