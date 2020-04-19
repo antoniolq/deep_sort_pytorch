@@ -19,8 +19,8 @@ import numpy as np
 from tqdm.autonotebook import tqdm
 
 from efficientdet.loss import FocalLoss
-from utils.sync_batchnorm import patch_replication_callback
-from utils.utils import replace_w_sync_bn, CustomDataParallel, get_last_weights, init_weights
+from tools.sync_batchnorm import patch_replication_callback
+from tools.utils import replace_w_sync_bn, CustomDataParallel, get_last_weights, init_weights
 
 
 class Params:
