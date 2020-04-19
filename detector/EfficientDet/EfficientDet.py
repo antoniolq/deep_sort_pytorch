@@ -42,13 +42,13 @@ class EfficientDet(object):
                     'toothbrush']
 
         # tf bilinear interpolation is different from any other's, just make do
-        self.input_sizes = [512, 640, 768, 896, 1024, 1280, 1280, 1536]
-        self.input_size = self.input_sizes[self.compound_coef] if self.force_input_size is None else self.force_input_size
 
     def __call__(self):
         print("callll")
         print(self.img_path)
-        ori_imgs, framed_imgs, framed_metas = preprocess(self.img_path, max_size=self.input_size)
+        input_sizes = [512, 640, 768, 896, 1024, 1280, 1280, 1536]
+        input_size = input_sizes[self.compound_coef] if self.force_input_size is None else self.force_input_size
+        ori_imgs, framed_imgs, framed_metas = preprocess(self.img_path, max_size=input_size)
 
         if self.use_cuda:
             x = torch.stack([torch.from_numpy(fi).cuda() for fi in framed_imgs], 0)
