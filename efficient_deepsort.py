@@ -12,3 +12,4 @@ from utils.parser import get_config
 
 if __name__ == '__main__':
     test = build_detector_advanced()
+    test()
