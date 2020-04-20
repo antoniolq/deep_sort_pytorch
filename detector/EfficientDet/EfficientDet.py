@@ -13,7 +13,7 @@ from tools.utils import preprocess, invert_affine, postprocess
 class EfficientDet(object):
     def __init__(self):
         # net definition
-        self.compound_coef = 7
+        self.compound_coef = 1
         self.force_input_size = None  # set None to use default size
         self.img_path = "detector/EfficientDet/imgs/000128.jpg"
 
@@ -21,7 +21,7 @@ class EfficientDet(object):
         self.anchor_ratios = [(1.0, 1.0), (1.4, 0.7), (0.7, 1.4)]
         self.anchor_scales = [2 ** 0, 2 ** (1.0 / 3.0), 2 ** (2.0 / 3.0)]
 
-        self.threshold = 0.6
+        self.threshold = 0.8
         self.iou_threshold = 0.2
 
         self.use_cuda = True
