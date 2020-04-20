@@ -31,7 +31,6 @@ def invert_affine(metas: Union[float, list, tuple], preds):
 
 def aspectaware_resize_padding(image, width, height, interpolation=None, means=None):
     old_h, old_w, c = image.shape
-    print(old_h, old_w, c)
     if old_w > old_h:
         new_w = width
         new_h = int(width / old_w * old_h)

@@ -23,7 +23,7 @@ class DeepSort(object):
         metric = NearestNeighborDistanceMetric("cosine", max_cosine_distance, nn_budget)
         self.tracker = Tracker(metric, max_iou_distance=0.7, max_age=70, n_init=3)
 
-    def update(self, bbox_xywh, confidences, ori_img):
+    def update(self, bbox_xywh, confidences, ori_img, is_realtime):
         self.height, self.width = ori_img.shape[:2]
         # generate detections
         features = self._get_features(bbox_xywh, ori_img)
@@ -53,7 +53,10 @@ class DeepSort(object):
             results.append(np.array([track_id,box[0],box[1],box[2],box[3]], dtype=np.int))
         if len(outputs) > 0:
             outputs = np.stack(outputs,axis=0)
-        return outputs
+        if is_realtime:
+            return outputs
+        else:
+            return results
 
 
     """
