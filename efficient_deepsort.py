@@ -57,23 +57,24 @@ class VideoTracker(object):
 
             # do detection
             bbox_xyxy, cls_conf, cls_ids = self.detector(im)
-            bbox_xywh = xyxy_to_xywh(bbox_xyxy)
-            if bbox_xywh is not None:
-                # select person class
-                mask = cls_ids == 0
+            if len(bbox_xyxy) != 0:
+                bbox_xywh = xyxy_to_xywh(bbox_xyxy)
+                if bbox_xywh is not None:
+                    # select person class
+                    mask = cls_ids == 0
 
-                bbox_xywh = bbox_xywh[mask]
-                bbox_xywh[:, 3:] *= 1.2  # bbox dilation just in case bbox too small
-                cls_conf = cls_conf[mask]
+                    bbox_xywh = bbox_xywh[mask]
+                    bbox_xywh[:, 3:] *= 1.2  # bbox dilation just in case bbox too small
+                    cls_conf = cls_conf[mask]
 
-                # do tracking
-                outputs = self.deepsort.update(bbox_xywh, cls_conf, im, True)
+                    # do tracking
+                    outputs = self.deepsort.update(bbox_xywh, cls_conf, im, True)
 
-                # draw boxes for visualization
-                if len(outputs) > 0:
-                    bbox_xyxy = outputs[:, :4]
-                    identities = outputs[:, -1]
-                    ori_im = draw_boxes(ori_im, bbox_xyxy, identities)
+                    # draw boxes for visualization
+                    if len(outputs) > 0:
+                        bbox_xyxy = outputs[:, :4]
+                        identities = outputs[:, -1]
+                        ori_im = draw_boxes(ori_im, bbox_xyxy, identities)
 
             end = time.time()
             print("time: {:.03f}s, fps: {:.03f}".format(end - start, 1 / (end - start)))
