@@ -21,7 +21,7 @@ class EfficientDet(object):
         self.anchor_ratios = [(1.0, 1.0), (1.4, 0.7), (0.7, 1.4)]
         self.anchor_scales = [2 ** 0, 2 ** (1.0 / 3.0), 2 ** (2.0 / 3.0)]
 
-        self.threshold = 0.2
+        self.threshold = 0.6
         self.iou_threshold = 0.2
 
         self.use_cuda = True
