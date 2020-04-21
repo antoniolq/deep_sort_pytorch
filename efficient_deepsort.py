@@ -54,7 +54,7 @@ class VideoTracker(object):
     def run(self):
         idx_frame = 0
         fps = FPS().start()
-        while fps._numFrames:
+        while fps._numFrames < 10000:
             idx_frame += 1
             if idx_frame % self.args.frame_interval:
                 continue
