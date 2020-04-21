@@ -62,7 +62,7 @@ class VideoTracker(object):
             start = time.time()
             _, ori_im = self.stream.retrieve()
             (grabbed, frame) = self.stream.read()
-            frame = imutils.resize(frame, width=400)
+            # frame = imutils.resize(frame, width=400)
             im = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
             # do detection
@@ -87,7 +87,7 @@ class VideoTracker(object):
                         ori_im = draw_boxes(ori_im, bbox_xyxy, identities)
             fps.update()
             end = time.time()
-            # print("time: {:.03f}s, fps: {:.03f}".format(end - start, 1 / (end - start)))
+            print("time: {:.03f}s, fps: {:.03f}".format(end - start, 1 / (end - start)))
 
 
             if self.args.display:
