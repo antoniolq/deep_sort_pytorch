@@ -88,7 +88,7 @@ class VideoTracker(object):
             fps.update()
             end = time.time()
             # print("time: {:.03f}s, fps: {:.03f}".format(end - start, 1 / (end - start)))
-            print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
+
 
             if self.args.display:
                 cv2.imshow("test", ori_im)
@@ -96,7 +96,8 @@ class VideoTracker(object):
 
             if self.args.save_path:
                 self.writer.write(ori_im)
-
+        fps.stop()
+        print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
 
 def parse_args():
     parser = argparse.ArgumentParser()
