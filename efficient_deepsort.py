@@ -10,6 +10,13 @@ from deep_sort import build_tracker
 from utils.draw import draw_boxes,xyxy_to_xywh
 from utils.parser import get_config
 
+from threading import Thread
+from imutils.video import WebcamVideoStream
+from imutils.video import FPS
+import argparse
+import imutils
+import cv2
+
 
 class VideoTracker(object):
     def __init__(self, cfg, args):
@@ -23,21 +30,21 @@ class VideoTracker(object):
             cv2.namedWindow("test", cv2.WINDOW_NORMAL)
             cv2.resizeWindow("test", args.display_width, args.display_height)
 
-        self.vdo = cv2.VideoCapture()
+        self.stream = cv2.VideoCapture()
         self.detector = build_detector_advanced()
         self.deepsort = build_tracker(cfg, use_cuda=use_cuda)
 
     def __enter__(self):
         assert os.path.isfile(self.args.VIDEO_PATH), "Error: path error"
-        self.vdo.open(self.args.VIDEO_PATH)
-        self.im_width = int(self.vdo.get(cv2.CAP_PROP_FRAME_WIDTH))
-        self.im_height = int(self.vdo.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        self.stream.open(self.args.VIDEO_PATH)
+        self.im_width = int(self.stream.get(cv2.CAP_PROP_FRAME_WIDTH))
+        self.im_height = int(self.stream.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
         if self.args.save_path:
             fourcc = cv2.VideoWriter_fourcc(*'MJPG')
             self.writer = cv2.VideoWriter(self.args.save_path, fourcc, 20, (self.im_width, self.im_height))
 
-        assert self.vdo.isOpened()
+        assert self.stream.isOpened()
         return self
 
     def __exit__(self, exc_type, exc_value, exc_traceback):
@@ -46,14 +53,17 @@ class VideoTracker(object):
 
     def run(self):
         idx_frame = 0
-        while self.vdo.grab():
+        fps = FPS().start()
+        while fps._numFrames:
             idx_frame += 1
             if idx_frame % self.args.frame_interval:
                 continue
 
             start = time.time()
-            _, ori_im = self.vdo.retrieve()
-            im = cv2.cvtColor(ori_im, cv2.COLOR_BGR2RGB)
+            _, ori_im = self.stream.retrieve()
+            (grabbed, frame) = self.stream.read()
+            frame = imutils.resize(frame, width=400)
+            im = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
             # do detection
             bbox_xyxy, cls_conf, cls_ids = self.detector(im)
@@ -75,9 +85,10 @@ class VideoTracker(object):
                         bbox_xyxy = outputs[:, :4]
                         identities = outputs[:, -1]
                         ori_im = draw_boxes(ori_im, bbox_xyxy, identities)
-
+            fps.update()
             end = time.time()
-            print("time: {:.03f}s, fps: {:.03f}".format(end - start, 1 / (end - start)))
+            # print("time: {:.03f}s, fps: {:.03f}".format(end - start, 1 / (end - start)))
+            print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
 
             if self.args.display:
                 cv2.imshow("test", ori_im)
