@@ -66,7 +66,7 @@ class VideoTracker(object):
             start = time.time()
             _, ori_im = self.stream.retrieve()
             frame = fvs.read()
-            if frame != None:
+            if frame:
                 frame = imutils.resize(frame, width=400)
                 im = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
@@ -94,12 +94,12 @@ class VideoTracker(object):
                 end = time.time()
                 print("time: {:.03f}s, fps: {:.03f}".format(end - start, 1 / (end - start)))
 
-                if self.args.display:
-                    cv2.imshow("test", ori_im)
-                    cv2.waitKey(1)
+            if self.args.display:
+                cv2.imshow("test", ori_im)
+                cv2.waitKey(1)
 
-                if self.args.save_path:
-                    self.writer.write(ori_im)
+            if self.args.save_path:
+                self.writer.write(ori_im)
         fps.stop()
         fvs.stop()
         print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
