@@ -66,40 +66,40 @@ class VideoTracker(object):
             start = time.time()
             _, ori_im = self.stream.retrieve()
             frame = fvs.read()
+            if frame != None:
+                frame = imutils.resize(frame, width=400)
+                im = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
-            frame = imutils.resize(frame, width=400)
-            im = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                # do detection
+                bbox_xyxy, cls_conf, cls_ids = self.detector(im)
+                if len(bbox_xyxy) != 0:
+                    bbox_xywh = xyxy_to_xywh(bbox_xyxy)
+                    if bbox_xywh is not None:
+                        # select person class
+                        mask = cls_ids == 0
 
-            # do detection
-            bbox_xyxy, cls_conf, cls_ids = self.detector(im)
-            if len(bbox_xyxy) != 0:
-                bbox_xywh = xyxy_to_xywh(bbox_xyxy)
-                if bbox_xywh is not None:
-                    # select person class
-                    mask = cls_ids == 0
+                        bbox_xywh = bbox_xywh[mask]
+                        bbox_xywh[:, 3:] *= 1.2  # bbox dilation just in case bbox too small
+                        cls_conf = cls_conf[mask]
 
-                    bbox_xywh = bbox_xywh[mask]
-                    bbox_xywh[:, 3:] *= 1.2  # bbox dilation just in case bbox too small
-                    cls_conf = cls_conf[mask]
+                        # do tracking
+                        outputs = self.deepsort.update(bbox_xywh, cls_conf, im, True)
 
-                    # do tracking
-                    outputs = self.deepsort.update(bbox_xywh, cls_conf, im, True)
+                        # draw boxes for visualization
+                        if len(outputs) > 0:
+                            bbox_xyxy = outputs[:, :4]
+                            identities = outputs[:, -1]
+                            ori_im = draw_boxes(ori_im, bbox_xyxy, identities)
+                fps.update()
+                end = time.time()
+                print("time: {:.03f}s, fps: {:.03f}".format(end - start, 1 / (end - start)))
 
-                    # draw boxes for visualization
-                    if len(outputs) > 0:
-                        bbox_xyxy = outputs[:, :4]
-                        identities = outputs[:, -1]
-                        ori_im = draw_boxes(ori_im, bbox_xyxy, identities)
-            fps.update()
-            end = time.time()
-            print("time: {:.03f}s, fps: {:.03f}".format(end - start, 1 / (end - start)))
+                if self.args.display:
+                    cv2.imshow("test", ori_im)
+                    cv2.waitKey(1)
 
-            if self.args.display:
-                cv2.imshow("test", ori_im)
-                cv2.waitKey(1)
-
-            if self.args.save_path:
-                self.writer.write(ori_im)
+                if self.args.save_path:
+                    self.writer.write(ori_im)
         fps.stop()
         fvs.stop()
         print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
