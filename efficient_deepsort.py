@@ -67,9 +67,9 @@ class VideoTracker(object):
                 continue
 
             start = time.time()
-            _, ori_im = self.stream.retrieve()
+            grabbed, ori_im = self.stream.retrieve()
             frame = fvs.read()
-            if all(frame != None):
+            if grabbed:
                 frame = imutils.resize(frame, width=400)
                 im = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
