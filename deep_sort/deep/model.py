@@ -130,9 +130,9 @@ class Net(nn.Module):
             nn.BatchNorm2d(64),
             nn.ReLU(inplace=True),
             # nn.AvgPool2d(3,2,padding=1),
-            # nn.Conv2d(64, 64, 3, stride=1, padding=1),
-            # nn.BatchNorm2d(64),
-            # nn.ReLU(inplace=True),
+            nn.Conv2d(64, 64, 3, stride=1, padding=1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(inplace=True),
             nn.MaxPool2d(3, 2, padding=1),
         )
         # 32 64 32
