@@ -19,7 +19,7 @@ class DeepSort(object):
         self.extractor = Extractor(model_path, use_cuda=use_cuda)
 
         max_cosine_distance = max_dist
-        nn_budget = 100
+        nn_budget = 300
         metric = NearestNeighborDistanceMetric("cosine", max_cosine_distance, nn_budget)
         self.tracker = Tracker(metric, max_iou_distance=0.7, max_age=70, n_init=3)
 
