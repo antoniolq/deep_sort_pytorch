@@ -61,7 +61,7 @@ class imageTracker(object):
                 cls_conf = cls_conf[mask]
 
                 # do tracking
-                results = self.deepsort.update(bbox_xywh, cls_conf, im)
+                results = self.deepsort.update(bbox_xywh, cls_conf, im, False)
                 f = open(self.outdir, 'a')
                 for row in results:
                     print('%d,%d,%.2f,%.2f,%.2f,%.2f,1,-1,-1,-1' % (idx_frame,
