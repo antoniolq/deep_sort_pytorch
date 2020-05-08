@@ -53,7 +53,7 @@ class DeepSort(object):
             results.append(np.array([track_id,box[0],box[1],box[2],box[3]], dtype=np.int))
         if len(outputs) > 0:
             outputs = np.stack(outputs,axis=0)
-        return outputs
+        return results
 
 
     """
