@@ -15,11 +15,11 @@ import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 class imageTracker(object):
-    def __init__(self, cfg, args, name, dir):
+    def __init__(self, cfg, args, name):
         self.cfg = cfg
         self.args = args
         self.name = name
-        self.dir = dir
+        self.dir = self.args.dir
         use_cuda = args.use_cuda and torch.cuda.is_available()
         if not use_cuda:
             raise UserWarning("Running in cpu mode!")
