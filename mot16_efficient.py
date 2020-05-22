@@ -25,7 +25,7 @@ class imageTracker(object):
             raise UserWarning("Running in cpu mode!")
 
         self.indir = "/mnt/Disk1/qingl/data/MOT16/train/"+ self.name +"/img1/"
-        self.outdir = "/home/qingl/antonio/deep_sort_pytorch/mot16/advanced/" + self.dir + self.name +".txt"
+        self.outdir = "/home/qingl/antonio/deep_sort_pytorch/mot16/advanced/" + self.dir + "/" + self.name +".txt"
         f = open(self.outdir, 'w')
         f.truncate()
         self.detector = build_detector_advanced()
