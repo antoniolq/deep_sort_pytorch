@@ -15,16 +15,17 @@ import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 class imageTracker(object):
-    def __init__(self, cfg, args, name):
+    def __init__(self, cfg, args, name, dir):
         self.cfg = cfg
         self.args = args
         self.name = name
+        self.dir = dir
         use_cuda = args.use_cuda and torch.cuda.is_available()
         if not use_cuda:
             raise UserWarning("Running in cpu mode!")
 
         self.indir = "/mnt/Disk1/qingl/data/MOT16/train/"+ self.name +"/img1/"
-        self.outdir = dir = "/home/qingl/antonio/deep_sort_pytorch/mot16/advanced/"+ self.name +".txt"
+        self.outdir = "/home/qingl/antonio/deep_sort_pytorch/mot16/advanced/" + self.dir + self.name +".txt"
         f = open(self.outdir, 'w')
         f.truncate()
         self.detector = build_detector_advanced()
@@ -79,6 +80,7 @@ def parse_args():
     parser.add_argument("--config_deepsort", type=str, default="./configs/deep_sort.yaml")
     parser.add_argument("--cpu", dest="use_cuda", action="store_false", default=True)
     parser.add_argument("--name", type=str, default="MOT16-02")
+    parser.add_argument("--dir", type=str, default="eff0")
     return parser.parse_args()
 
 
