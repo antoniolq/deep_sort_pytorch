@@ -86,7 +86,7 @@ def train(opt):
     params = Params(f'projects/{opt.project}.yml')
 
     if params.num_gpus == 0:
-        os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+        os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 
     if torch.cuda.is_available():
         torch.cuda.manual_seed(42)
