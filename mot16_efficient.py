@@ -12,7 +12,7 @@ from utils.parser import get_config
 from skimage import io
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 class imageTracker(object):
     def __init__(self, cfg, args, name):
