@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import math
+from torchsummary import summary
 import time
 
 class BasicBlock(nn.Module):
@@ -207,6 +208,7 @@ if __name__ == '__main__':
     input = torch.rand([128,3,128,64])
     print(input.shape)
     out = net(input)
+    summary(net, (128,3,128,64))
     print("reid model structure")
     # time.sleep(1000000000)
     # print("----------------------------------------------")
