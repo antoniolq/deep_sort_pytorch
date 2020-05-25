@@ -81,6 +81,7 @@ def parse_args():
     parser.add_argument("--cpu", dest="use_cuda", action="store_false", default=True)
     parser.add_argument("--name", type=str, default="MOT16-02")
     parser.add_argument("--dir", type=str, default="eff0")
+    parser.add_argument("--id", type=str, default="0")
     return parser.parse_args()
 
 
@@ -90,11 +91,11 @@ if __name__=="__main__":
     cfg.merge_from_file(args.config_detection)
     cfg.merge_from_file(args.config_deepsort)
     list = ["MOT16-02","MOT16-04","MOT16-05","MOT16-09","MOT16-10","MOT16-11","MOT16-13"]
-    id = 0
-    while(id < len(list)):
-        print(list[id], ".txt started------------")
-        with imageTracker(cfg, args, list[id]) as img_trk:
-            img_trk.run()
-        print(list[id], ".txt finished-----------")
-        id += 1
+    id = args.id
+    # while(id < len(list)):
+    print(list[id], ".txt started------------")
+    with imageTracker(cfg, args, list[id]) as img_trk:
+        img_trk.run()
+    print(list[id], ".txt finished-----------")
+        # id += 1
     print("all finished")
