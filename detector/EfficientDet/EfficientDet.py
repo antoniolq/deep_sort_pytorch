@@ -13,7 +13,7 @@ from tools.utils import preprocess, invert_affine, postprocess
 class EfficientDet(object):
     def __init__(self):
         # net definition
-        self.compound_coef = 0
+        self.compound_coef = 1
         self.force_input_size = None  # set None to use default size
         self.img_path = "detector/EfficientDet/imgs/000128.jpg"
 
