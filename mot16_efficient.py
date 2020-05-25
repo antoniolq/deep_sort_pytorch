@@ -93,9 +93,9 @@ if __name__=="__main__":
     list = ["MOT16-02","MOT16-04","MOT16-05","MOT16-09","MOT16-10","MOT16-11","MOT16-13"]
     id = args.id
     # while(id < len(list)):
-    print(list[id], ".txt started------------")
-    with imageTracker(cfg, args, list[id]) as img_trk:
+    print(list[int(id)], ".txt started------------")
+    with imageTracker(cfg, args, list[int(id)]) as img_trk:
         img_trk.run()
-    print(list[id], ".txt finished-----------")
+    print(list[int(id)], ".txt finished-----------")
         # id += 1
     print("all finished")
