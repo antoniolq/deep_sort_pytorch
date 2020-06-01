@@ -197,6 +197,7 @@ def draw_curve(epoch, train_loss, train_err, test_loss, test_err):
         ax0.legend()
         ax1.legend()
     fig.savefig("train.jpg")
+    np.save("record.npy",record)
 
 
 # lr decay
