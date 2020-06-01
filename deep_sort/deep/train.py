@@ -65,7 +65,7 @@ print("test num_classes", len(testloader.dataset.classes))
 # net definition
 start_epoch = 0
 net = Net(num_classes=len(trainloader.dataset.classes))
-net = nn.DataParallel(net, device_ids=[0,1,2])
+# net = nn.DataParallel(net, device_ids=[0,1,2])
 cudnn.benchmark = True
 args.resume = False
 if args.resume:
