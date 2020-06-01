@@ -209,6 +209,7 @@ def lr_decay():
 
 
 def main():
+    print("fdsf")
     for epoch in range(start_epoch, start_epoch + 50):
         train_loss, train_err = train(epoch)
         test_loss, test_err = test(epoch)
